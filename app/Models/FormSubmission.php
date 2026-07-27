@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 
-#[Fillable(['user_id', 'form_type', 'date', 'answers', 'notes'])]
+#[Fillable(['user_id', 'form_type', 'form_id', 'date', 'answers', 'notes'])]
 class FormSubmission extends Model
 {
     /**
@@ -28,5 +28,13 @@ class FormSubmission extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get the form definition this submission belongs to.
+     */
+    public function form(): BelongsTo
+    {
+        return $this->belongsTo(Form::class);
     }
 }
