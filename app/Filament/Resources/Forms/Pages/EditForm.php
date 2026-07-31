@@ -23,7 +23,7 @@ class EditForm extends EditRecord
                 ->icon($record->is_category ? 'heroicon-o-folder-open' : 'heroicon-o-list-bullet')
                 ->color('info')
                 ->url(route('filament.admin.resources.forms.index', ['parent_id' => $record->id]))
-                ->visible(fn () => $record->is_category || !empty($record->options)),
+                ->visible(fn () => $record->is_category || ! empty($record->options)),
 
             Action::make('kembali')
                 ->label('← Kembali')
@@ -37,4 +37,3 @@ class EditForm extends EditRecord
         ];
     }
 }
-

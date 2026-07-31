@@ -4,8 +4,9 @@ namespace App\Filament\Resources\FormSubmissions\Schemas;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
 class FormSubmissionForm
@@ -24,7 +25,7 @@ class FormSubmissionForm
                     ->required(),
                 DatePicker::make('date')
                     ->required(),
-                Textarea::make('answers')
+                TagsInput::make('answers')
                     ->required()
                     ->columnSpanFull(),
                 Textarea::make('notes')

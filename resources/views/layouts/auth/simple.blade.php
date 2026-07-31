@@ -3,18 +3,40 @@
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <div class="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
-            <div class="flex w-full max-w-sm flex-col gap-2">
-                <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
-                    <span class="flex h-9 w-9 mb-1 items-center justify-center rounded-md">
-                        <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
+    <body class="min-h-screen antialiased bg-zinc-950">
+
+        {{-- Background decorative blobs --}}
+        <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+            <div class="absolute -top-40 -right-32 w-96 h-96 rounded-full
+                        bg-cyan-600/10 blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-32 w-96 h-96 rounded-full
+                        bg-cyan-500/8 blur-3xl"></div>
+        </div>
+
+        <div class="relative bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
+            <div class="flex w-full max-w-sm flex-col gap-2 animate-fade-in-up">
+
+                {{-- Logo & Brand --}}
+                <a href="{{ route('home') }}" class="flex flex-col items-center gap-3 mb-2" wire:navigate>
+                    <span class="flex h-14 w-14 items-center justify-center rounded-2xl
+                                 bg-cyan-600 shadow-lg shadow-cyan-900/40
+                                 ring-1 ring-cyan-500/40
+                                 transition-transform duration-200 hover:scale-105">
+                        <x-app-logo-icon class="size-8 text-white" />
                     </span>
-                    <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-white tracking-tight">Sistem Checklist</div>
+                        <div class="text-xs text-cyan-400 font-semibold tracking-widest uppercase">Aqua</div>
+                    </div>
                 </a>
+
                 <div class="flex flex-col gap-6">
                     {{ $slot }}
                 </div>
+
+                <p class="text-center text-xs text-zinc-600 mt-4">
+                    &copy; {{ date('Y') }} Sistem Checklist Aqua. All rights reserved.
+                </p>
             </div>
         </div>
 
@@ -27,3 +49,4 @@
         @fluxScripts
     </body>
 </html>
+

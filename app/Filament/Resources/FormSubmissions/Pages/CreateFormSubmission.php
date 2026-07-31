@@ -8,4 +8,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateFormSubmission extends CreateRecord
 {
     protected static string $resource = FormSubmissionResource::class;
+
+    public function canCreateAnother(): bool
+    {
+        return false;
+    }
 }

@@ -5,7 +5,6 @@ namespace App\Filament\Resources\Users\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -17,21 +16,39 @@ class UsersTable
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
-                TextColumn::make('email')
-                    ->label('Email address')
+
+                TextColumn::make('username')
+                    ->label('Username')
                     ->searchable(),
-                TextColumn::make('email_verified_at')
-                    ->dateTime()
-                    ->sortable(),
-                IconColumn::make('is_admin')
-                    ->boolean(),
-                TextColumn::make('two_factor_confirmed_at')
-                    ->dateTime()
-                    ->sortable(),
+
+                TextColumn::make('role')
+                    ->label('Role')
+                    ->badge()
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        'super_admin' => '🔑 Super Admin',
+                        'admin'       => '🛠️ Admin',
+                        'responden'   => '📋 Responden',
+                        default       => $state,
+                    })
+                    ->color(fn (string $state): string => match ($state) {
+                        'super_admin' => 'danger',
+                        'admin'       => 'warning',
+                        'responden'   => 'success',
+                        default       => 'gray',
+                    }),
+
+                TextColumn::make('assignedForms.title')
+                    ->label('Assigned Forms')
+                    ->badge()
+                    ->color('gray')
+                    ->separator(', ')
+                    ->placeholder('Semua forms'),
+
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
                 TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()

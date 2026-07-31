@@ -2,10 +2,10 @@
 
 namespace App\Filament\Resources\Users\Schemas;
 
-use Filament\Forms\Components\DateTimePicker;
+use App\Models\Form;
+use Filament\Forms\Components\CheckboxList;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
 
 class UserForm
@@ -16,23 +16,40 @@ class UserForm
             ->components([
                 TextInput::make('name')
                     ->required(),
-                TextInput::make('email')
-                    ->label('Email address')
-                    ->email()
+
+                TextInput::make('username')
+                    ->label('Username')
                     ->required(),
-                DateTimePicker::make('email_verified_at'),
+
                 TextInput::make('password')
                     ->password()
-                    ->required(),
-                Toggle::make('is_admin')
-                    ->required(),
-                Textarea::make('two_factor_secret')
-                    ->default(null)
+                    ->required(fn (string $operation): bool => $operation === 'create')
+                    ->dehydrated(fn (?string $state) => filled($state)),
+
+                Select::make('role')
+                    ->label('Role')
+                    ->required()
+                    ->options([
+                        'super_admin' => '🔑 Super Admin',
+                        'admin'       => '🛠️ Admin (Terbatas)',
+                        'responden'   => '📋 Responden',
+                    ])
+                    ->default('responden')
+                    ->live()
+                    ->helperText(fn (?string $state): string => match ($state) {
+                        'super_admin' => 'Kendali penuh atas seluruh sistem.',
+                        'admin'       => 'Hanya bisa CRUD forms pada bagian yang di-assign.',
+                        'responden'   => 'Hanya bisa mengisi form pada bagian yang di-assign.',
+                        default       => '',
+                    }),
+
+                CheckboxList::make('assignedForms')
+                    ->label('Form yang Di-assign')
+                    ->relationship('assignedForms', 'title', fn ($query) => $query->whereNull('parent_id')->orderBy('order'))
+                    ->helperText('Pilih form utama (root) yang boleh diakses/dikelola oleh user ini. Berlaku untuk role Admin dan Responden.')
+                    ->visible(fn (callable $get): bool => in_array($get('role'), ['admin', 'responden']))
+                    ->columns(2)
                     ->columnSpanFull(),
-                Textarea::make('two_factor_recovery_codes')
-                    ->default(null)
-                    ->columnSpanFull(),
-                DateTimePicker::make('two_factor_confirmed_at'),
             ]);
     }
 }

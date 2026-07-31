@@ -19,14 +19,17 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Engineer Aqua',
-            'email' => 'engineer@aqua.com',
+            'username' => 'engineer',
             'password' => bcrypt('password'),
+            'is_admin' => true,
         ]);
 
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'username' => 'test',
             'password' => bcrypt('password'),
         ]);
+
+        $this->call(FormSeeder::class);
     }
 }

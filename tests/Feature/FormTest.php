@@ -1,7 +1,12 @@
 <?php
 
-use App\Models\User;
 use App\Models\FormSubmission;
+use App\Models\User;
+use Database\Seeders\FormSeeder;
+
+beforeEach(function () {
+    $this->seed(FormSeeder::class);
+});
 
 test('guests are redirected to the login page when visiting forms', function () {
     $response = $this->get(route('forms.show', 'work-at-height/fix-ladder/cimex/ladder-1'));

@@ -2,12 +2,11 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Form;
+use App\Models\FormSubmission;
+use App\Models\User;
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
-
-use App\Models\FormSubmission;
-use App\Models\Form;
-use App\Models\User;
 
 class StatsOverview extends StatsOverviewWidget
 {

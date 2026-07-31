@@ -22,14 +22,16 @@ class ListForms extends ListRecords
         // Tombol kembali jika sedang melihat child
         if ($parentId) {
             $parent = Form::find($parentId);
-            $backUrl = $parent?->parent_id
-                ? route('filament.admin.resources.forms.index', ['parent_id' => $parent->parent_id])
-                : route('filament.admin.resources.forms.index');
+            if ($parent instanceof Form) {
+                $backUrl = $parent->parent_id
+                    ? route('filament.admin.resources.forms.index', ['parent_id' => $parent->parent_id])
+                    : route('filament.admin.resources.forms.index');
 
-            $actions[] = Action::make('kembali')
-                ->label('← Kembali')
-                ->color('gray')
-                ->url($backUrl);
+                $actions[] = Action::make('kembali')
+                    ->label('← Kembali')
+                    ->color('gray')
+                    ->url($backUrl);
+            }
         }
 
         $actions[] = CreateAction::make()
@@ -42,16 +44,22 @@ class ListForms extends ListRecords
         return $actions;
     }
 
+    /**
+     * @return Builder<Form>
+     */
     protected function getTableQuery(): Builder
     {
+        // Get the base query from the Resource, which already handles admin scoping
+        $query = parent::getTableQuery();
+
         $parentId = request()->query('parent_id');
 
         if ($parentId) {
-            return Form::query()->where('parent_id', $parentId);
+            return $query->where('parent_id', $parentId);
         }
 
         // Default: hanya root-level forms (yang tidak punya parent)
-        return Form::query()->whereNull('parent_id');
+        return $query->whereNull('parent_id');
     }
 
     public function getHeading(): string
@@ -60,8 +68,8 @@ class ListForms extends ListRecords
 
         if ($parentId) {
             $parent = Form::find($parentId);
-            if ($parent) {
-                return 'Isi dari: ' . $parent->title;
+            if ($parent instanceof Form) {
+                return 'Isi dari: '.$parent->title;
             }
         }
 
@@ -74,15 +82,17 @@ class ListForms extends ListRecords
 
         if ($parentId) {
             $parent = Form::find($parentId);
-            $breadcrumbs = [];
-            $current = $parent;
+            if ($parent instanceof Form) {
+                $breadcrumbs = [];
+                $current = $parent;
 
-            while ($current) {
-                array_unshift($breadcrumbs, $current->title);
-                $current = $current->parent;
+                while ($current instanceof Form) {
+                    array_unshift($breadcrumbs, $current->title);
+                    $current = $current->parent;
+                }
+
+                return 'Jalur: '.implode(' › ', $breadcrumbs);
             }
-
-            return 'Jalur: ' . implode(' › ', $breadcrumbs);
         }
 
         return 'Menampilkan 12 form utama yang tersedia.';

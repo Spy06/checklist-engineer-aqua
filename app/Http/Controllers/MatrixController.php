@@ -1,0 +1,65 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Form;
+use App\Models\FormSubmission;
+use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
+
+class MatrixController extends Controller
+{
+    public function index()
+    {
+        $currentYear  = Carbon::now()->year;
+        $currentMonth = Carbon::now()->month;
+
+        $months = [];
+        for ($i = 1; $i <= $currentMonth; $i++) {
+            $months[$i] = Carbon::create()->month($i)->translatedFormat('F');
+        }
+
+        // Always show all root forms in the matrix (regardless of user role)
+        $rootForms = Form::whereNull('parent_id')->orderBy('order')->get();
+
+        $matrix = [];
+
+        foreach ($rootForms as $form) {
+            $formIds   = $this->getAllDescendantIds($form);
+            $formIds[] = $form->id;
+
+            $matrix[$form->id] = [
+                'title'  => $form->title,
+                'status' => [],
+            ];
+
+            foreach ($months as $monthNum => $monthName) {
+                $hasSubmission = FormSubmission::whereIn('form_id', $formIds)
+                    ->whereMonth('date', $monthNum)
+                    ->whereYear('date', $currentYear)
+                    ->exists();
+
+                $matrix[$form->id]['status'][$monthNum] = $hasSubmission;
+            }
+        }
+
+        return view('matrix', [
+            'months'      => $months,
+            'matrix'      => $matrix,
+            'currentYear' => $currentYear,
+        ]);
+    }
+
+    /**
+     * @return array<int>
+     */
+    private function getAllDescendantIds(Form $form): array
+    {
+        $ids = [];
+        foreach ($form->children as $child) {
+            $ids[]  = $child->id;
+            $ids    = array_merge($ids, $this->getAllDescendantIds($child));
+        }
+        return $ids;
+    }
+}

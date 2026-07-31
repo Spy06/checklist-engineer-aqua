@@ -16,12 +16,14 @@ class FormSeeder extends Seeder
         // Only run if the table is empty to prevent duplicates
         if (DB::table('forms')->count() > 0) {
             $this->command->info('Forms table is not empty, skipping seeder.');
+
             return;
         }
 
         $formsConfig = config('forms');
         if (! $formsConfig) {
             $this->command->warn('No config/forms.php found or it is empty.');
+
             return;
         }
 
@@ -31,7 +33,10 @@ class FormSeeder extends Seeder
         $this->migrateSubmissions();
     }
 
-    private function seedLevel(array $items, ?int $parentId)
+    /**
+     * @param  array<string, mixed>  $items
+     */
+    private function seedLevel(array $items, ?int $parentId): void
     {
         $order = 1;
         foreach ($items as $slug => $def) {
@@ -41,7 +46,7 @@ class FormSeeder extends Seeder
             }
 
             $isCategory = $def['is_category'] ?? false;
-            if (isset($def['items']) && !isset($def['options'])) {
+            if (isset($def['items']) && ! isset($def['options'])) {
                 $isCategory = true;
             }
 
@@ -68,27 +73,28 @@ class FormSeeder extends Seeder
         }
     }
 
-    private function migrateSubmissions()
+    private function migrateSubmissions(): void
     {
         $submissions = DB::table('form_submissions')->whereNull('form_id')->get();
         $forms = DB::table('forms')->get();
 
         $formPaths = [];
-        
+
         // Helper to build path recursively
-        $buildPath = function($form) use ($forms, &$buildPath, &$formPaths) {
+        $buildPath = function ($form) use ($forms, &$buildPath, &$formPaths) {
             if (isset($formPaths[$form->id])) {
                 return $formPaths[$form->id];
             }
 
-            if (!$form->parent_id) {
+            if (! $form->parent_id) {
                 $path = $form->slug;
             } else {
                 $parent = $forms->firstWhere('id', $form->parent_id);
-                $path = $parent ? $buildPath($parent) . '.' . $form->slug : $form->slug;
+                $path = $parent ? $buildPath($parent).'.'.$form->slug : $form->slug;
             }
-            
+
             $formPaths[$form->id] = $path;
+
             return $path;
         };
 

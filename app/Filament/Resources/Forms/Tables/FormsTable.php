@@ -3,15 +3,15 @@
 namespace App\Filament\Resources\Forms\Tables;
 
 use App\Models\Form;
+use App\Models\User;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\BadgeColumn;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 
 class FormsTable
 {
@@ -29,6 +29,12 @@ class FormsTable
                     ->searchable()
                     ->weight('bold'),
 
+                TextColumn::make('parent.title')
+                    ->label('Induk')
+                    ->badge()
+                    ->color('info')
+                    ->placeholder('— Root Form —'),
+
                 TextColumn::make('tipe')
                     ->label('Tipe')
                     ->badge()
@@ -36,6 +42,7 @@ class FormsTable
                     ->color(fn (string $state) => match ($state) {
                         'Childable' => 'info',
                         'Option'    => 'success',
+                        default     => 'gray',
                     }),
 
                 TextColumn::make('children_count')
@@ -66,7 +73,17 @@ class FormsTable
                 EditAction::make(),
 
                 DeleteAction::make()
-                    ->successNotificationTitle('Form berhasil dihapus beserta seluruh child-nya'),
+                    ->successNotificationTitle('Form berhasil dihapus beserta seluruh child-nya')
+                    // Admins (non-super) cannot delete a root form (parent_id = null) that is assigned to them
+                    ->visible(function (Form $record): bool {
+                        /** @var User $user */
+                        $user = Auth::user();
+                        if ($user->isSuperAdmin()) {
+                            return true;
+                        }
+                        // Admin can delete child forms, but NOT the root assigned forms
+                        return $record->parent_id !== null;
+                    }),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
