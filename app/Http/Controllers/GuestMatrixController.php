@@ -3,15 +3,28 @@
 namespace App\Http\Controllers;
 
 use App\Models\Form;
-use App\Models\FormSubmission;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 use App\Concerns\MatrixSummary;
 
 class GuestMatrixController extends Controller
 {
     use MatrixSummary;
 
-    public function index()
+    /**
+     * Cache key for the shared live submissions (all visitors share same data).
+     * We use a global key (not per-session) so one fetch benefits everyone.
+     */
+    private const CACHE_KEY  = 'global_live_submissions';
+    private const CACHE_TTL  = 10; // minutes — fresh enough, fast enough
+
+    /**
+     * Live matrix — the single public page of the app.
+     * Serves from cache if available to avoid Google API timeout on page load.
+     * If no cache exists yet, fetches synchronously with a 25s time limit.
+     */
+    public function live(\App\Services\GoogleFormsSyncService $syncService)
     {
         $currentYear  = Carbon::now()->year;
         $currentMonth = Carbon::now()->month;
@@ -26,61 +39,19 @@ class GuestMatrixController extends Controller
             ->orderBy('order')
             ->get();
 
-        $submissions = FormSubmission::whereYear('date', $currentYear)->get();
+        // ---------- Fetch live submissions (cached) ----------
+        $liveSubmissions = $this->fetchLiveSubmissions($syncService);
 
-        // Pre-build O(1) lookup: [form_id][month] = true
-        // This avoids iterating ALL submissions inside every form×month loop
-        $filledLookup = $this->buildFilledLookup($submissions, $currentYear);
-
-        $matrix  = $this->buildMatrixRows($rootForms, $months, $currentYear, $filledLookup);
-        $summary = $this->buildMonthlySummary($months, $currentYear, $submissions);
-
-        $matrixStatusMap = [];
-        foreach ($matrix as $row) {
-            $matrixStatusMap[$row['id']] = $row['status'];
-        }
-
-        return view('guest-matrix', [
-            'months'          => $months,
-            'matrix'          => $matrix,
-            'matrixStatusMap' => $matrixStatusMap,
-            'summary'         => $summary,
-            'currentYear'     => $currentYear,
-            'isLive'          => false,
-        ]);
-    }
-
-    public function live(\Illuminate\Http\Request $request, \App\Services\GoogleFormsSyncService $syncService)
-    {
-        $currentYear  = Carbon::now()->year;
-        $currentMonth = Carbon::now()->month;
-
-        $months = [];
-        for ($i = 1; $i <= $currentMonth; $i++) {
-            $months[$i] = Carbon::create()->month($i)->translatedFormat('F');
-        }
-
-        $rootForms = Form::with('children.children.children.children')
-            ->whereNull('parent_id')
-            ->orderBy('order')
-            ->get();
-
-        // Fetch from Google Forms API and keep in memory
-        $formId          = '1bJXgi5GMANXfesZAXkn77f4KFugpXCwLN7nLkEIKQjk';
-        $liveSubmissions = $syncService->getLiveResponses($formId, 'mobile-ladder');
-
-        // Cache as plain PHP array (NOT Collection) — Collections fail to unserialize from file cache
-        \Illuminate\Support\Facades\Cache::put(
+        // Build session cache for submission-detail modal
+        Cache::put(
             'live_submissions_' . session()->getId(),
             $liveSubmissions->values()->toArray(),
-            now()->addMinutes(30)
+            now()->addMinutes(self::CACHE_TTL + 5)
         );
 
-        // Build lookup for live submissions (plain arrays)
         $filledLookup = $this->buildFilledLookupFromArrays($liveSubmissions, $currentYear);
-
-        $matrix  = $this->buildMatrixRows($rootForms, $months, $currentYear, $filledLookup);
-        $summary = $this->buildMonthlySummary($months, $currentYear, $liveSubmissions);
+        $matrix       = $this->buildMatrixRows($rootForms, $months, $currentYear, $filledLookup);
+        $summary      = $this->buildMonthlySummary($months, $currentYear, $liveSubmissions);
 
         $matrixStatusMap = [];
         foreach ($matrix as $row) {
@@ -93,43 +64,42 @@ class GuestMatrixController extends Controller
             'matrixStatusMap' => $matrixStatusMap,
             'summary'         => $summary,
             'currentYear'     => $currentYear,
-            'isLive'          => true,
         ]);
     }
 
     /**
-     * AJAX polling endpoint — returns fresh filledLookup as JSON without full page reload.
-     * Called periodically by the auto-refresh toggle in Live Mode.
+     * AJAX polling endpoint — called by the auto-refresh toggle.
+     * Always fetches fresh data from Google and updates the global cache.
+     * Returns the new matrixStatusMap so Alpine can update cells reactively.
      */
     public function livePoll(\App\Services\GoogleFormsSyncService $syncService): \Illuminate\Http\JsonResponse
     {
-        $currentYear = Carbon::now()->year;
+        $currentYear  = Carbon::now()->year;
+        $currentMonth = Carbon::now()->month;
 
-        $formId          = '1bJXgi5GMANXfesZAXkn77f4KFugpXCwLN7nLkEIKQjk';
-        $liveSubmissions = $syncService->getLiveResponses($formId, 'mobile-ladder');
+        // Force a fresh fetch and update global cache
+        $liveSubmissions = $this->fetchFreshSubmissions($syncService);
 
-        // Update the cache so the submission-detail modal still works
-        \Illuminate\Support\Facades\Cache::put(
+        // Update session cache for submission-detail modal
+        Cache::put(
             'live_submissions_' . session()->getId(),
             $liveSubmissions->values()->toArray(),
-            now()->addMinutes(30)
+            now()->addMinutes(self::CACHE_TTL + 5)
         );
 
-        $filledLookup = $this->buildFilledLookupFromArrays($liveSubmissions, $currentYear);
-        
         $months = [];
-        $currentMonth = Carbon::now()->month;
         for ($i = 1; $i <= $currentMonth; $i++) {
             $months[$i] = Carbon::create()->month($i)->translatedFormat('F');
         }
-        
+
         $rootForms = Form::with('children.children.children.children')
             ->whereNull('parent_id')
             ->orderBy('order')
             ->get();
-            
-        $matrix  = $this->buildMatrixRows($rootForms, $months, $currentYear, $filledLookup);
-        
+
+        $filledLookup = $this->buildFilledLookupFromArrays($liveSubmissions, $currentYear);
+        $matrix       = $this->buildMatrixRows($rootForms, $months, $currentYear, $filledLookup);
+
         $matrixStatusMap = [];
         foreach ($matrix as $row) {
             $matrixStatusMap[$row['id']] = $row['status'];
@@ -142,37 +112,125 @@ class GuestMatrixController extends Controller
     }
 
     /**
-     * Build a nested lookup from Eloquent FormSubmission collection.
-     * Result: $lookup[form_id][month] = true
-     *
-     * @param  \Illuminate\Support\Collection<int, FormSubmission>  $submissions
+     * Return submission detail data for a specific form+month+year as JSON.
      */
-    private function buildFilledLookup(\Illuminate\Support\Collection $submissions, int $year): array
+    public function submissionDetail(\Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse
     {
-        $lookup = [];
-        foreach ($submissions as $sub) {
-            $fid   = $sub->form_id;
-            $month = (int) Carbon::parse($sub->date)->format('n');
-            $yr    = (int) Carbon::parse($sub->date)->format('Y');
-            if ($yr === $year) {
-                $lookup[$fid][$month] = true;
-            }
+        $formId = $request->integer('form_id');
+        $month  = $request->integer('month');
+        $year   = $request->integer('year');
+
+        $form = Form::find($formId);
+        if (! $form) {
+            return response()->json(['error' => 'Form tidak ditemukan.'], 404);
         }
-        return $lookup;
+
+        $parseNotes = function (?string $rawNotes) {
+            if (!$rawNotes) return ['notes' => null, 'failures' => []];
+            $notes = $rawNotes;
+            $failures = [];
+            if (str_contains($notes, '[IMPORTED FAILURES]')) {
+                preg_match('/\[IMPORTED FAILURES\]:\s*(.*)/', $notes, $matches);
+                if (!empty($matches[1])) {
+                    $failures = array_map('trim', explode(',', $matches[1]));
+                }
+                $notes = trim(preg_replace('/\[IMPORTED FAILURES\].*/', '', $notes));
+            }
+            return [
+                'notes' => $notes ?: null,
+                'failures' => $failures
+            ];
+        };
+
+        // Data stored as plain PHP array — safe for file cache serialization
+        $liveData = Cache::get('live_submissions_' . session()->getId());
+
+        if (!$liveData) {
+            return response()->json(['error' => 'Data live sudah kedaluwarsa. Silakan muat ulang halaman.'], 410);
+        }
+
+        $submissions = collect($liveData)
+            ->filter(fn($s) => ($s['form_id'] ?? null) == $formId)
+            ->filter(fn($s) => Carbon::parse($s['date'] ?? '')->month == $month && Carbon::parse($s['date'] ?? '')->year == $year)
+            ->sortBy('date')
+            ->values()
+            ->map(function ($sub) use ($parseNotes) {
+                $parsed = $parseNotes($sub['notes'] ?? null);
+                return [
+                    'id'         => $sub['id'] ?? '-',
+                    'date'       => Carbon::parse($sub['date'] ?? '')->translatedFormat('d F Y'),
+                    'user_name'  => $sub['user_name'] ?? '-',
+                    'notes'      => $parsed['notes'],
+                    'failures'   => $parsed['failures'],
+                    'answers'    => $sub['answers'] ?? [],
+                ];
+            });
+
+        return response()->json([
+            'form_title'  => $form->title,
+            'submissions' => $submissions,
+        ]);
+    }
+
+    // -----------------------------------------------------------------------
+    // Private helpers
+    // -----------------------------------------------------------------------
+
+    /**
+     * Fetch live submissions, preferring the cache.
+     * If cache is empty, falls back to fetchFreshSubmissions().
+     */
+    private function fetchLiveSubmissions(\App\Services\GoogleFormsSyncService $syncService): \Illuminate\Support\Collection
+    {
+        $cached = Cache::get(self::CACHE_KEY);
+        if ($cached !== null) {
+            return collect($cached);
+        }
+
+        return $this->fetchFreshSubmissions($syncService);
+    }
+
+    /**
+     * Fetch fresh data from all registered Google Forms and update the global cache.
+     * Wrapped in a try-catch so errors never crash the page.
+     */
+    private function fetchFreshSubmissions(\App\Services\GoogleFormsSyncService $syncService): \Illuminate\Support\Collection
+    {
+        try {
+            // All Google Form IDs registered for this matrix.
+            // Add more entries here when new Google Forms are connected.
+            $googleForms = [
+                ['id' => '1bJXgi5GMANXfesZAXkn77f4KFugpXCwLN7nLkEIKQjk', 'slug' => 'mobile-ladder'],
+            ];
+
+            $all = collect();
+            foreach ($googleForms as $gf) {
+                $responses = $syncService->getLiveResponses($gf['id'], $gf['slug']);
+                $all = $all->merge($responses);
+            }
+
+            // Store in global shared cache so every visitor benefits
+            Cache::put(self::CACHE_KEY, $all->values()->toArray(), now()->addMinutes(self::CACHE_TTL));
+
+            return $all;
+        } catch (\Exception $e) {
+            Log::error('GuestMatrixController fetchFreshSubmissions: ' . $e->getMessage());
+            // Return whatever is in cache (even stale), or empty collection
+            $stale = Cache::get(self::CACHE_KEY);
+            return $stale ? collect($stale) : collect();
+        }
     }
 
     /**
      * Build a nested lookup from plain-array live submissions.
      * Result: $lookup[form_id][month] = true
-     *
-     * @param  \Illuminate\Support\Collection<int, array>  $submissions
      */
     private function buildFilledLookupFromArrays(\Illuminate\Support\Collection $submissions, int $year): array
     {
         $lookup = [];
         foreach ($submissions as $sub) {
-            $fid   = $sub['form_id'] ?? null;
-            $date  = $sub['date'] ?? null;
+            $fid  = $sub['form_id'] ?? null;
+            $date = $sub['date'] ?? null;
             if (!$fid || !$date) continue;
             $month = (int) Carbon::parse($date)->format('n');
             $yr    = (int) Carbon::parse($date)->format('Y');
@@ -185,12 +243,6 @@ class GuestMatrixController extends Controller
 
     /**
      * Build flattened matrix rows recursively with 3-state status.
-     * Uses pre-built $filledLookup for O(1) per-cell status checks.
-     *
-     * @param  \Illuminate\Database\Eloquent\Collection<int, Form>  $forms
-     * @param  array<int, string>  $months
-     * @param  array<int, array<int, bool>>  $filledLookup  [form_id][month] = true
-     * @return array<int, array<string, mixed>>
      */
     private function buildMatrixRows(
         $forms,
@@ -234,15 +286,15 @@ class GuestMatrixController extends Controller
             }
 
             $rows[] = [
-                'id'          => $form->id,
-                'parent_id'   => $parentId,
-                'ancestors'   => $ancestors,
-                'level'       => $level,
-                'title'       => $form->title,
-                'slug'        => $form->slug ?? null,
-                'is_category' => $form->is_category,
-                'has_children'=> $hasChildren,
-                'status'      => $status,
+                'id'           => $form->id,
+                'parent_id'    => $parentId,
+                'ancestors'    => $ancestors,
+                'level'        => $level,
+                'title'        => $form->title,
+                'slug'         => $form->slug ?? null,
+                'is_category'  => $form->is_category,
+                'has_children' => $hasChildren,
+                'status'       => $status,
             ];
 
             if ($hasChildren) {
@@ -257,8 +309,6 @@ class GuestMatrixController extends Controller
 
     /**
      * Get IDs of all leaf descendants (forms with no children).
-     *
-     * @return array<int>
      */
     private function getLeafDescendantIds(Form $form): array
     {

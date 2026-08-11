@@ -20,10 +20,18 @@ class GoogleFormsSyncService
     {
         $this->client = new Client();
         $this->client->setApplicationName('Checklist Engineer Sync');
-        
-        $base64Creds = config('services.google.base64_credentials');
+
+        // Explicit HTTP timeout: 20s connect + 20s read.
+        // This ensures the Google API call always fails gracefully
+        // before PHP's 30s max_execution_time is hit.
+        $this->client->setHttpClient(new \GuzzleHttp\Client([
+            'timeout'         => 20,
+            'connect_timeout' => 10,
+        ]));
+
+        $base64Creds     = config('services.google.base64_credentials');
         $credentialsPath = config('services.google.credentials');
-        
+
         if ($base64Creds) {
             $decoded = json_decode(base64_decode($base64Creds), true);
             if ($decoded) {
@@ -36,7 +44,7 @@ class GoogleFormsSyncService
                 Log::error('Google credentials base64 is invalid.');
             }
         }
-        
+
         if (file_exists($credentialsPath)) {
             $this->client->setAuthConfig($credentialsPath);
             $this->client->addScope(Forms::FORMS_RESPONSES_READONLY);

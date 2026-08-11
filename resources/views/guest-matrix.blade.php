@@ -13,9 +13,9 @@
         <div class="relative bg-background flex min-h-svh flex-col items-center p-6 md:p-10 pt-10">
             <div class="flex w-full max-w-7xl flex-col gap-6 animate-fade-in-up">
                 
+                {{-- Logo & Brand Header --}}
                 <div class="flex items-center justify-between">
-                    {{-- Logo & Brand --}}
-                    <a href="{{ route('home') ?? url('/') }}" class="flex items-center gap-3" wire:navigate>
+                    <a href="/" class="flex items-center gap-3">
                         <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-600 shadow-lg shadow-cyan-900/40 ring-1 ring-cyan-500/40 transition-transform duration-200 hover:scale-105">
                             <x-app-logo-icon class="size-6 text-white" />
                         </span>
@@ -24,21 +24,10 @@
                             <div class="text-xs text-cyan-400 font-semibold tracking-widest uppercase">Aqua</div>
                         </div>
                     </a>
-                    
-                    <div class="flex items-center gap-3">
-                        @if(!$isLive)
-                            <flux:button href="{{ route('guest.matrix.live') }}" variant="outline" icon="bolt" class="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 border-amber-200 dark:border-amber-700/50 hover:bg-amber-50 dark:hover:bg-amber-900/30" wire:navigate>
-                                Lihat versi live dari form
-                            </flux:button>
-                        @else
-                            <flux:button href="{{ route('guest.matrix') }}" variant="outline" icon="arrow-left" class="text-zinc-600 dark:text-zinc-300 hover:text-zinc-800 dark:hover:text-white" wire:navigate>
-                                Kembali ke Database
-                            </flux:button>
-                        @endif
-                        <flux:button href="{{ route('login') }}" variant="primary" wire:navigate>
-                            Login
-                        </flux:button>
-                    </div>
+                    {{-- Live badge always shown --}}
+                    <span class="px-3 py-1.5 bg-amber-500/15 text-amber-400 text-xs font-bold rounded-full uppercase tracking-widest border border-amber-500/30 flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span> Live
+                    </span>
                 </div>
 
                  <div class="bg-white dark:bg-zinc-900/60 shadow-sm dark:shadow-xl ring-1 ring-zinc-200 dark:ring-white/5 rounded-2xl p-6 sm:p-10 w-full"
@@ -70,7 +59,6 @@
                              return this.matrixStatusMap[formId][monthNum] || 'none';
                          },
 
-                         @if($isLive)
                          async pollLiveData() {
                              if (this.refreshing) return;
                              this.refreshing = true;
@@ -101,7 +89,6 @@
                              if (this.autoRefresh) { this.startAutoRefresh(); }
                              else { this.stopAutoRefresh(); }
                          },
-                         @endif
 
                          openDetail(formId, monthNum, year, formTitle) {
                              this.modal.title = formTitle;
@@ -110,7 +97,7 @@
                              this.modal.submissions = [];
                              this.modal.open = true;
 
-                             fetch(`/matrix/submission-detail?form_id=${formId}&month=${monthNum}&year=${year}{{ $isLive ? '&live=1' : '' }}`, {
+                             fetch(`/matrix/submission-detail?form_id=${formId}&month=${monthNum}&year=${year}&live=1`, {
                                  headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json' }
                              })
                                  .then(res => {
@@ -180,11 +167,9 @@
                             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-700 dark:from-cyan-400 dark:to-cyan-600">
                                 Bulanan {{ $currentYear }}
                             </span></span>
-                            @if($isLive)
-                                <span class="px-3 py-1 bg-amber-500 text-white text-sm font-bold rounded-full uppercase tracking-widest shadow-lg shadow-amber-500/30 flex items-center gap-1.5 animate-pulse">
-                                    <flux:icon name="bolt" class="w-4 h-4" /> Live Mode
+                                <span class="px-3 py-1 bg-amber-500 text-white text-sm font-bold rounded-full uppercase tracking-widest shadow-lg shadow-amber-500/30 flex items-center gap-1.5">
+                                    <flux:icon name="bolt" class="w-4 h-4" /> Live
                                 </span>
-                            @endif
                         </h1>
                         <p class="text-sm text-zinc-500 dark:text-zinc-400 max-w-xl">
                             Rekap status pengisian seluruh form checklist sepanjang tahun {{ $currentYear }}.
@@ -197,8 +182,7 @@
                         <div class="overflow-x-auto rounded-2xl border border-zinc-200 dark:border-zinc-700/60 shadow-sm">
                             <div class="flex items-center justify-between gap-4 p-4 border-b border-zinc-200 dark:border-zinc-700/60 bg-zinc-50 dark:bg-zinc-800/50">
 
-                                {{-- Auto-refresh toggle (Live Mode only) --}}
-                                @if($isLive)
+                                {{-- Auto-refresh toggle --}}
                                 <div class="flex items-center gap-3">
                                     <label class="flex items-center gap-3 cursor-pointer select-none group">
                                         <div class="text-left">
@@ -238,9 +222,6 @@
                                         </button>
                                     </div>
                                 </div>
-                                @else
-                                <div></div>
-                                @endif
 
                                 {{-- Expand all toggle --}}
                                 <label class="flex items-center gap-3 cursor-pointer select-none group">
