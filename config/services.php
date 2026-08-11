@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'google' => [
+        'credentials' => env('GOOGLE_APPLICATION_CREDENTIALS', base_path('checklist-engineer-aqua-sync-51290ca1b200.json')),
+        'base64_credentials' => env('GOOGLE_CREDENTIALS_BASE64'),
+    ],
+
 ];

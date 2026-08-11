@@ -21,15 +21,19 @@ class DatabaseSeeder extends Seeder
             'name' => 'Engineer Aqua',
             'username' => 'engineer',
             'password' => bcrypt('password'),
-            'is_admin' => true,
+            'role' => 'super_admin',
         ]);
 
         User::factory()->create([
             'name' => 'Test User',
             'username' => 'test',
             'password' => bcrypt('password'),
+            'role' => 'responden',
         ]);
 
-        $this->call(FormSeeder::class);
+        $this->call([
+            FormSeeder::class,
+            UserSeeder::class,
+        ]);
     }
 }

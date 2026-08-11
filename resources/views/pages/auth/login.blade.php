@@ -5,8 +5,6 @@
         <!-- Session Status -->
         <x-auth-session-status class="text-center" :status="session('status')" />
 
-        <x-passkey-verify />
-
         <form method="POST" action="{{ route('login.store') }}" class="flex flex-col gap-6">
             @csrf
 
@@ -45,8 +43,8 @@
             <flux:checkbox name="remember" :label="__('Remember me')" :checked="old('remember')" />
 
             <div class="flex items-center justify-end gap-3">
-                <flux:button href="{{ route('guest.matrix') }}" wire:navigate class="w-full sm:w-auto" data-test="guest-button">
-                    {{ __('Masuk sebagai Guest') }}
+                <flux:button href="{{ route('home') }}" wire:navigate class="w-full sm:w-auto" data-test="guest-button">
+                    {{ __('Lihat Matriks') }}
                 </flux:button>
                 
                 <flux:button variant="primary" type="submit" class="w-full sm:w-auto" data-test="login-button">

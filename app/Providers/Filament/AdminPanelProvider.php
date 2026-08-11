@@ -29,6 +29,7 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Cyan,
             ])
+            ->darkMode(false)
             ->brandName('Sistem Checklist Aqua')
             ->userMenuItems([
                 MenuItem::make()

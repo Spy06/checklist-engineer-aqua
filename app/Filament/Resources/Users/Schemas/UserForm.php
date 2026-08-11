@@ -3,10 +3,10 @@
 namespace App\Filament\Resources\Users\Schemas;
 
 use App\Models\Form;
-use Filament\Forms\Components\CheckboxList;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\DB;
 
 class UserForm
 {
@@ -43,12 +43,40 @@ class UserForm
                         default       => '',
                     }),
 
-                CheckboxList::make('assignedForms')
-                    ->label('Form yang Di-assign')
+                Select::make('assignedForms')
+                    ->label('Form yang Di-assign (PIC)')
+                    ->multiple()
                     ->relationship('assignedForms', 'title', fn ($query) => $query->whereNull('parent_id')->orderBy('order'))
-                    ->helperText('Pilih form utama (root) yang boleh diakses/dikelola oleh user ini. Berlaku untuk role Admin dan Responden.')
+                    ->helperText(fn ($livewire): string => 'Setiap form hanya dapat memiliki 1 PIC. Form yang sudah di-assign ke user lain tidak bisa dipilih.')
                     ->visible(fn (callable $get): bool => in_array($get('role'), ['admin', 'responden']))
-                    ->columns(2)
+                    ->getOptionLabelFromRecordUsing(fn (Form $record): string => $record->title)
+                    ->options(function ($livewire) {
+                        // Get the current record ID (null if creating)
+                        $currentRecordId = $livewire->record?->id ?? null;
+
+                        // Get form IDs already assigned to OTHER users
+                        $assignedFormIds = \DB::table('user_form_assignments')
+                            ->when($currentRecordId, fn ($q) => $q->where('user_id', '!=', $currentRecordId))
+                            ->pluck('form_id')
+                            ->toArray();
+
+                        return Form::whereNull('parent_id')
+                            ->orderBy('order')
+                            ->get()
+                            ->mapWithKeys(fn (Form $form) => [
+                                $form->id => in_array($form->id, $assignedFormIds)
+                                    ? "🔒 {$form->title} (Sudah di-assign)"
+                                    : $form->title,
+                            ]);
+                    })
+                    ->disableOptionWhen(function (string|int $value, $livewire): bool {
+                        $currentRecordId = $livewire->record?->id ?? null;
+
+                        return \DB::table('user_form_assignments')
+                            ->where('form_id', $value)
+                            ->when($currentRecordId, fn ($q) => $q->where('user_id', '!=', $currentRecordId))
+                            ->exists();
+                    })
                     ->columnSpanFull(),
             ]);
     }

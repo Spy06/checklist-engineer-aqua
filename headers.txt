@@ -1,0 +1,372 @@
+=====================================
+Form Pemeriksaan Bor Duduk .csv
+Motor
+Head Drill
+Cover
+Ragum
+Chuck bit
+Meja
+Pengamanan
+Kebersihan
+
+=====================================
+Form Pemeriksaan Gerinda Duduk.csv
+Motor
+Soft wheel grinding
+Hard wheel grinding
+Pelindung mata
+Push buttom
+Tool rest (Penahan benda kerja)
+Pengamanan
+Kebersihan
+Kebersihan
+
+=====================================
+Form Pemeriksaan Jack Hammer Krisbow.csv
+Side handle
+Chisel / Pahat
+Body
+Chisel chuck
+Motor
+Switch
+Pengamanan
+Kebersihan
+
+=====================================
+Form Pemeriksaan Jack Hammer Makita.csv
+Side handle
+Chisel / Pahat
+Body
+Chisel chuck
+Motor
+Switch
+Pengamanan
+Kebersihan
+
+=====================================
+Form Pemeriksaan Lifeline.csv
+Nama pemeriksa
+Lokasi Pemeriksaan
+Sling/Pipa
+Tension
+Wire Clip
+Turnbuckle hook & eye
+Tiang penyangga dan support
+Base plate
+
+=====================================
+Form Pemeriksaan Lifter.csv
+Hydraulic System 1
+Hydraulic System 2
+Hydraulic System 3
+Hydraulic System 4
+Platform 1
+Platform 2
+Base & Foot 1
+Base & Foot 2
+Electric 1
+Electric 2
+Pengamanan 1
+Pengamanan 2
+
+=====================================
+Form Pemeriksaan Mesin Las Argon.csv
+Tabung Argon
+Kebocoran
+Mesin Las
+Trolley
+
+=====================================
+Form Pemeriksaan Mesin Press.csv
+Pompa
+Kebocoran
+Cylinder
+Frame
+Cover guard
+Hose
+Pengamanan
+Kebersihan
+
+=====================================
+Form Pemeriksaan Mobile Ladder .csv
+Body
+Step
+Feet/Anti slip
+Lock
+Paku rivet
+Top step
+Pengamanan
+
+=====================================
+Form Pemeriksaan Rolling Door.csv
+Jenis Rolling Door
+Nomer Conventional Rolling Door
+Nomer Speed Rolling Door
+Curtain / Slat (Daun Pintu)
+Barrel / Drum / As Roll
+Motor Rolling Door
+Control Box / Panel
+Push Bottom (Up-Stop-Down)
+Remote Control (Optional)
+Guide Rail / Rel Samping
+Bottom Rail / Botton Bar
+Limit Switch
+System Pengamanan (Lock Pin)
+Curtain / Door Sheet
+Guide Rail / Side Frame
+Bottom Bar
+Drive Motor
+Control Panel
+Shaft atau Roller
+Hood atau Cover
+Safety Device
+
+=====================================
+Form Pemeriksaan Skylight Protection.csv
+Wire Mesh
+Rangka
+Roofing atau baut
+Lasan
+Cat
+
+=====================================
+Form Pemeriksaan Storage Gas (Ar & N2).csv
+Area storage gas
+Tabung Gas
+Keterangan tambahan
+
+=====================================
+Form Pemeriksaan Storage Gas (Fr).csv
+Area storage gas
+Tabung Gas
+Keterangan tambahan
+
+=====================================
+Form Pemeriksaan Storage Gas (sodu Gas).csv
+Area storage gas
+Tabung Gas
+Keterangan tambahan
+
+=====================================
+Form pemeriksaan FBH.csv
+Lokasi Pemeriksaan
+Shoulder Straps (Tali Bahu)
+Chest & Back Straps (Tali Dada dan Belakang)
+Waist Straps (Tali Pinggang)
+Leg Straps (Tali Kaki)
+Cuts (Ada Luka)
+Burns (Terbakar)
+Holes (Berlubang)
+Deterioration (Rusak/aus oleh kimia)
+Paint Damage (Kerusakan Warna/Cat)
+D Ring
+Chest Carabiner (Hook)
+Label, Marking, Mfg Date
+
+=====================================
+Form pemeriksaan Fix Ladder.csv
+Rail/Pegangan (Diagonal Ladder), Cage/Kurungan (Vertical Ladder)
+Lasan, Baut atau Rivet
+Steps (Anak Tangga) / Walkway
+Akses (Pintu / Barrier)
+Body atau Tiang
+Sign atau Nomer Tangga
+Cat, Stainless atau Concrete
+Kunci atau Gembok
+
+=====================================
+Form pemeriksaan pintu geser.csv
+Nama pemeriksa
+Motor dan gearbox
+Rail
+Roda atau bearing
+Sambungan baut, rivet atau lasan
+Cover gearbox
+Proximity switch
+Daun pintu
+Remote
+
+=====================================
+Formulir pengecekan Lemari APD.csv
+Jumlah welding helmet
+WELDING HELMET
+Jumlah helmet
+HELMET
+Jumlah full body harness
+FULL BODY HARNESS
+Jumlah face shield
+FACE SHIELD
+Jumlah welding gloves
+WELDING GLOVES
+Jumlah insulating gloves
+INSULATING GLOVES
+Jumlah ear muppler
+EAR MUPPLER
+Jumlah welding sleeve
+WELDING SLEEVE
+Jumlah welding apron
+WELDING APRON
+Jumlah welding cloth
+WELDING CLOTH
+Jumlah resfirator
+RESFIRATOR
+Jumlah welding blanket
+WELDING BLANKET
+
+=====================================
+Formulir pengecekan Lemari tool 1.csv
+Jumlah kunci kombinasi
+KUNCI KOMBINASI
+Jumlah kikir
+KIKIR
+Jumlah gergaji besi
+GERGAJI BESI
+Jumlah palu plastik
+PALU PLASTIK
+Jumlah palu besi
+PALU BESI
+Jumlah penitik
+PENITIK
+Jumlah drift pin
+DRIFT PIN
+Jumlah tang pelat
+TANG PELAT
+Jumlah tang rivet
+TANG RIVET
+Jumlah gunting seng lurus
+GUNTING SENG LURUS
+Jumlah gunting seng bengkok
+GUNTING SENG BENGKOK
+Jumlah obeng plus
+
+OBENG PLUS
+Jumlah obeng minus
+OBENG MINUS
+Jumlah jangka
+JANGKA
+Jumlah waterpass
+WATERPASS
+
+=====================================
+Formulir pengecekan Lemari tool 2.csv
+Jumlah gerinda lurus
+GERINDA LURUS
+Jumlah  gerinda segitiga
+GERINDA SEGITIGA
+Jumlah gergaji akrilik
+GERGAJI AKRILIK
+Jumlah gerinda potong
+GERINDA POTONG
+Jumlah bor tangan
+BOR TANGAN
+
+=====================================
+Formulir pengecekan Lemari tool 3.csv
+Jumlah kunci pipa 18 "
+KUNCI PIPA 18 "
+Jumlah kunci pipa 24 "
+KUNCI PIPA 24 "
+Jumlah kunci pipa 12 "
+KUNCI PIPA 12 "
+Jumlah kop kaca
+KOP KACA
+Jumlah pistol pemanas
+PISTOL PEMANAS
+Jumlah flashlight
+FLASHLIGHT
+Jumlah multimeter
+MULTIMETER
+Jumlah pistol cat
+PISTOL CAT
+Jumlah meteran 50 M
+METERAN 50 M
+Jumlah gerinda tangan
+GERINDA TANGAN
+Jumlah mesin las plastik nt-wj25s
+MESIN LAS PLASTIK NT-WJ25S
+Jumlah mata bor beton 24 mm
+MATA BOR BETON 24 MM
+Jumlah alat ulir pipa
+ALAT ULIR PIPA
+Jumlah box alat listrik
+BOX ALAT LISTRIK
+Jumlah box alat mekanik
+BOX ALAT MEKANIK
+
+=====================================
+Formulir pengecekan Lemari tool 4.csv
+Jumlah tang kakatua
+TANG KAKATUA
+Jumlah linggis besar
+LINGGIS BESAR
+Jumlah linggis kecil
+LINGGIS KECIL
+Jumlah pahat kayu
+PAHAT KAYU
+Jumlah palu karet
+PALU KARET
+Jumlah gergaji kayu
+GERGAJI KAYU
+Jumlah pistol silikon
+PISTOL SILIKON
+Jumlah siku hitam
+SIKU HITAM
+Jumlah siku kayu
+SIKU KAYU
+Jumlah palu besi 5 kg
+PALU BESI 5 KG
+Jumlah pahat pipih
+PAHAT PIPIH
+Jumlah pahat lancip
+PAHAT LANCIP
+Jumlah mistar baja
+MISTAR BAJA
+Jumlah lot
+LOT
+
+=====================================
+Formulir pengecekan Rak Facility.csv
+Jumlah gensets kw 26-851
+GENSETS KW 26-851
+Jumlah air ventilator fan ctf-45
+AIR VENTILATOR FAN CTF-45
+Jumlah plasma cutter cut 60G
+PLASMA CUTTER CUT 60G
+Jumlah krisbow jack hammer
+KRISBOW JACK HAMMER
+Jumlah makita jack hammer
+MAKITA JACK HAMMER
+Jumlah makita cordless driver drill
+MAKITA CORDLESS DRIVER DRILL
+Jumlah electric drain cleaner
+ELECTRIC DRAIN CLEANER
+Jumlah baby compressor
+BABY COMPRESSOR
+
+=====================================
+Formulir pengecekan scaffolding .csv
+Jumlah adjustable base plate
+ADJUSTABLE BASE PLATE
+Jumlah base plate
+BASE PLATE
+Jumlah coupler
+COUPLER
+Jumlah roda caster
+RODA CASTER
+Jumlah joint pin
+JOINT PIN
+Jumlah frame
+FRAME
+Jumlah railing
+RAILING
+Jumlah tangga
+TANGGA
+Jumlah platform
+PLATFORM
+Jumlah top platform
+TOP PLATFORM
+Jumlah long & short cross brace
+LONG & SHORT CROSS BRACE
+Jumlah long & short pipe
+LONG & SHORT PIPE
+
