@@ -26,15 +26,15 @@ class UsersTable
                     ->badge()
                     ->formatStateUsing(fn (string $state): string => match ($state) {
                         'super_admin' => '🔑 Super Admin',
-                        'admin'       => '🛠️ Admin',
-                        'responden'   => '📋 Responden',
-                        default       => $state,
+                        'admin' => '🛠️ Admin',
+                        'responden' => '📋 Responden',
+                        default => $state,
                     })
                     ->color(fn (string $state): string => match ($state) {
                         'super_admin' => 'danger',
-                        'admin'       => 'warning',
-                        'responden'   => 'success',
-                        default       => 'gray',
+                        'admin' => 'warning',
+                        'responden' => 'success',
+                        default => 'gray',
                     }),
 
                 TextColumn::make('assignedForms.title')

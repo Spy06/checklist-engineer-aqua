@@ -41,13 +41,15 @@ class FormForm
                                             // Get all descendant IDs of assigned roots to use as valid parents
                                             $allAllowed = $assignedIds;
                                             $level = $assignedIds;
-                                            while (!empty($level)) {
+                                            while (! empty($level)) {
                                                 $children = Form::whereIn('parent_id', $level)->pluck('id')->toArray();
                                                 $allAllowed = array_merge($allAllowed, $children);
                                                 $level = $children;
                                             }
+
                                             return $query->whereIn('id', $allAllowed);
                                         }
+
                                         return $query;
                                     }
                                 )

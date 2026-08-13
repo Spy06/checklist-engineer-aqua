@@ -1,0 +1,323 @@
+- ID: 1048 | Slug: lemari-apd-workshop | Title: Lemari Apd Workshop | is_category: NO
+- ID: 1051 | Slug: jh-makita-01 | Title: Jh Makita 01 | is_category: NO
+- ID: 1054 | Slug: lemari-tool-3 | Title: Lemari Tool 3 | is_category: NO
+- ID: 1063 | Slug: lemari-tool-4 | Title: Lemari Tool 4 | is_category: NO
+- ID: 1068 | Slug: lemari-tool-2 | Title: Lemari Tool 2 | is_category: NO
+- ID: 1071 | Slug: lemari-tool-1 | Title: Lemari Tool 1 | is_category: NO
+- ID: 1084 | Slug: jh-krisbow-01 | Title: Jh Krisbow 01 | is_category: NO
+- ID: 1 | Slug: work-at-height | Title: Work at height | is_category: YES
+  - ID: 672 | Slug: fix-ladder | Title: Fix Ladder | is_category: YES
+    - ID: 775 | Slug: fix-ladder-cimex | Title: Area Cimex | is_category: YES
+      - ID: 776 | Slug: flc-01-roof-chiller | Title: FLC 01 ROOF CHILLER | is_category: NO
+      - ID: 777 | Slug: flc-02-roof-gensets | Title: FLC 02 ROOF GENSETS | is_category: NO
+      - ID: 778 | Slug: flc-03-gensets | Title: FLC 03 GENSETS | is_category: NO
+      - ID: 779 | Slug: flc-04-wwtp-tank | Title: FLC 04 WWTP TANK | is_category: NO
+      - ID: 780 | Slug: flc-05-valve-station | Title: FLC 05 VALVE STATION | is_category: NO
+      - ID: 781 | Slug: flc-06-pedestrian-wt | Title: FLC 06 PEDESTRIAN WT | is_category: NO
+      - ID: 782 | Slug: flc-07-pedestrian-cimex | Title: FLC 07 PEDESTRIAN CIMEX | is_category: NO
+      - ID: 783 | Slug: flc-08-pedestrian-penaatan | Title: FLC 08 PEDESTRIAN PENAATAN | is_category: NO
+      - ID: 784 | Slug: flc-09-pedestrian-wwtp | Title: FLC 09 PEDESTRIAN WWTP | is_category: NO
+      - ID: 785 | Slug: flc-10-palletizer | Title: FLC 10 PALLETIZER | is_category: NO
+      - ID: 786 | Slug: flc-11-conveyor-palletizer | Title: FLC 11 CONVEYOR PALLETIZER | is_category: NO
+      - ID: 990 | Slug: flc-12-pedestrian-eol-a | Title: FLC 12 PEDESTRIAN EOL a | is_category: NO
+      - ID: 991 | Slug: flc-13-pedestrian-eol-b | Title: FLC 13 PEDESTRIAN EOL B | is_category: NO
+      - ID: 992 | Slug: flc-14-pedestrian-eol-c | Title: FLC 14 PEDESTRIAN EOL C | is_category: NO
+      - ID: 790 | Slug: flc-15-ahu | Title: FLC 15 AHU | is_category: NO
+      - ID: 791 | Slug: flc-16-preform | Title: FLC 16 PREFORM | is_category: NO
+      - ID: 792 | Slug: flc-17-capper | Title: FLC 17 CAPPER | is_category: NO
+      - ID: 793 | Slug: flc-18-blowing | Title: FLC 18 BLOWING | is_category: NO
+      - ID: 794 | Slug: flc-19-storage-tank | Title: FLC 19 STORAGE TANK | is_category: NO
+      - ID: 795 | Slug: flc-20-finish-tank | Title: FLC 20 FINISH TANK | is_category: NO
+      - ID: 796 | Slug: flc-21-fresh-water-tank | Title: FLC 21 FRESH WATER TANK | is_category: NO
+    - ID: 797 | Slug: fix-ladder-existing | Title: Area Existing | is_category: YES
+      - ID: 798 | Slug: fle-01-roof-workshop | Title: FLE 01 ROOF WORKSHOP | is_category: NO
+      - ID: 799 | Slug: fle-02-roof-compressor | Title: FLE 02 ROOF COMPRESSOR | is_category: NO
+      - ID: 800 | Slug: fle-03-hydrant-tank | Title: FLE 03 HYDRANT TANK | is_category: NO
+      - ID: 801 | Slug: fle-04-pedestrian-hydrant-room | Title: FLE 04 PEDESTRIAN HYDRANT ROOM | is_category: NO
+      - ID: 802 | Slug: fle-05-ct-af | Title: FLE 05 CT AF | is_category: NO
+      - ID: 803 | Slug: fle-06-becis | Title: FLE 06 BECIS | is_category: NO
+      - ID: 804 | Slug: fle-07-top-roof-becis | Title: FLE 07 TOP ROOF (BECIS) | is_category: NO
+      - ID: 993 | Slug: fle-08-husky | Title: FLE 08 HUSKY | is_category: NO
+      - ID: 806 | Slug: fle-09-silo-husky | Title: FLE 09 SILO HUSKY | is_category: NO
+      - ID: 807 | Slug: fle-10-plafond-sbo | Title: FLE 10 PLAFOND SBO | is_category: NO
+      - ID: 808 | Slug: fle-11-ct-husky | Title: FLE 11 CT HUSKY | is_category: NO
+      - ID: 809 | Slug: fle-12-storage-preform-l1 | Title: FLE 12 STORAGE PREFORM L1 | is_category: NO
+      - ID: 810 | Slug: fle-13-storage-preform-l2 | Title: FLE 13 STORAGE PREFORM L2 | is_category: NO
+      - ID: 811 | Slug: fle-14-storage-preform-l3 | Title: FLE 14 STORAGE PREFORM L3 | is_category: NO
+      - ID: 812 | Slug: fle-15-roof-wt | Title: FLE 15 ROOF WT | is_category: NO
+      - ID: 813 | Slug: fle-16-fresh-water-tank | Title: FLE 16 FRESH WATER TANK | is_category: NO
+      - ID: 814 | Slug: fle-17-storage-tank | Title: FLE 17 STORAGE TANK | is_category: NO
+      - ID: 815 | Slug: fle-18-chemical-tank | Title: FLE 18 CHEMICAL TANK | is_category: NO
+      - ID: 816 | Slug: fle-19-finish-tank-l1 | Title: FLE 19 FINISH TANK L1 | is_category: NO
+      - ID: 817 | Slug: fle-20-finish-tank-l2 | Title: FLE 20 FINISH TANK L2 | is_category: NO
+      - ID: 818 | Slug: fle-21-finish-tank-l3 | Title: FLE 21 FINISH TANK L3 | is_category: NO
+      - ID: 819 | Slug: fle-22-soft-water-tank | Title: FLE 22 SOFT WATER TANK | is_category: NO
+      - ID: 820 | Slug: fle-23-wt-room | Title: FLE 23 WT ROOM | is_category: NO
+      - ID: 821 | Slug: fle-24-pedestrian-wt | Title: FLE 24 PEDESTRIAN WT | is_category: NO
+      - ID: 822 | Slug: fle-25-pedestrian-rmpm | Title: FLE 25 PEDESTRIAN RMPM | is_category: NO
+      - ID: 994 | Slug: fle-26-pedestrian-racking | Title: FLE 26 PEDESTRIAN RACKING | is_category: NO
+      - ID: 995 | Slug: fle-27-pedestrian-rts | Title: FLE 27 PEDESTRIAN RTS | is_category: NO
+      - ID: 825 | Slug: fle-28-afval | Title: FLE 28 AFVAL | is_category: NO
+      - ID: 826 | Slug: fle-29-pedestrian-data-entry | Title: FLE 29 PEDESTRIAN DATA ENTRY | is_category: NO
+      - ID: 827 | Slug: fle-30-pedestrian-gazebo | Title: FLE 30 PEDESTRIAN GAZEBO | is_category: NO
+      - ID: 828 | Slug: fle-31-gensets | Title: FLE 31 GENSETS | is_category: NO
+      - ID: 829 | Slug: fle-32-pedestrian-parkiran-motor | Title: FLE 32 PEDESTRIAN PARKIRAN MOTOR | is_category: NO
+      - ID: 996 | Slug: fle-33-pedestrian-parkiran-mobil | Title: FLE 33 PEDESTRIAN PARKIRAN MOBIL | is_category: NO
+      - ID: 831 | Slug: fle-34-pedestrian-gor | Title: FLE 34 PEDESTRIAN GOR | is_category: NO
+      - ID: 832 | Slug: fle-35-pedestrian-engineering | Title: FLE 35 PEDESTRIAN ENGINEERING | is_category: NO
+      - ID: 833 | Slug: fle-36-pedestrian-workshop | Title: FLE 36 PEDESTRIAN WORKSHOP | is_category: NO
+      - ID: 834 | Slug: fle-37-office | Title: FLE 37 OFFICE | is_category: NO
+      - ID: 835 | Slug: fle-38-conveyor-palletizer-1 | Title: FLE 38 CONVEYOR PALLETIZER 1 | is_category: NO
+      - ID: 836 | Slug: fle-39-palletizer-1 | Title: FLE 39 PALLETIZER 1 | is_category: NO
+      - ID: 997 | Slug: fle-40-pedestrian-eol-1 | Title: FLE 40 PEDESTRIAN EOL 1 | is_category: NO
+      - ID: 998 | Slug: fle-41-pedestrian-eol-2 | Title: FLE 41 PEDESTRIAN EOL 2 | is_category: NO
+      - ID: 839 | Slug: fle-42-conveyor-palletizer-2 | Title: FLE 42 CONVEYOR PALLETIZER 2 | is_category: NO
+      - ID: 840 | Slug: fle-43-conveyor-palletizer-3 | Title: FLE 43 CONVEYOR PALLETIZER 3 | is_category: NO
+      - ID: 841 | Slug: fle-44-wrapround-3 | Title: FLE 44 WRAPROUND 3 | is_category: NO
+      - ID: 842 | Slug: fle-45-smi | Title: FLE 45 SMI | is_category: NO
+      - ID: 843 | Slug: fle-46-wrapround-2 | Title: FLE 46 WRAPROUND 2 | is_category: NO
+      - ID: 844 | Slug: fle-47-carton-feeder | Title: FLE 47 CARTON FEEDER | is_category: NO
+      - ID: 999 | Slug: fle-48-infeed-pallet-carton-feeder-a | Title: FLE 48 INFEED PALLET  CARTON FEEDER A | is_category: NO
+      - ID: 1000 | Slug: fle-49-infeed-pallet-carton-feeder-b | Title: FLE 49 INFEED PALLET  CARTON FEEDER B | is_category: NO
+      - ID: 1001 | Slug: fle-50-conveyor-carton-feeder-l2 | Title: FLE 50 CONVEYOR CARTON FEEDER L2 | is_category: NO
+      - ID: 1002 | Slug: fle-51-conveyor-carton-feeder-l3 | Title: FLE 51 CONVEYOR CARTON FEEDER L3 | is_category: NO
+      - ID: 1003 | Slug: fle-52-conveyor-carton-feeder-l1 | Title: FLE 52 CONVEYOR CARTON FEEDER L1 | is_category: NO
+      - ID: 1004 | Slug: fle-53-smi-carton-feeder-l1 | Title: FLE 53 SMI CARTON FEEDER L1 | is_category: NO
+      - ID: 1005 | Slug: fle-54-capper-sbo-l1 | Title: FLE 54 CAPPER SBO L1 | is_category: NO
+      - ID: 1006 | Slug: fle-55-preform-sbo-1 | Title: FLE 55 PREFORM SBO 1 | is_category: NO
+      - ID: 1007 | Slug: fle-56-capper-preform-sbo-3 | Title: FLE 56 CAPPER & PREFORM SBO 3 | is_category: NO
+      - ID: 1008 | Slug: fle-57-capper-sbo-2 | Title: FLE 57 CAPPER SBO 2 | is_category: NO
+      - ID: 1009 | Slug: fle-58-preform-sbo-2 | Title: FLE 58 PREFORM SBO 2 | is_category: NO
+      - ID: 1010 | Slug: fle-59-sparepart-room | Title: FLE 59 SPAREPART ROOM | is_category: NO
+      - ID: 1011 | Slug: fle-60-cf-platform-l3 | Title: FLE 60 CF Platform L3 | is_category: NO
+      - ID: 1012 | Slug: fle-61-pedestrian-loading-dok-existing | Title: FLE 61 PEDESTRIAN LOADING DOK EXISTING | is_category: NO
+      - ID: 1013 | Slug: fle-62-cf-platform-l2 | Title: FLE 62 CF Platform L2 | is_category: NO
+      - ID: 1014 | Slug: fle-63-cf-platform-l1 | Title: FLE 63 CF Platform L1 | is_category: NO
+    - ID: 853 | Slug: fix-ladder-gede | Title: Area Gede | is_category: YES
+      - ID: 854 | Slug: flg-01-office-l5 | Title: FLG 01 OFFICE L5 | is_category: NO
+      - ID: 855 | Slug: flg-02-plafond-sbo | Title: FLG 02 PLAFOND SBO | is_category: NO
+      - ID: 856 | Slug: flg-03-roof-ct-af | Title: FLG 03 ROOF CT AF | is_category: NO
+      - ID: 1015 | Slug: flg-04-roof-gensets-l5 | Title: FLG 04 ROOF GENSETS L5 | is_category: NO
+      - ID: 1016 | Slug: flg-05-stp | Title: FLG 05 STP | is_category: NO
+      - ID: 1017 | Slug: flg-06-wwtp | Title: FLG 06 WWTP | is_category: NO
+      - ID: 1018 | Slug: flg-07-solar-storage-tank | Title: FLG 07 SOLAR STORAGE TANK | is_category: NO
+      - ID: 1019 | Slug: flg-08-pedestrian-solar-storage-tank | Title: FLG 08 PEDESTRIAN SOLAR STORAGE TANK | is_category: NO
+      - ID: 1020 | Slug: flg-09-pedestrian-chiller-l5 | Title: FLG 09 PEDESTRIAN CHILLER L5 | is_category: NO
+      - ID: 1021 | Slug: flg-10-soft-water-a | Title: FLG 10 SOFT WATER A | is_category: NO
+      - ID: 1022 | Slug: flg-11-soft-water-b | Title: FLG 11 SOFT WATER B | is_category: NO
+      - ID: 1023 | Slug: flg-12-storage-tank | Title: FLG 12 STORAGE TANK | is_category: NO
+      - ID: 1024 | Slug: flg-13-chemical-tank | Title: FLG 13 CHEMICAL TANK | is_category: NO
+      - ID: 1025 | Slug: flg-14-fresh-water-tank | Title: FLG 14 FRESH WATER TANK | is_category: NO
+      - ID: 1026 | Slug: flg-15-finish-tank | Title: FLG 15 FINISH TANK | is_category: NO
+      - ID: 1027 | Slug: flg-16-capper-sbo | Title: FLG 16 CAPPER SBO | is_category: NO
+      - ID: 1028 | Slug: flg-17-vario-pack-a | Title: FLG 17 VARIO PACK A | is_category: NO
+      - ID: 1029 | Slug: flg-18-vario-pack-b | Title: FLG 18 VARIO PACK B | is_category: NO
+      - ID: 1030 | Slug: flg-19-vario-pack-c | Title: FLG 19 VARIO PACK C | is_category: NO
+      - ID: 1031 | Slug: flg-20-conveyor-palletizer | Title: FLG 20 CONVEYOR PALLETIZER | is_category: NO
+      - ID: 1032 | Slug: flg-21-palletizer | Title: FLG 21 PALLETIZER | is_category: NO
+      - ID: 1033 | Slug: flg-22-conveyor-out-filler | Title: FLG 22 CONVEYOR OUT FILLER | is_category: NO
+      - ID: 1034 | Slug: flg-23-gazebo-l5 | Title: FLG 23 GAZEBO L5 | is_category: NO
+      - ID: 1035 | Slug: flg-24-filler-sbo-5 | Title: FLG 24 FILLER SBO 5 | is_category: NO
+      - ID: 1036 | Slug: flg-25-preform-sbo-5 | Title: FLG 25 PREFORM SBO 5 | is_category: NO
+      - ID: 1037 | Slug: flg-26-pedestrian-wwtp-gede | Title: FLG 26 PEDESTRIAN WWTP GEDE | is_category: NO
+      - ID: 1038 | Slug: flg-27-hopper | Title: FLG 27 HOPPER | is_category: NO
+    - ID: 874 | Slug: fix-ladder-sumber | Title: Area Sumber | is_category: YES
+      - ID: 875 | Slug: fls-01-rumah-pompa | Title: FLS 01 RUMAH POMPA | is_category: NO
+      - ID: 1039 | Slug: fls-02-storage-tank-1 | Title: FLS 02 STORAGE TANK 1 | is_category: NO
+      - ID: 877 | Slug: fls-03-rumah-sumber-1 | Title: FLS 03 RUMAH SUMBER 1 | is_category: NO
+      - ID: 878 | Slug: fls-04-rwh-cimex | Title: FLS 04 RWH CIMEX | is_category: NO
+      - ID: 879 | Slug: fls-05-rwh-wt-existing | Title: FLS 05 RWH WT EXISTING | is_category: NO
+      - ID: 880 | Slug: fls-06-storage-tank-2500-sb-4 | Title: FLS 06 STORAGE TANK 2500 SB 4 | is_category: NO
+      - ID: 1040 | Slug: fls-07-room-storage-tank-2500 | Title: FLS 07 ROOM STORAGE TANK 2500 | is_category: NO
+      - ID: 882 | Slug: fls-08-giant-tank | Title: FLS 08 GIANT TANK | is_category: NO
+      - ID: 1041 | Slug: fls-09-titik-penaatan-sumber-1 | Title: FLS 09 TITIK PENAATAN SUMBER 1 | is_category: NO
+  - ID: 677 | Slug: mobile-ladder | Title: Mobile Ladder | is_category: YES
+    - ID: 702 | Slug: mobile-ladder-cimex | Title: Area Cimex | is_category: YES
+      - ID: 703 | Slug: mlc-01-blowing-sbo-4 | Title: MLC 01 BLOWING SBO 4 | is_category: NO
+      - ID: 704 | Slug: mlc-02-ocs-a | Title: MLC 02 OCS A | is_category: NO
+      - ID: 705 | Slug: mlc-03-ocs-b | Title: MLC 03 OCS B | is_category: NO
+    - ID: 706 | Slug: mobile-ladder-existing | Title: Area Existing | is_category: YES
+      - ID: 707 | Slug: mle-01-workshop-a | Title: MLE 01 WORKSHOP A | is_category: NO
+      - ID: 708 | Slug: mle-02-workshop-b | Title: MLE 02 WORKSHOP B | is_category: NO
+      - ID: 709 | Slug: mle-03-luar-gudang-capex | Title: MLE 03 LUAR GUDANG CAPEX | is_category: NO
+      - ID: 710 | Slug: mle-04-compressor-af-existing | Title: MLE 04 COMPRESSOR AF EXISTING | is_category: NO
+      - ID: 711 | Slug: mle-05-hydrant | Title: MLE 05 HYDRANT | is_category: NO
+      - ID: 712 | Slug: mle-06-sbo-1a | Title: MLE 06 SBO 1A | is_category: NO
+      - ID: 713 | Slug: mle-07-sbo-1b | Title: MLE 07 SBO 1B | is_category: NO
+      - ID: 714 | Slug: mle-08-sbo-2a | Title: MLE 08 SBO 2A | is_category: NO
+      - ID: 715 | Slug: mle-09-sbo-2b | Title: MLE 09 SBO 2B | is_category: NO
+      - ID: 716 | Slug: mle-10-sbo-3a | Title: MLE 10 SBO 3A | is_category: NO
+      - ID: 717 | Slug: mle-11-sbo-3b | Title: MLE 11 SBO 3B | is_category: NO
+      - ID: 718 | Slug: mle-12-husky | Title: MLE 12 HUSKY | is_category: NO
+      - ID: 719 | Slug: mle-13-softdrop | Title: MLE 13 SOFTDROP | is_category: NO
+      - ID: 720 | Slug: mle-14-ruang-resin | Title: MLE 14 RUANG RESIN | is_category: NO
+      - ID: 721 | Slug: mle-15-afval | Title: MLE 15 AFVAL | is_category: NO
+      - ID: 722 | Slug: mle-16-eol-1 | Title: MLE 16 EOL 1 | is_category: NO
+      - ID: 723 | Slug: mle-17-eol-2 | Title: MLE 17 EOL 2 | is_category: NO
+      - ID: 724 | Slug: mle-18-storage-preform-l1 | Title: MLE 18 STORAGE PREFORM L1 | is_category: NO
+      - ID: 725 | Slug: mle-19-storage-preform-l2 | Title: MLE 19 STORAGE PREFORM L2 | is_category: NO
+      - ID: 726 | Slug: mle-20-storage-preform-l3 | Title: MLE 20 STORAGE PREFORM L3 | is_category: NO
+      - ID: 727 | Slug: mle-21-spectrum-l2 | Title: MLE 21 SPECTRUM L2 | is_category: NO
+      - ID: 728 | Slug: mle-22-sparepart-lantai-1 | Title: MLE 22 SPAREPART LANTAI 1 | is_category: NO
+      - ID: 729 | Slug: mle-23-sparepart-lantai-2 | Title: MLE 23 SPAREPART LANTAI 2 | is_category: NO
+    - ID: 730 | Slug: mobile-ladder-gede | Title: Area Gede | is_category: YES
+      - ID: 731 | Slug: mlg-01-sbo | Title: MLG 01 SBO | is_category: NO
+      - ID: 732 | Slug: mlg-02-sbo | Title: MLG 02 SBO | is_category: NO
+      - ID: 733 | Slug: mlg-03-sbo | Title: MLG 03 SBO | is_category: NO
+      - ID: 734 | Slug: mlg-04-ct-af-gede | Title: MLG 04 CT AF GEDE | is_category: NO
+      - ID: 735 | Slug: mlg-05-hpu | Title: MLG 05 HPU | is_category: NO
+  - ID: 678 | Slug: lifeline | Title: Lifeline | is_category: YES
+    - ID: 736 | Slug: lifeline-cimex | Title: Area Cimex | is_category: YES
+      - ID: 737 | Slug: llc-01-roof | Title: LLC 01 ROOF | is_category: NO
+      - ID: 738 | Slug: llc-02-extention-roof | Title: LLC 02 EXTENTION ROOF | is_category: NO
+      - ID: 739 | Slug: llc-03-loading-dok | Title: LLC 03 LOADING DOK | is_category: NO
+      - ID: 740 | Slug: llc-04-penerpalan | Title: LLC 04 PENERPALAN | is_category: NO
+      - ID: 741 | Slug: abc-o1-cip-room | Title: ABC O1 CIP ROOM | is_category: NO
+    - ID: 742 | Slug: lifeline-existing | Title: Area Existing | is_category: YES
+      - ID: 743 | Slug: lle-01-roof-existing | Title: LLE 01 ROOF EXISTING | is_category: NO
+      - ID: 744 | Slug: lle-02-ct-af | Title: LLE 02 CT AF | is_category: NO
+      - ID: 745 | Slug: lle-03-loading-dok-existing | Title: LLE 03 LOADING DOK EXISTING | is_category: NO
+      - ID: 746 | Slug: lle-04-penerpalan-existing | Title: LLE 04 PENERPALAN EXISTING | is_category: NO
+      - ID: 747 | Slug: lle-05-afval | Title: LLE 05 AFVAL | is_category: NO
+    - ID: 748 | Slug: lifeline-gede | Title: Area Gede | is_category: YES
+      - ID: 749 | Slug: llg-01-roof-gede | Title: LLG 01 ROOF GEDE | is_category: NO
+      - ID: 750 | Slug: llg-02-roof-gdbesi-bekas-oli | Title: LLG 02 ROOF GD.BESI BEKAS & OLI | is_category: NO
+      - ID: 751 | Slug: llg-03-roof-solar-tank | Title: LLG 03  ROOF SOLAR TANK | is_category: NO
+      - ID: 752 | Slug: llg-04-compressor | Title: LLG 04  COMPRESSOR | is_category: NO
+      - ID: 753 | Slug: llg-05-chiller | Title: LLG 05 CHILLER | is_category: NO
+    - ID: 754 | Slug: lifeline-sumber | Title: Area Sumber | is_category: YES
+      - ID: 755 | Slug: lls-01-storage-tank-2500 | Title: LLS 01 STORAGE TANK 2500 | is_category: NO
+  - ID: 679 | Slug: skylife-protection | Title: Skylight Protection | is_category: YES
+    - ID: 987 | Slug: sp-cimex-no-01-84 | Title: SP CIMEX No. 01-84 | is_category: NO
+    - ID: 988 | Slug: sp-existing-no-01-184 | Title: SP EXISTING No. 01-184 | is_category: NO
+    - ID: 989 | Slug: sp-gede-no-01-10 | Title: SP GEDE No. 01-10 | is_category: NO
+  - ID: 107 | Slug: scaffolding | Title: Scaffolding | is_category: NO
+- ID: 682 | Slug: confined-space | Title: Confined Space | is_category: YES
+- ID: 138 | Slug: hazardous-gases | Title: Hazardous Gases | is_category: YES
+  - ID: 683 | Slug: argon-dan-nitrogen-storage-gas | Title: Argon dan Nitrogen Storage Gas | is_category: NO
+  - ID: 684 | Slug: freon-storage | Title: Freon Storage | is_category: NO
+  - ID: 147 | Slug: sodu-gas | Title: Sodu Gas | is_category: YES
+    - ID: 1057 | Slug: andryana-arif | Title: Andryana Arif | is_category: NO
+    - ID: 1058 | Slug: ahmad-safari-k | Title: Ahmad Safari K | is_category: NO
+    - ID: 1059 | Slug: iman-solehudin | Title: Iman Solehudin | is_category: NO
+    - ID: 1060 | Slug: m-gani | Title: M Gani | is_category: NO
+    - ID: 1061 | Slug: asep-hindrayana | Title: Asep Hindrayana | is_category: NO
+    - ID: 1062 | Slug: ardian-lesmana | Title: Ardian Lesmana | is_category: NO
+- ID: 685 | Slug: rack-and-pallets | Title: Rack and Pallets | is_category: NO
+- ID: 149 | Slug: safety-machines | Title: Safety Machines | is_category: YES
+  - ID: 686 | Slug: rolling-door | Title: Rolling Door | is_category: YES
+    - ID: 960 | Slug: rolling-door-conventional-rolling-door | Title: Area Conventional Rolling Door | is_category: YES
+      - ID: 961 | Slug: rd-01-workshop | Title: RD 01 Workshop | is_category: NO
+      - ID: 962 | Slug: rd-02-gdcapex | Title: RD 02 Gd.Capex | is_category: NO
+      - ID: 963 | Slug: rd-03-loading-material-l5 | Title: RD 03 Loading Material L5 | is_category: NO
+      - ID: 964 | Slug: rd-04-loading-fg-existing-gate-1 | Title: RD 04 Loading FG Existing Gate 1 | is_category: NO
+      - ID: 965 | Slug: rd-05-loading-fg-existing-gate-2 | Title: Rd 05 Loading FG Existing Gate 2 | is_category: NO
+      - ID: 966 | Slug: rd-06-loading-fg-existing-gate-3 | Title: RD 06 Loading FG Existing Gate 3 | is_category: NO
+      - ID: 967 | Slug: rd-07-loading-fg-existing-gate-4 | Title: RD 07 Loading FG Existing Gate 4 | is_category: NO
+      - ID: 968 | Slug: rd-08-loading-fg-existing-gate-5 | Title: RD 08 Loading FG Existing Gate 5 | is_category: NO
+      - ID: 969 | Slug: rd-09-loading-fg-existing-gate-6 | Title: RD 09 Loading FG Existing Gate 6 | is_category: NO
+      - ID: 970 | Slug: rd-10-loading-fg-existing-gate-7 | Title: RD 10 Loading FG Existing Gate 7 | is_category: NO
+      - ID: 971 | Slug: rd-11-loading-fg-existing-gate-8 | Title: RD 11 Loading FG Existing Gate 8 | is_category: NO
+      - ID: 972 | Slug: rd-12-loading-fg-existing-gate-9 | Title: RD 12 Loading FG Existing Gate 9 | is_category: NO
+      - ID: 973 | Slug: rd-13-keluar-masuk-rm-1 | Title: RD 13 Keluar Masuk RM 1 | is_category: NO
+      - ID: 974 | Slug: rd-14-keluar-masuk-rm-2 | Title: RD 14 Keluar Masuk RM 2 | is_category: NO
+      - ID: 975 | Slug: rd-15-storage-preform-existing-1 | Title: RD 15 Storage Preform Existing 1 | is_category: NO
+      - ID: 976 | Slug: rd-16-storage-preform-existing-2 | Title: RD 16 Storage Preform Existing 2 | is_category: NO
+      - ID: 977 | Slug: rd-17-rm-ke-line-2 | Title: RD 17 RM ke Line 2 | is_category: NO
+      - ID: 978 | Slug: rd-18-loading-fg-cimex-gate-1 | Title: RD 18 Loading FG Cimex Gate 1 | is_category: NO
+      - ID: 979 | Slug: rd-19-loading-fg-cimex-gate-2 | Title: RD 19 Loading FG Cimex Gate 2 | is_category: NO
+      - ID: 980 | Slug: rd-20-loading-fg-cimex-gate-3 | Title: RD 20 Loading FG Cimex Gate 3 | is_category: NO
+      - ID: 981 | Slug: rd-21-loading-material-cimex | Title: RD 21 Loading Material Cimex | is_category: NO
+      - ID: 982 | Slug: rd-22-storage-preform-cimex-1 | Title: RD 22 Storage preform Cimex 1 | is_category: NO
+      - ID: 983 | Slug: rd-23-storage-preform-cimex-2 | Title: RD 23 Storage preform Cimex 2 | is_category: NO
+    - ID: 984 | Slug: rolling-door-speed-rolling-door | Title: Area Speed Rolling Door | is_category: YES
+      - ID: 985 | Slug: rd-24-storage-preform-gede-1 | Title: RD 24 Storage Preform Gede 1 | is_category: NO
+      - ID: 986 | Slug: rd-25-storage-preform-gede-2 | Title: RD 25 Storage Preform Gede 2 | is_category: NO
+  - ID: 687 | Slug: pintu-geser | Title: Pintu Geser | is_category: YES
+    - ID: 931 | Slug: pintu-geser-existing | Title: Area Existing | is_category: YES
+      - ID: 932 | Slug: pg-01-pos-security-pintu-masuk | Title: PG 01 Pos Security Pintu Masuk | is_category: NO
+      - ID: 933 | Slug: pg-02-pos-security-pintu-keluar | Title: PG 02 Pos Security Pintu Keluar | is_category: NO
+      - ID: 934 | Slug: pg-03-ruang-sparepart | Title: PG 03 Ruang Sparepart | is_category: NO
+      - ID: 935 | Slug: pg-04-ruang-capex | Title: PG 04 Ruang Capex | is_category: NO
+      - ID: 936 | Slug: pg-06-area-palletizer-ke-area-gd-capex | Title: PG 06 Area palletizer ke area gd. capex | is_category: NO
+      - ID: 937 | Slug: pg-08-office-produksi | Title: Pg 08 Office Produksi | is_category: NO
+      - ID: 938 | Slug: pg-09-ruang-special-tool | Title: PG 09 Ruang Special Tool | is_category: NO
+      - ID: 939 | Slug: pg-10-ruang-resin-husky | Title: PG 10 Ruang Resin Husky | is_category: NO
+      - ID: 940 | Slug: pg-11-unloading-material-ke-ruang-preform | Title: PG 11 Unloading Material ke Ruang Preform | is_category: NO
+      - ID: 941 | Slug: pg-12-unloading-material-ke-rmpm | Title: PG 12 Unloading Material ke RMPM | is_category: NO
+      - ID: 942 | Slug: pg-13-area-l2-ke-loading-dok | Title: PG 13 Area L2 ke Loading Dok | is_category: NO
+      - ID: 943 | Slug: pg-14-ruang-afval | Title: PG 14 Ruang Afval | is_category: NO
+      - ID: 944 | Slug: pg-15-ruang-kimia | Title: PG 15 Ruang Kimia | is_category: NO
+      - ID: 945 | Slug: pg-16-ruang-imc | Title: PG 16 Ruang IMC | is_category: NO
+      - ID: 946 | Slug: pg-17-ruang-limbah-b3 | Title: PG 17 Ruang Limbah B3 | is_category: NO
+      - ID: 947 | Slug: pg-20-ruang-sparepart | Title: PG 20 Ruang Sparepart | is_category: NO
+      - ID: 948 | Slug: pg-21-resin-ruang-antara | Title: PG 21 Resin Ruang Antara | is_category: NO
+      - ID: 949 | Slug: pg-25-mushola-data-entry | Title: PG 25 Mushola data entry | is_category: NO
+      - ID: 950 | Slug: pg-26-ruang | Title: PG 26 Ruang | is_category: NO
+    - ID: 951 | Slug: pintu-geser-gede | Title: Area Gede | is_category: YES
+      - ID: 952 | Slug: pg-05-mushola-l5 | Title: PG 05 Mushola L5 | is_category: NO
+      - ID: 953 | Slug: pg-07-area-produk-hold-ke-rmpm-l5 | Title: PG 07 Area produk hold ke RMPM L5 | is_category: NO
+      - ID: 954 | Slug: pg-24-area-pedestrian-eol-l5 | Title: PG 24 Area Pedestrian EOL L5 | is_category: NO
+    - ID: 955 | Slug: pintu-geser-cimex | Title: Area Cimex | is_category: YES
+      - ID: 956 | Slug: pg-18-charger-forklift-cimex | Title: PG 18 Charger Forklift Cimex | is_category: NO
+      - ID: 957 | Slug: pg-19-compressor-bm-cimex | Title: PG 19 Compressor BM Cimex | is_category: NO
+      - ID: 958 | Slug: pg-22-compressor-af-cimex | Title: PG 22 Compressor AF Cimex | is_category: NO
+      - ID: 959 | Slug: pg-23-charger-ke-fg-cimex | Title: PG 23 Charger ke FG Cimex | is_category: NO
+  - ID: 681 | Slug: full-body-harness | Title: Full Body Harness | is_category: YES
+    - ID: 756 | Slug: full-body-harness-existing | Title: Area Existing | is_category: YES
+      - ID: 757 | Slug: fbh-1-workshop | Title: FBH 1 Workshop | is_category: NO
+      - ID: 758 | Slug: fbh-2-workshop | Title: FBH 2 Workshop | is_category: NO
+      - ID: 759 | Slug: fbh-3-workshop | Title: FBH 3 Workshop | is_category: NO
+      - ID: 760 | Slug: fbh-4-penerpalan-existing | Title: FBH 4 Penerpalan Existing | is_category: NO
+      - ID: 761 | Slug: fbh-5-penerpalan-existing | Title: FBH 5 Penerpalan Existing | is_category: NO
+      - ID: 762 | Slug: fbh-6-penerpalan-existing | Title: FBH 6 Penerpalan Existing | is_category: NO
+      - ID: 763 | Slug: fbh-11-wt-existing | Title: FBH 11 WT Existing | is_category: NO
+      - ID: 764 | Slug: fbh-13-confine-space | Title: FBH 13 Confine Space | is_category: NO
+    - ID: 765 | Slug: full-body-harness-cimex | Title: Area Cimex | is_category: YES
+      - ID: 766 | Slug: fbh-7-penerpalan-cimex | Title: FBH 7 Penerpalan Cimex | is_category: NO
+      - ID: 767 | Slug: fbh-8-penerpalan-cimex | Title: FBh 8 Penerpalan Cimex | is_category: NO
+      - ID: 768 | Slug: fbh-9-penerpalan-cimex | Title: FBH 9 Penerpalan Cimex | is_category: NO
+      - ID: 769 | Slug: fbh-10-penerpalan-cimex | Title: FBH 10 Penerpalan cimex | is_category: NO
+      - ID: 770 | Slug: fbh-14-ocs-cimex | Title: FBH 14 OCS Cimex | is_category: NO
+      - ID: 771 | Slug: fbh-15-ocs-cimex | Title: FBH 15 OCS Cimex | is_category: NO
+      - ID: 772 | Slug: fbh-15-wt-cimex | Title: FBH 15 WT Cimex | is_category: NO
+    - ID: 773 | Slug: full-body-harness-gede | Title: Area Gede | is_category: YES
+      - ID: 774 | Slug: fbh-12-wt-gede | Title: FBH 12 WT Gede | is_category: NO
+  - ID: 688 | Slug: mesin-las-argon | Title: Mesin Las Argon | is_category: NO
+  - ID: 689 | Slug: mesin-press | Title: Mesin Press | is_category: NO
+  - ID: 690 | Slug: mesin-gerinda-duduk | Title: Mesin Gerinda Duduk | is_category: NO
+  - ID: 691 | Slug: mesin-bor-duduk | Title: Mesin Bor Duduk | is_category: NO
+  - ID: 693 | Slug: rak-facility | Title: Rak Facility | is_category: NO
+- ID: 205 | Slug: forklift | Title: Forklift | is_category: NO
+- ID: 694 | Slug: fire-evacuation | Title: Fire Evacuation | is_category: YES
+- ID: 695 | Slug: work-permit | Title: Work Permit | is_category: NO
+- ID: 696 | Slug: truck-loading-unloading | Title: Truck Loading Unloading | is_category: NO
+- ID: 697 | Slug: chemical-product | Title: Chemical Product | is_category: YES
+- ID: 698 | Slug: atex | Title: Atex | is_category: NO
+- ID: 699 | Slug: loto | Title: LOTO (Log Out Take Out] | is_category: YES
+- ID: 244 | Slug: barrier-dan-self-door-closer | Title: Barrier Dan Self Door Closer | is_category: YES
+  - ID: 324 | Slug: barrier-dan-self-door-closer-barrier-railing-br | Title: Area Barrier & Railing (BR) | is_category: YES
+    - ID: 325 | Slug: br-01-retaining-wall-gazebo-l | Title: BR 01 RETAINING WALL GAZEBO L | is_category: NO
+    - ID: 326 | Slug: br-02-hydrant | Title: BR 02 HYDRANT | is_category: NO
+    - ID: 327 | Slug: br-03-compressor-existing | Title: BR 03 COMPRESSOR EXISTING | is_category: NO
+    - ID: 328 | Slug: br-04-workshop | Title: BR 04 WORKSHOP | is_category: NO
+    - ID: 329 | Slug: br-05-trafo-gede | Title: BR 05 TRAFO GEDE | is_category: NO
+    - ID: 330 | Slug: br-06-gensets-cimex | Title: BR 06 GENSETS CIMEX | is_category: NO
+    - ID: 331 | Slug: br-07-chiller-cimex | Title: BR 07 CHILLER CIMEX | is_category: NO
+    - ID: 332 | Slug: br-08-retaining-wall-cimex | Title: BR 08 RETAINING WALL CIMEX | is_category: NO
+  - ID: 333 | Slug: barrier-dan-self-door-closer-self-door-closer-sdr | Title: Area Self Door Closer (SDR) | is_category: YES
+    - ID: 334 | Slug: sdr-01-pos | Title: SDR 01 POS | is_category: NO
+    - ID: 335 | Slug: sdr-02-pos | Title: SDR 02 POS | is_category: NO
+    - ID: 336 | Slug: sdr-03-pos | Title: SDR 03 POS | is_category: NO
+    - ID: 337 | Slug: sdr-04-gardu-pln | Title: SDR 04 GARDU PLN | is_category: NO
+    - ID: 338 | Slug: lle-05-afval | Title: LLE 05 AFVAL | is_category: NO
+    - ID: 339 | Slug: sdr-06-charger-cimex | Title: SDR 06 CHARGER CIMEX | is_category: NO
+    - ID: 340 | Slug: sdr-07-gazebo-gede | Title: SDR 07 GAZEBO GEDE | is_category: NO
+    - ID: 341 | Slug: sdr-08-gazebo-gede | Title: SDR 08 GAZEBO GEDE | is_category: NO
+    - ID: 342 | Slug: sdr-09-chiller-gede | Title: SDR 09 CHILLER GEDE | is_category: NO
+    - ID: 343 | Slug: sdr-10-chiller-gede | Title: SDR 10 CHILLER GEDE | is_category: NO
+    - ID: 344 | Slug: sdr-11-loading-dok-existing | Title: SDR 11 LOADING DOK EXISTING | is_category: NO
+    - ID: 345 | Slug: sdr-12-loading-dok-existing | Title: SDR 12 LOADING DOK EXISTING | is_category: NO
+    - ID: 346 | Slug: sdr-13-b3 | Title: SDR 13 B3 | is_category: NO
+    - ID: 347 | Slug: sdr-14-wt-existing | Title: SDR 14 WT EXISTING | is_category: NO
+    - ID: 348 | Slug: sdr-15-wt-existing | Title: SDR 15 WT EXISTING | is_category: NO

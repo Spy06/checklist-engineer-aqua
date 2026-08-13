@@ -101,7 +101,7 @@ class FormSubmissionResource extends Resource
     {
         return [
             'index' => ListFormSubmissions::route('/'),
-            'edit'  => EditFormSubmission::route('/{record}/edit'),
+            'edit' => EditFormSubmission::route('/{record}/edit'),
         ];
     }
 }

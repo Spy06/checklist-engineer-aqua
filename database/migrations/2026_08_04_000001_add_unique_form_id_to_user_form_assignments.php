@@ -18,11 +18,11 @@ return new class extends Migration
     public function up(): void
     {
         // 1. Clean up duplicate assignments — keep the one with the lowest ID
-        DB::statement("
+        DB::statement('
             DELETE a FROM user_form_assignments a
             INNER JOIN user_form_assignments b
             ON a.form_id = b.form_id AND a.id > b.id
-        ");
+        ');
 
         Schema::table('user_form_assignments', function (Blueprint $table) {
             // Drop foreign keys first (MySQL requirement)

@@ -1,0 +1,1557 @@
+
+<table class="fooTableInit" data-filtering="true">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Date Scan</th>
+			<th>Apar Code</th>
+			<th>Contain</th>									
+			<th>Location</th>
+			<th>Expired Date</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr id="row_1">
+      <td class="foo-cell">1</td>
+      <td class="foo-cell">2025-07-31 11:17:59</td>
+      <td class="foo-cell">AP202204270038</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Husky</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_2">
+      <td class="foo-cell">2</td>
+      <td class="foo-cell">2025-07-31 11:17:37</td>
+      <td class="foo-cell">AP202204270051</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Ruang Kompressor AF4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_3">
+      <td class="foo-cell">3</td>
+      <td class="foo-cell">2025-07-31 11:17:09</td>
+      <td class="foo-cell">AP202204270064</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_4">
+      <td class="foo-cell">4</td>
+      <td class="foo-cell">2025-07-31 11:12:56</td>
+      <td class="foo-cell">AP202204270065</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 4</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_5">
+      <td class="foo-cell">5</td>
+      <td class="foo-cell">2025-07-31 11:12:10</td>
+      <td class="foo-cell">AP202204270066</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_6">
+      <td class="foo-cell">6</td>
+      <td class="foo-cell">2025-07-31 11:06:35</td>
+      <td class="foo-cell">AP202206020118</td>                       
+      <td class="foo-cell">FENWAL FM200 42.2 Kg</td>
+      <td class="foo-cell">Ruang server Office Atas</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_7">
+      <td class="foo-cell">7</td>
+      <td class="foo-cell">2025-07-31 11:06:02</td>
+      <td class="foo-cell">AP202206150120</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 5</td>
+      <td class="foo-cell">2026-05-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_8">
+      <td class="foo-cell">8</td>
+      <td class="foo-cell">2025-07-31 11:05:42</td>
+      <td class="foo-cell">AP202310200121</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area Line 1</td>
+      <td class="foo-cell">2026-05-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_9">
+      <td class="foo-cell">9</td>
+      <td class="foo-cell">2025-07-31 11:05:15</td>
+      <td class="foo-cell">AP202310200122</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area Line 4</td>
+      <td class="foo-cell">2026-05-26</td>
+      <td class="foo-cell">Nozzle rusak </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_10">
+      <td class="foo-cell">10</td>
+      <td class="foo-cell">2025-07-31 11:04:51</td>
+      <td class="foo-cell">AP202310200123</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area Line 5</td>
+      <td class="foo-cell">2026-05-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_11">
+      <td class="foo-cell">11</td>
+      <td class="foo-cell">2025-07-31 11:04:29</td>
+      <td class="foo-cell">AP202402010140</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Loading Line 1,2,3</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_12">
+      <td class="foo-cell">12</td>
+      <td class="foo-cell">2025-07-31 11:04:02</td>
+      <td class="foo-cell">AP202506120154</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Workshop</td>
+      <td class="foo-cell">2030-06-11</td>
+      <td class="foo-cell">Kondisi bagus </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_13">
+      <td class="foo-cell">13</td>
+      <td class="foo-cell">2025-07-31 11:03:37</td>
+      <td class="foo-cell">AP202204270069</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu WT Line 4</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_14">
+      <td class="foo-cell">14</td>
+      <td class="foo-cell">2025-07-31 11:03:10</td>
+      <td class="foo-cell">AP202204270081</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Ruang Kompressor Oil Inject Eksisting</td>
+      <td class="foo-cell">2027-06-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_15">
+      <td class="foo-cell">15</td>
+      <td class="foo-cell">2025-07-31 11:02:37</td>
+      <td class="foo-cell">AP202204270116</td>                       
+      <td class="foo-cell">SERVO 6 Kg</td>
+      <td class="foo-cell">Sumber 4 Dalam</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_16">
+      <td class="foo-cell">16</td>
+      <td class="foo-cell">2025-07-31 11:02:08</td>
+      <td class="foo-cell">AP202205250117</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">ruang kompressor line 5 oil free</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_17">
+      <td class="foo-cell">17</td>
+      <td class="foo-cell">2025-07-31 10:45:41</td>
+      <td class="foo-cell">AP202204270067</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">SBO Line 4</td>
+      <td class="foo-cell">2024-04-25</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan,exp tgl 7 Maret 2029</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_18">
+      <td class="foo-cell">18</td>
+      <td class="foo-cell">2025-07-31 10:44:45</td>
+      <td class="foo-cell">AP202204270068</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">AHU Line 4</td>
+      <td class="foo-cell">2028-02-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_19">
+      <td class="foo-cell">19</td>
+      <td class="foo-cell">2025-07-24 11:20:36</td>
+      <td class="foo-cell">AP202204010001</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Posko Security</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_20">
+      <td class="foo-cell">20</td>
+      <td class="foo-cell">2025-07-15 21:20:37</td>
+      <td class="foo-cell">AP202402010124</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Timur posko sekurity</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_21">
+      <td class="foo-cell">21</td>
+      <td class="foo-cell">2025-07-15 21:18:20</td>
+      <td class="foo-cell">AP202204010002</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gardu PLN</td>
+      <td class="foo-cell">2028-02-28</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_22">
+      <td class="foo-cell">22</td>
+      <td class="foo-cell">2025-07-15 21:15:02</td>
+      <td class="foo-cell">AP202402010125</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Taman Depan Mushola bawah</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Rantai putus</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_23">
+      <td class="foo-cell">23</td>
+      <td class="foo-cell">2025-07-15 21:12:50</td>
+      <td class="foo-cell">AP202204270111</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu Toilet Office atas</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_24">
+      <td class="foo-cell">24</td>
+      <td class="foo-cell">2025-07-15 21:12:12</td>
+      <td class="foo-cell">AP202204270110</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping pintu Ruang gunung Geulis</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan exp 26 Feb 2026</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_25">
+      <td class="foo-cell">25</td>
+      <td class="foo-cell">2025-07-15 21:09:15</td>
+      <td class="foo-cell">AP202402010126</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Taman Depan Compressor</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Rantai putus bagian kiri</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_26">
+      <td class="foo-cell">26</td>
+      <td class="foo-cell">2025-07-15 21:05:04</td>
+      <td class="foo-cell">AP202204270083</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Hydrant</td>
+      <td class="foo-cell">2027-06-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_27">
+      <td class="foo-cell">27</td>
+      <td class="foo-cell">2025-07-15 21:00:24</td>
+      <td class="foo-cell">AP202204270112</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Sumber 1</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_28">
+      <td class="foo-cell">28</td>
+      <td class="foo-cell">2025-07-15 20:59:52</td>
+      <td class="foo-cell">AP202204270113</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Sumber 2</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_29">
+      <td class="foo-cell">29</td>
+      <td class="foo-cell">2025-07-15 20:59:29</td>
+      <td class="foo-cell">AP202204270114</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Sumber 3</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_30">
+      <td class="foo-cell">30</td>
+      <td class="foo-cell">2025-07-15 20:59:04</td>
+      <td class="foo-cell">AP202204270115</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Sumber 4</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_31">
+      <td class="foo-cell">31</td>
+      <td class="foo-cell">2025-07-15 20:58:08</td>
+      <td class="foo-cell">AP202204270048</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">AHU Existing (Lantai 2)</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_32">
+      <td class="foo-cell">32</td>
+      <td class="foo-cell">2025-07-15 20:56:44</td>
+      <td class="foo-cell">AP202204270047</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Compressor Low press Existing</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_33">
+      <td class="foo-cell">33</td>
+      <td class="foo-cell">2025-07-15 20:46:45</td>
+      <td class="foo-cell">AP202204270043</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">SBO Line 2</td>
+      <td class="foo-cell">2025-09-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_34">
+      <td class="foo-cell">34</td>
+      <td class="foo-cell">2025-07-15 20:45:20</td>
+      <td class="foo-cell">AP202204270044</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">SBO Line 3</td>
+      <td class="foo-cell">2028-03-20</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_35">
+      <td class="foo-cell">35</td>
+      <td class="foo-cell">2025-07-15 20:44:07</td>
+      <td class="foo-cell">AP202204270042</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">SBO Line 1</td>
+      <td class="foo-cell">2025-09-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_36">
+      <td class="foo-cell">36</td>
+      <td class="foo-cell">2025-07-15 20:27:01</td>
+      <td class="foo-cell">AP202204270018</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 5</td>
+      <td class="foo-cell">2027-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_37">
+      <td class="foo-cell">37</td>
+      <td class="foo-cell">2025-07-15 20:24:28</td>
+      <td class="foo-cell">AP202402010146</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">R.Storage preform Line-5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_38">
+      <td class="foo-cell">38</td>
+      <td class="foo-cell">2025-07-15 20:22:17</td>
+      <td class="foo-cell">AP202204270019</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 5</td>
+      <td class="foo-cell">2028-03-20</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_39">
+      <td class="foo-cell">39</td>
+      <td class="foo-cell">2025-07-15 20:21:32</td>
+      <td class="foo-cell">AP202204270017</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 5</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_40">
+      <td class="foo-cell">40</td>
+      <td class="foo-cell">2025-07-15 20:15:19</td>
+      <td class="foo-cell">AP202204270021</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ergobloc Line 5</td>
+      <td class="foo-cell">2030-06-11</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_41">
+      <td class="foo-cell">41</td>
+      <td class="foo-cell">2025-07-15 19:58:09</td>
+      <td class="foo-cell">AP202204270022</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ergobloc Line 5</td>
+      <td class="foo-cell">2028-03-30</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_42">
+      <td class="foo-cell">42</td>
+      <td class="foo-cell">2025-07-15 19:55:42</td>
+      <td class="foo-cell">AP202204270020</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ergobloc Line 5</td>
+      <td class="foo-cell">2028-03-20</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_43">
+      <td class="foo-cell">43</td>
+      <td class="foo-cell">2025-07-15 19:46:17</td>
+      <td class="foo-cell">AP202204270099</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Lab QA</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_44">
+      <td class="foo-cell">44</td>
+      <td class="foo-cell">2025-07-15 19:43:15</td>
+      <td class="foo-cell">AP202204270101</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Lab QA</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_45">
+      <td class="foo-cell">45</td>
+      <td class="foo-cell">2025-07-15 19:42:26</td>
+      <td class="foo-cell">AP202204270100</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Lab QA</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_46">
+      <td class="foo-cell">46</td>
+      <td class="foo-cell">2025-07-15 18:07:12</td>
+      <td class="foo-cell">AP202402010148</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Sebelah akses jalan masuk truk</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Rantai putus </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_47">
+      <td class="foo-cell">47</td>
+      <td class="foo-cell">2025-07-15 18:04:12</td>
+      <td class="foo-cell">AP202402010147</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Seberang Compressor Line-5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi rantai putus </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_48">
+      <td class="foo-cell">48</td>
+      <td class="foo-cell">2025-07-15 18:02:46</td>
+      <td class="foo-cell">AP202204010003</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Trafo Line 5</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_49">
+      <td class="foo-cell">49</td>
+      <td class="foo-cell">2025-07-15 18:02:04</td>
+      <td class="foo-cell"></td>                       
+      <td class="foo-cell">  </td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_50">
+      <td class="foo-cell">50</td>
+      <td class="foo-cell">2025-07-15 18:01:59</td>
+      <td class="foo-cell">AP202204270006</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Kompressor Line 5</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_51">
+      <td class="foo-cell">51</td>
+      <td class="foo-cell">2025-07-15 17:59:21</td>
+      <td class="foo-cell">AP202204270008</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Gudang Besi</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_52">
+      <td class="foo-cell">52</td>
+      <td class="foo-cell">2025-07-15 17:58:30</td>
+      <td class="foo-cell">AP202204270007</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Tank Solar</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Lubang pengait pada apar patah</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_53">
+      <td class="foo-cell">53</td>
+      <td class="foo-cell">2025-07-15 17:55:25</td>
+      <td class="foo-cell">AP202402010141</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Loading Line 1,2,3</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_54">
+      <td class="foo-cell">54</td>
+      <td class="foo-cell">2025-07-15 17:51:57</td>
+      <td class="foo-cell">AP202204270033</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Admin Logistik</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_55">
+      <td class="foo-cell">55</td>
+      <td class="foo-cell">2025-07-15 17:50:22</td>
+      <td class="foo-cell">AP202402010137</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Loading material 1,2,3</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Rantai putus </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_56">
+      <td class="foo-cell">56</td>
+      <td class="foo-cell">2025-07-15 17:46:11</td>
+      <td class="foo-cell">AP202204270040</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 1</td>
+      <td class="foo-cell">2027-10-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_57">
+      <td class="foo-cell">57</td>
+      <td class="foo-cell">2025-07-15 17:43:35</td>
+      <td class="foo-cell">AP202204270039</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 1</td>
+      <td class="foo-cell">2026-09-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_58">
+      <td class="foo-cell">58</td>
+      <td class="foo-cell">2025-07-15 17:39:42</td>
+      <td class="foo-cell">AP202204270041</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Storage Preform Line 1</td>
+      <td class="foo-cell">2027-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_59">
+      <td class="foo-cell">59</td>
+      <td class="foo-cell">2025-07-15 17:38:44</td>
+      <td class="foo-cell">AP202204270037</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Resin Husky</td>
+      <td class="foo-cell">2027-01-17</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_60">
+      <td class="foo-cell">60</td>
+      <td class="foo-cell">2025-07-15 17:32:13</td>
+      <td class="foo-cell">AP202204270046</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Chiller Husky (Lantai 2)</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_61">
+      <td class="foo-cell">61</td>
+      <td class="foo-cell">2025-07-15 17:31:15</td>
+      <td class="foo-cell">AP202204270045</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Tangga Ruang Husky</td>
+      <td class="foo-cell">2025-12-15</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_62">
+      <td class="foo-cell">62</td>
+      <td class="foo-cell">2025-07-15 17:29:55</td>
+      <td class="foo-cell">AP202204270079</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gazebo Ex ruang SPAG</td>
+      <td class="foo-cell">2028-08-09</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_63">
+      <td class="foo-cell">63</td>
+      <td class="foo-cell">2025-07-15 17:28:28</td>
+      <td class="foo-cell">AP202204270078</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Genset Line 4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_64">
+      <td class="foo-cell">64</td>
+      <td class="foo-cell">2025-07-15 17:25:45</td>
+      <td class="foo-cell">AP202204270061</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell"> EOL Line 4 Depan Ruang File RMPM Line 4</td>
+      <td class="foo-cell">2025-12-15</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_65">
+      <td class="foo-cell">65</td>
+      <td class="foo-cell">2025-07-15 17:25:01</td>
+      <td class="foo-cell">AP202204270060</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 4 Samping Pintu Ruang File Line 4</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_66">
+      <td class="foo-cell">66</td>
+      <td class="foo-cell">2025-07-15 17:23:53</td>
+      <td class="foo-cell">AP202402010133</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Line Produksi Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_67">
+      <td class="foo-cell">67</td>
+      <td class="foo-cell">2025-07-15 17:22:33</td>
+      <td class="foo-cell">AP202204270063</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 4 Samping Tangga Buffer Versa</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_68">
+      <td class="foo-cell">68</td>
+      <td class="foo-cell">2025-07-15 17:21:16</td>
+      <td class="foo-cell">AP202402010132</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Racking Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_69">
+      <td class="foo-cell">69</td>
+      <td class="foo-cell">2025-07-15 17:20:13</td>
+      <td class="foo-cell">AP202204270062</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Material Line 4</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Segel rusak , lubang dudukan apar rusak</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_70">
+      <td class="foo-cell">70</td>
+      <td class="foo-cell">2025-07-15 17:18:20</td>
+      <td class="foo-cell">AP202402010135</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Gudang Produk Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_71">
+      <td class="foo-cell">71</td>
+      <td class="foo-cell">2025-07-15 17:17:27</td>
+      <td class="foo-cell">AP202204270072</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gudang FG Line 4</td>
+      <td class="foo-cell">2026-06-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_72">
+      <td class="foo-cell">72</td>
+      <td class="foo-cell">2025-07-15 17:16:19</td>
+      <td class="foo-cell">AP202204270073</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gudang FG Line 4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_73">
+      <td class="foo-cell">73</td>
+      <td class="foo-cell">2025-07-15 17:14:58</td>
+      <td class="foo-cell">AP202402010128</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Palletizer Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_74">
+      <td class="foo-cell">74</td>
+      <td class="foo-cell">2025-07-15 17:14:19</td>
+      <td class="foo-cell">AP202204270074</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gudang FG Line 4</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_75">
+      <td class="foo-cell">75</td>
+      <td class="foo-cell">2025-07-15 17:13:35</td>
+      <td class="foo-cell">AP202204270075</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gudang FG Line 4</td>
+      <td class="foo-cell">2026-06-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_76">
+      <td class="foo-cell">76</td>
+      <td class="foo-cell">2025-07-15 17:12:42</td>
+      <td class="foo-cell">AP202204270071</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Office Line 4</td>
+      <td class="foo-cell">2026-06-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_77">
+      <td class="foo-cell">77</td>
+      <td class="foo-cell">2025-07-15 17:12:41</td>
+      <td class="foo-cell">AP202204270070</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu WT Line 4</td>
+      <td class="foo-cell">2026-06-26</td>
+      <td class="foo-cell">Segel rusak </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_78">
+      <td class="foo-cell">78</td>
+      <td class="foo-cell">2025-07-15 17:11:49</td>
+      <td class="foo-cell">AP202402010134</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Office Cimex atas</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_79">
+      <td class="foo-cell">79</td>
+      <td class="foo-cell">2025-07-15 17:01:54</td>
+      <td class="foo-cell">AP202402010127</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Sebelah Pedestrian Penerpalan Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_80">
+      <td class="foo-cell">80</td>
+      <td class="foo-cell">2025-07-14 13:30:56</td>
+      <td class="foo-cell">AP202506100153</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi bagus </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_81">
+      <td class="foo-cell">81</td>
+      <td class="foo-cell">2025-07-14 13:28:05</td>
+      <td class="foo-cell">AP202204270089</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan exp 1 April 2029</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_82">
+      <td class="foo-cell">82</td>
+      <td class="foo-cell">2025-07-14 13:27:45</td>
+      <td class="foo-cell">AP202204270086</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan exp 1 April 2029</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_83">
+      <td class="foo-cell">83</td>
+      <td class="foo-cell">2025-07-14 13:26:58</td>
+      <td class="foo-cell">AP202204270085</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan exp 1 April 2029</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_84">
+      <td class="foo-cell">84</td>
+      <td class="foo-cell">2025-07-14 13:26:30</td>
+      <td class="foo-cell">AP202204270090</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2028-06-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_85">
+      <td class="foo-cell">85</td>
+      <td class="foo-cell">2025-07-14 13:25:52</td>
+      <td class="foo-cell">AP202204270087</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_86">
+      <td class="foo-cell">86</td>
+      <td class="foo-cell">2025-07-14 13:24:59</td>
+      <td class="foo-cell">AP202204270088</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Panel LVMDP Eksisting</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_87">
+      <td class="foo-cell">87</td>
+      <td class="foo-cell">2025-07-14 13:23:13</td>
+      <td class="foo-cell">AP202204270082</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Kompressor AF Eksisting</td>
+      <td class="foo-cell">2027-01-17</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_88">
+      <td class="foo-cell">88</td>
+      <td class="foo-cell">2025-07-14 13:20:10</td>
+      <td class="foo-cell">AP202204270077</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Ruang Janitor ISS</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_89">
+      <td class="foo-cell">89</td>
+      <td class="foo-cell">2025-07-14 13:19:37</td>
+      <td class="foo-cell">AP202204270059</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Ruang Cubicle Line 4</td>
+      <td class="foo-cell">2026-09-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_90">
+      <td class="foo-cell">90</td>
+      <td class="foo-cell">2025-07-14 13:18:35</td>
+      <td class="foo-cell">AP202204270054</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2027-10-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_91">
+      <td class="foo-cell">91</td>
+      <td class="foo-cell">2025-07-14 13:17:55</td>
+      <td class="foo-cell">AP202204270055</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_92">
+      <td class="foo-cell">92</td>
+      <td class="foo-cell">2025-07-14 13:17:03</td>
+      <td class="foo-cell">AP202506100152</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2029-04-04</td>
+      <td class="foo-cell">Kondisi bagus</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_93">
+      <td class="foo-cell">93</td>
+      <td class="foo-cell">2025-07-14 13:13:25</td>
+      <td class="foo-cell">AP202204270058</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2029-05-28</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_94">
+      <td class="foo-cell">94</td>
+      <td class="foo-cell">2025-07-14 13:12:30</td>
+      <td class="foo-cell">AP202204270057</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_95">
+      <td class="foo-cell">95</td>
+      <td class="foo-cell">2025-07-14 13:11:32</td>
+      <td class="foo-cell">AP202204270056</td>                       
+      <td class="foo-cell">FireTrace 6 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 4</td>
+      <td class="foo-cell">2029-04-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_96">
+      <td class="foo-cell">96</td>
+      <td class="foo-cell">2025-07-14 13:10:27</td>
+      <td class="foo-cell">AP202402010129</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Sebelah Chiller Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Ada tetesan pada pilar hidran</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_97">
+      <td class="foo-cell">97</td>
+      <td class="foo-cell">2025-07-14 13:09:45</td>
+      <td class="foo-cell">AP202204270053</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Pojok SBO Cimex</td>
+      <td class="foo-cell">2026-06-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_98">
+      <td class="foo-cell">98</td>
+      <td class="foo-cell">2025-07-14 13:09:10</td>
+      <td class="foo-cell">AP202402010130</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Depan pintu SBO Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_99">
+      <td class="foo-cell">99</td>
+      <td class="foo-cell">2025-07-14 13:08:23</td>
+      <td class="foo-cell">AP202204270052</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu Kompressor AF4</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_100">
+      <td class="foo-cell">100</td>
+      <td class="foo-cell">2025-07-14 13:06:53</td>
+      <td class="foo-cell">AP202402010131</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Pedestrian ujung  timur Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_101">
+      <td class="foo-cell">101</td>
+      <td class="foo-cell">2025-07-14 13:04:35</td>
+      <td class="foo-cell">AP202204270050</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu Transfer Line 4</td>
+      <td class="foo-cell">2027-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_102">
+      <td class="foo-cell">102</td>
+      <td class="foo-cell">2025-07-14 13:02:44</td>
+      <td class="foo-cell">AP202402010136</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Sebelah Data Entry Cimex</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi valve bocor air menetes </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_103">
+      <td class="foo-cell">103</td>
+      <td class="foo-cell">2025-07-14 13:02:13</td>
+      <td class="foo-cell">AP202204270049</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Data Entry Logistik Line 4</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_104">
+      <td class="foo-cell">104</td>
+      <td class="foo-cell">2025-07-14 12:55:52</td>
+      <td class="foo-cell">AP202204270035</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Penampungan Sampah Baru</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_105">
+      <td class="foo-cell">105</td>
+      <td class="foo-cell">2025-07-14 12:54:59</td>
+      <td class="foo-cell">AP202204270034</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Gudang Afval</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_106">
+      <td class="foo-cell">106</td>
+      <td class="foo-cell">2025-07-14 12:52:37</td>
+      <td class="foo-cell">AP202406260151</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang IMC</td>
+      <td class="foo-cell">2027-01-17</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_107">
+      <td class="foo-cell">107</td>
+      <td class="foo-cell">2025-07-14 12:48:32</td>
+      <td class="foo-cell">AP202204270036</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">WT Existing</td>
+      <td class="foo-cell">2027-10-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_108">
+      <td class="foo-cell">108</td>
+      <td class="foo-cell">2025-07-14 12:47:21</td>
+      <td class="foo-cell">AP202204270032</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Raw Material Line 1</td>
+      <td class="foo-cell">2027-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_109">
+      <td class="foo-cell">109</td>
+      <td class="foo-cell">2025-07-14 12:45:27</td>
+      <td class="foo-cell">AP202402010138</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Racking Line 1,2,3</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_110">
+      <td class="foo-cell">110</td>
+      <td class="foo-cell">2025-07-14 12:44:05</td>
+      <td class="foo-cell">AP202204270031</td>                       
+      <td class="foo-cell">VIKING AV 250 P 6 Kg</td>
+      <td class="foo-cell">Raw Material Line 1</td>
+      <td class="foo-cell">2028-02-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_111">
+      <td class="foo-cell">111</td>
+      <td class="foo-cell">2025-07-14 12:42:21</td>
+      <td class="foo-cell">AP202204270029</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 2</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_112">
+      <td class="foo-cell">112</td>
+      <td class="foo-cell">2025-07-14 12:41:17</td>
+      <td class="foo-cell">AP202204270030</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 2</td>
+      <td class="foo-cell">2029-03-07</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_113">
+      <td class="foo-cell">113</td>
+      <td class="foo-cell">2025-07-14 12:39:04</td>
+      <td class="foo-cell">AP202204270025</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">FG Existing</td>
+      <td class="foo-cell">2028-03-20</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_114">
+      <td class="foo-cell">114</td>
+      <td class="foo-cell">2025-07-14 12:38:05</td>
+      <td class="foo-cell">AP202204270026</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">FG Existing</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_115">
+      <td class="foo-cell">115</td>
+      <td class="foo-cell">2025-07-14 12:36:46</td>
+      <td class="foo-cell">AP202402010139</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Sebelah Manual pallet line 2</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi selang kotor </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_116">
+      <td class="foo-cell">116</td>
+      <td class="foo-cell">2025-07-14 12:34:49</td>
+      <td class="foo-cell">AP202204270028</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 1</td>
+      <td class="foo-cell">2029-03-07</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan expired 7 Maret 2029</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_117">
+      <td class="foo-cell">117</td>
+      <td class="foo-cell">2025-07-14 12:33:53</td>
+      <td class="foo-cell">AP202204270027</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">EOL Line 1</td>
+      <td class="foo-cell">2028-02-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_118">
+      <td class="foo-cell">118</td>
+      <td class="foo-cell">2025-07-14 12:31:32</td>
+      <td class="foo-cell">AP202204270024</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">FG Existing</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_119">
+      <td class="foo-cell">119</td>
+      <td class="foo-cell">2025-07-14 12:30:09</td>
+      <td class="foo-cell">AP202204270023</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">FG Existing</td>
+      <td class="foo-cell">2026-11-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_120">
+      <td class="foo-cell">120</td>
+      <td class="foo-cell">2025-07-14 12:29:02</td>
+      <td class="foo-cell">AP202204270011</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Penyimpanan Pallet Line 5</td>
+      <td class="foo-cell">2029-03-07</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_121">
+      <td class="foo-cell">121</td>
+      <td class="foo-cell">2025-07-14 12:26:21</td>
+      <td class="foo-cell">AP202204270010</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Penyimpanan Pallet Line 5</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_122">
+      <td class="foo-cell">122</td>
+      <td class="foo-cell">2025-07-14 12:24:42</td>
+      <td class="foo-cell">AP202402010143</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Gudang Material Line-5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_123">
+      <td class="foo-cell">123</td>
+      <td class="foo-cell">2025-07-14 12:22:42</td>
+      <td class="foo-cell">AP202204270016</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Raw Material Line 5</td>
+      <td class="foo-cell">2029-03-07</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_124">
+      <td class="foo-cell">124</td>
+      <td class="foo-cell">2025-07-14 12:21:13</td>
+      <td class="foo-cell">AP202204270012</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area EOL Line 5</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_125">
+      <td class="foo-cell">125</td>
+      <td class="foo-cell">2025-07-14 12:20:13</td>
+      <td class="foo-cell">AP202402010145</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Depan pintu SBO Line-5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_126">
+      <td class="foo-cell">126</td>
+      <td class="foo-cell">2025-07-14 12:19:22</td>
+      <td class="foo-cell">AP202204270015</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Raw Material Line 5</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_127">
+      <td class="foo-cell">127</td>
+      <td class="foo-cell">2025-07-14 11:57:58</td>
+      <td class="foo-cell">AP202402010142</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Loading Line-5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_128">
+      <td class="foo-cell">128</td>
+      <td class="foo-cell">2025-07-14 11:54:02</td>
+      <td class="foo-cell">AP202204270009</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang WWTP Baru</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_129">
+      <td class="foo-cell">129</td>
+      <td class="foo-cell">2025-07-14 11:51:10</td>
+      <td class="foo-cell">AP202204270005</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 5</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_130">
+      <td class="foo-cell">130</td>
+      <td class="foo-cell">2025-07-14 11:49:09</td>
+      <td class="foo-cell">AP202204270004</td>                       
+      <td class="foo-cell">FireTrace 3.2 Kg</td>
+      <td class="foo-cell">Ruang LVMDP Line 5</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_131">
+      <td class="foo-cell">131</td>
+      <td class="foo-cell">2025-07-14 11:44:16</td>
+      <td class="foo-cell">AP202204270013</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area EOL Line 5</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_132">
+      <td class="foo-cell">132</td>
+      <td class="foo-cell">2025-07-14 11:43:18</td>
+      <td class="foo-cell">AP202402010144</td>                       
+      <td class="foo-cell">HIDRAN BOX  </td>
+      <td class="foo-cell">Line Produksi L5</td>
+      <td class="foo-cell">0000-00-00</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_133">
+      <td class="foo-cell">133</td>
+      <td class="foo-cell">2025-07-14 11:42:11</td>
+      <td class="foo-cell">AP202204270014</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area EOL Line 5</td>
+      <td class="foo-cell">2028-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_134">
+      <td class="foo-cell">134</td>
+      <td class="foo-cell">2025-07-11 13:56:55</td>
+      <td class="foo-cell">AP202204270109</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Lobby</td>
+      <td class="foo-cell">2029-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_135">
+      <td class="foo-cell">135</td>
+      <td class="foo-cell">2025-07-11 13:55:53</td>
+      <td class="foo-cell">AP202204270108</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan ruang Finance</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_136">
+      <td class="foo-cell">136</td>
+      <td class="foo-cell">2025-07-11 13:55:13</td>
+      <td class="foo-cell">AP202204270107</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Mushala</td>
+      <td class="foo-cell">2026-02-26</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_137">
+      <td class="foo-cell">137</td>
+      <td class="foo-cell">2025-07-11 13:54:23</td>
+      <td class="foo-cell">AP202204270105</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping pintu Ruang panel gallon</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_138">
+      <td class="foo-cell">138</td>
+      <td class="foo-cell">2025-07-11 13:52:40</td>
+      <td class="foo-cell">AP202204270103</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Ruang ATK</td>
+      <td class="foo-cell">2024-10-21</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_139">
+      <td class="foo-cell">139</td>
+      <td class="foo-cell">2025-07-11 13:48:52</td>
+      <td class="foo-cell">AP202204270104</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Depan Pintu Ruang Loker</td>
+      <td class="foo-cell">2024-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_140">
+      <td class="foo-cell">140</td>
+      <td class="foo-cell">2025-07-11 13:46:59</td>
+      <td class="foo-cell">AP202204270102</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Lorong Samping pintu Lab QA</td>
+      <td class="foo-cell">2024-10-21</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_141">
+      <td class="foo-cell">141</td>
+      <td class="foo-cell">2025-07-11 13:44:55</td>
+      <td class="foo-cell">AP202204270098</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Lorong Depan Ruang Part Assembly</td>
+      <td class="foo-cell">2027-10-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_142">
+      <td class="foo-cell">142</td>
+      <td class="foo-cell">2025-07-11 13:42:15</td>
+      <td class="foo-cell">AP202204270093</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu Ruang Special Tool</td>
+      <td class="foo-cell">2024-04-25</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan,exp 26 Februari 2026</td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_143">
+      <td class="foo-cell">143</td>
+      <td class="foo-cell">2025-07-11 13:39:07</td>
+      <td class="foo-cell">AP202204270080</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Lorong Belakang Kompressor Oil Inject Eksisting</td>
+      <td class="foo-cell">2025-12-15</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_144">
+      <td class="foo-cell">144</td>
+      <td class="foo-cell">2025-07-11 13:31:14</td>
+      <td class="foo-cell">AP202204270084</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Samping Pintu  Ruang Panel LVMDV Eksisting</td>
+      <td class="foo-cell">2027-06-03</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_145">
+      <td class="foo-cell">145</td>
+      <td class="foo-cell">2025-07-11 13:29:20</td>
+      <td class="foo-cell">AP202204270092</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Genset Eksisting</td>
+      <td class="foo-cell">2027-01-17</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_146">
+      <td class="foo-cell">146</td>
+      <td class="foo-cell">2025-07-11 13:28:04</td>
+      <td class="foo-cell">AP202204270091</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 6 Kg</td>
+      <td class="foo-cell">Samping Pintu Genset Existing</td>
+      <td class="foo-cell">2028-03-13</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_147">
+      <td class="foo-cell">147</td>
+      <td class="foo-cell">2025-07-11 13:26:39</td>
+      <td class="foo-cell">AP202204270095</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area Kantin Dalam</td>
+      <td class="foo-cell">2024-12-23</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_148">
+      <td class="foo-cell">148</td>
+      <td class="foo-cell">2025-07-11 13:25:37</td>
+      <td class="foo-cell">AP202204270094</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Area Kantin Luar</td>
+      <td class="foo-cell">2025-12-15</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_149">
+      <td class="foo-cell">149</td>
+      <td class="foo-cell">2025-07-11 13:24:21</td>
+      <td class="foo-cell">AP202204270096</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang Gunung Putri</td>
+      <td class="foo-cell">2027-08-01</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_150">
+      <td class="foo-cell">150</td>
+      <td class="foo-cell">2025-07-11 13:22:09</td>
+      <td class="foo-cell">AP202204270097</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Lorong Absen</td>
+      <td class="foo-cell">2027-10-19</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_151">
+      <td class="foo-cell">151</td>
+      <td class="foo-cell">2025-07-09 10:09:06</td>
+      <td class="foo-cell">AP202206020119</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 6 Kg</td>
+      <td class="foo-cell">Ruang Spare Part</td>
+      <td class="foo-cell">2028-05-16</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_152">
+      <td class="foo-cell">152</td>
+      <td class="foo-cell">2025-07-09 10:07:34</td>
+      <td class="foo-cell">AP202204270106</td>                       
+      <td class="foo-cell">OXIFIRE 11 ES 3,5 Kg</td>
+      <td class="foo-cell">Ruang worksop</td>
+      <td class="foo-cell">2025-12-15</td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_153">
+      <td class="foo-cell">153</td>
+      <td class="foo-cell">2024-12-31 22:33:35</td>
+      <td class="foo-cell">AP202405270149</td>                       
+      <td class="foo-cell">  </td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			<tr id="row_154">
+      <td class="foo-cell">154</td>
+      <td class="foo-cell">2024-12-31 22:32:46</td>
+      <td class="foo-cell">AP202405270150</td>                       
+      <td class="foo-cell">  </td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell"></td>
+      <td class="foo-cell">Kondisi baik secara keseluruhan </td>
+      <td class="foo-cell"></td>  
+
+			</tr>
+	</tbody>
+</table>

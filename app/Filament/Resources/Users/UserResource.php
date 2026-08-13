@@ -32,6 +32,7 @@ class UserResource extends Resource
     {
         /** @var User $user */
         $user = Auth::user();
+
         return $user?->isSuperAdmin() ?? false;
     }
 
@@ -55,9 +56,9 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index'  => ListUsers::route('/'),
+            'index' => ListUsers::route('/'),
             'create' => CreateUser::route('/create'),
-            'edit'   => EditUser::route('/{record}/edit'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }

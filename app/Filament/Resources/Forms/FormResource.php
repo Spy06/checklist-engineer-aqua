@@ -71,7 +71,7 @@ class FormResource extends Resource
         $allIds = [];
         $currentLevel = $rootIds;
 
-        while (!empty($currentLevel)) {
+        while (! empty($currentLevel)) {
             $children = Form::whereIn('parent_id', $currentLevel)->pluck('id')->toArray();
             $allIds = array_merge($allIds, $children);
             $currentLevel = $children;
@@ -100,9 +100,9 @@ class FormResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index'  => ListForms::route('/'),
+            'index' => ListForms::route('/'),
             'create' => CreateForm::route('/create'),
-            'edit'   => EditForm::route('/{record}/edit'),
+            'edit' => EditForm::route('/{record}/edit'),
         ];
     }
 }

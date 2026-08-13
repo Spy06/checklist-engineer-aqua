@@ -41,8 +41,8 @@ class FormsTable
                     ->getStateUsing(fn (Form $record) => $record->is_category ? 'Childable' : 'Option')
                     ->color(fn (string $state) => match ($state) {
                         'Childable' => 'info',
-                        'Option'    => 'success',
-                        default     => 'gray',
+                        'Option' => 'success',
+                        default => 'gray',
                     }),
 
                 TextColumn::make('children_count')
@@ -81,6 +81,7 @@ class FormsTable
                         if ($user->isSuperAdmin()) {
                             return true;
                         }
+
                         // Admin can delete child forms, but NOT the root assigned forms
                         return $record->parent_id !== null;
                     }),

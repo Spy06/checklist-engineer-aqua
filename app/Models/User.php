@@ -22,7 +22,7 @@ use Laravel\Fortify\PasskeyAuthenticatable;
  * @property string $name
  * @property string $username
  * @property string $password
- * @property string $role  (super_admin | admin | responden)
+ * @property string $role (super_admin | admin | responden)
  * @property string|null $remember_token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

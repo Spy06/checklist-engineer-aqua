@@ -32,9 +32,9 @@ class UserSeeder extends Seeder
         User::updateOrCreate(
             ['username' => 'superadmin'],
             [
-                'name'     => 'Super Admin',
+                'name' => 'Super Admin',
                 'password' => Hash::make('password'),
-                'role'     => 'super_admin',
+                'role' => 'super_admin',
             ]
         );
 
@@ -44,9 +44,9 @@ class UserSeeder extends Seeder
         $adminUser = User::updateOrCreate(
             ['username' => 'admin'],
             [
-                'name'     => 'Admin Demo',
+                'name' => 'Admin Demo',
                 'password' => Hash::make('password'),
-                'role'     => 'admin',
+                'role' => 'admin',
             ]
         );
 
@@ -64,9 +64,9 @@ class UserSeeder extends Seeder
         $respondenUser = User::updateOrCreate(
             ['username' => 'responden'],
             [
-                'name'     => 'Responden Demo',
+                'name' => 'Responden Demo',
                 'password' => Hash::make('password'),
-                'role'     => 'responden',
+                'role' => 'responden',
             ]
         );
 

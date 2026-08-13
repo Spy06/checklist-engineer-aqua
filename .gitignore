@@ -22,6 +22,8 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+/forms
+AGENTS.zip
 
 # Google Service Account Credentials
 checklist-engineer-aqua-sync-*.json

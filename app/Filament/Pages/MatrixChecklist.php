@@ -2,19 +2,27 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Pages\Page;
+use App\Concerns\MatrixSummary;
 use App\Models\Form;
 use App\Models\FormSubmission;
+use App\Services\GoogleFormsSyncService;
+use Filament\Actions\Action;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Filament\Pages\Page;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
-use App\Concerns\MatrixSummary;
 
 class MatrixChecklist extends Page
 {
     use MatrixSummary;
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-table-cells';
+
     protected static ?string $navigationLabel = 'Matriks Checklist';
+
     protected static ?string $title = 'Matriks Checklist';
+
     protected static ?int $navigationSort = 2;
 
     protected string $view = 'filament.pages.matrix-checklist';
@@ -22,31 +30,31 @@ class MatrixChecklist extends Page
     protected function getHeaderActions(): array
     {
         return [
-            \Filament\Actions\Action::make('syncGoogleForm')
+            Action::make('syncGoogleForm')
                 ->label('Sync Google Form')
                 ->icon('heroicon-o-arrow-path')
                 ->color('primary')
                 ->form([
-                    \Filament\Forms\Components\TextInput::make('form_id')
+                    TextInput::make('form_id')
                         ->label('Google Form ID')
                         ->required()
                         ->default('1bJXgi5GMANXfesZAXkn77f4KFugpXCwLN7nLkEIKQjk')
                         ->helperText('Contoh: 1bJXgi5GMANXfesZAXkn77f4KFugpXCwLN7nLkEIKQjk'),
-                    \Filament\Forms\Components\TextInput::make('internal_slug')
+                    TextInput::make('internal_slug')
                         ->label('Slug Kategori (Opsional)')
-                        ->helperText('Contoh: mobile-ladder. Jika dikosongkan, script akan mencoba mencari otomatis.')
+                        ->helperText('Contoh: mobile-ladder. Jika dikosongkan, script akan mencoba mencari otomatis.'),
                 ])
-                ->action(function (array $data, \App\Services\GoogleFormsSyncService $syncService) {
+                ->action(function (array $data, GoogleFormsSyncService $syncService) {
                     $result = $syncService->syncForm($data['form_id'], $data['internal_slug'] ?? null);
-                    
+
                     if ($result['status'] === 'success') {
-                        \Filament\Notifications\Notification::make()
+                        Notification::make()
                             ->title('Sinkronisasi Berhasil')
                             ->body($result['message'])
                             ->success()
                             ->send();
                     } else {
-                        \Filament\Notifications\Notification::make()
+                        Notification::make()
                             ->title('Sinkronisasi Gagal')
                             ->body($result['message'])
                             ->danger()
@@ -58,7 +66,7 @@ class MatrixChecklist extends Page
 
     protected function getViewData(): array
     {
-        $currentYear  = Carbon::now()->year;
+        $currentYear = Carbon::now()->year;
         $currentMonth = Carbon::now()->month;
 
         $months = [];
@@ -68,13 +76,13 @@ class MatrixChecklist extends Page
 
         $rootForms = Form::whereNull('parent_id')->orderBy('order')->get();
 
-        $matrix  = $this->buildMatrixRows($rootForms, $months, $currentYear);
+        $matrix = $this->buildMatrixRows($rootForms, $months, $currentYear);
         $summary = $this->buildMonthlySummary($months, $currentYear);
 
         return [
-            'months'      => $months,
-            'matrix'      => $matrix,
-            'summary'     => $summary,
+            'months' => $months,
+            'matrix' => $matrix,
+            'summary' => $summary,
             'currentYear' => $currentYear,
         ];
     }
@@ -82,7 +90,7 @@ class MatrixChecklist extends Page
     /**
      * Build flattened matrix rows recursively with 3-state status.
      *
-     * @param  \Illuminate\Database\Eloquent\Collection<int, Form>  $forms
+     * @param  Collection<int, Form>  $forms
      * @param  array<int, string>  $months
      * @return array<int, array<string, mixed>>
      */
@@ -92,7 +100,7 @@ class MatrixChecklist extends Page
 
         foreach ($forms as $form) {
             $hasChildren = $form->children->count() > 0;
-            $leafIds     = $this->getLeafDescendantIds($form);
+            $leafIds = $this->getLeafDescendantIds($form);
 
             if (! $hasChildren) {
                 $leafIds = [$form->id];
@@ -127,21 +135,21 @@ class MatrixChecklist extends Page
             }
 
             $rows[] = [
-                'id'           => $form->id,
-                'parent_id'    => $parentId,
-                'ancestors'    => $ancestors,
-                'level'        => $level,
-                'title'        => $form->title,
-                'slug'         => $form->slug ?? null,
-                'is_category'  => $form->is_category,
+                'id' => $form->id,
+                'parent_id' => $parentId,
+                'ancestors' => $ancestors,
+                'level' => $level,
+                'title' => $form->title,
+                'slug' => $form->slug ?? null,
+                'is_category' => $form->is_category,
                 'has_children' => $hasChildren,
-                'status'       => $status,
+                'status' => $status,
             ];
 
             if ($hasChildren) {
                 $newAncestors = array_merge($ancestors, [$form->id]);
-                $childRows    = $this->buildMatrixRows($form->children, $months, $currentYear, $level + 1, $form->id, $newAncestors);
-                $rows         = array_merge($rows, $childRows);
+                $childRows = $this->buildMatrixRows($form->children, $months, $currentYear, $level + 1, $form->id, $newAncestors);
+                $rows = array_merge($rows, $childRows);
             }
         }
 
@@ -163,6 +171,7 @@ class MatrixChecklist extends Page
                 $ids = array_merge($ids, $this->getLeafDescendantIds($child));
             }
         }
+
         return $ids;
     }
 }

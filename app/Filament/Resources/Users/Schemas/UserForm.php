@@ -6,7 +6,6 @@ use App\Models\Form;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
-use Illuminate\Support\Facades\DB;
 
 class UserForm
 {
@@ -31,16 +30,16 @@ class UserForm
                     ->required()
                     ->options([
                         'super_admin' => '🔑 Super Admin',
-                        'admin'       => '🛠️ Admin (Terbatas)',
-                        'responden'   => '📋 Responden',
+                        'admin' => '🛠️ Admin (Terbatas)',
+                        'responden' => '📋 Responden',
                     ])
                     ->default('responden')
                     ->live()
                     ->helperText(fn (?string $state): string => match ($state) {
                         'super_admin' => 'Kendali penuh atas seluruh sistem.',
-                        'admin'       => 'Hanya bisa CRUD forms pada bagian yang di-assign.',
-                        'responden'   => 'Hanya bisa mengisi form pada bagian yang di-assign.',
-                        default       => '',
+                        'admin' => 'Hanya bisa CRUD forms pada bagian yang di-assign.',
+                        'responden' => 'Hanya bisa mengisi form pada bagian yang di-assign.',
+                        default => '',
                     }),
 
                 Select::make('assignedForms')

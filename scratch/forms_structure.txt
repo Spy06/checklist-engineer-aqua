@@ -1,0 +1,1715 @@
+========================================
+SLUG: mobile-ladder | ID: 1TsEx5jisS8tlPVuu79qK380fQpdZ2Oh5Y2T48s_ed9E
+TITLE: Form Pemeriksaan Tangga Tidak Tetap (Mobile Ladder)
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Area Pemeriksaan
+  [Choice Question] Name:  (Type: RADIO)
+    - Cimex
+    - Existing
+    - Gede
+  [Page Break] Title: Cimex
+  [Choice Question] Name: Cimex (Type: RADIO)
+    - MLC 01 BLOWING SBO 4
+    - MLC 02 OCS A
+    - MLC 03 OCS B
+  [Page Break] Title: Existing
+  [Choice Question] Name: Existing (Type: RADIO)
+    - MLE 01 WORKSHOP A
+    - MLE 02 WORKSHOP B
+    - MLE 03 LUAR GUDANG CAPEX
+    - MLE 04 COMPRESSOR AF EXISTING
+    - MLE 05 HYDRANT
+    - MLE 06 SBO 1A
+    - MLE 07 SBO 1B
+    - MLE 08 SBO 2A
+    - MLE 09 SBO 2B
+    - MLE 10 SBO 3A
+    - MLE 11 SBO 3B
+    - MLE 12 HUSKY
+    - MLE 13 SOFTDROP
+    - MLE 14 RUANG RESIN
+    - MLE 15 AFVAL
+    - MLE 16 EOL 1
+    - MLE 17 EOL 2
+    - MLE 18 STORAGE PREFORM L1
+    - MLE 19 STORAGE PREFORM L2
+    - MLE 20 STORAGE PREFORM L3
+    - MLE 21 SPECTRUM L2
+    - MLE 22 SPAREPART LANTAI 1
+    - MLE 23 SPAREPART LANTAI 2
+  [Page Break] Title: Gedel
+  [Choice Question] Name: Gede (Type: RADIO)
+    - MLG 01 SBO
+    - MLG 02 SBO
+    - MLG 03 SBO
+    - MLG 04 CT AF GEDE
+    - MLG 05 HPU
+  [Page Break] Title: Checklist Tangga Tidak Tetap
+  [Choice Question] Name: Body (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Step (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Feet/Anti slip (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Lock (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Paku rivet (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Top step (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: lifeline | ID: 1ncZ9JGBDePI1FZVe-8ptAJrO4p3pP_Da5_-StZN6EDQ
+TITLE: Form Pemeriksaan Lifeline
+  [Question] Name: Nama pemeriksa (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Lokasi Pemeriksaan (Type: RADIO)
+    - LLC 01 ROOF
+    - LLC 02 EXTENTION ROOF
+    - LLC 03 LOADING DOK
+    - LLC 04 PENERPALAN
+    - ABC O1 CIP ROOM
+    - LLE 01 ROOF EXISTING
+    - LLE 02 CT AF
+    - LLE 03 LOADING DOK EXISTING
+    - LLE 04 PENERPALAN EXISTING
+    - LLE 05 AFVAL
+    - LLG 01 ROOF GEDE
+    - LLG 02 ROOF GD.BESI BEKAS & OLI
+    - LLG 03  ROOF SOLAR TANK
+    - LLG 04  COMPRESSOR
+    - LLG 05 CHILLER
+    - LLS 01 STORAGE TANK 2500
+  [Choice Question] Name: Sling/Pipa (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tension (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Wire Clip (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Turnbuckle hook & eye (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tiang penyangga dan support (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base plate (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: barrier-dan-self-door-closer | ID: 1mwfNlvPwjj4jqvZbg6OVj4-7Eva5aGwG21eafPfSuBw
+TITLE: Form Pemeriksaan Barrier dan Self Door Closer
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Jenis Pemeriksaan
+  [Choice Question] Name:  (Type: RADIO)
+    - BARRIER & RAILING (BR)
+    - SELF DOOR CLOSER (SDR)
+  [Page Break] Title: Barrier & Railing
+  [Choice Question] Name:  (Type: RADIO)
+    - BR 01 RETAINING WALL GAZEBO L
+    - BR 02 HYDRANT
+    - BR 03 COMPRESSOR EXISTING
+    - BR 04 WORKSHOP
+    - BR 05 TRAFO GEDE
+    - BR 06 GENSETS CIMEX
+    - BR 07 CHILLER CIMEX
+    - BR 08 RETAINING WALL CIMEX
+  [Page Break] Title: SELF DOOR CLOSER (SDR)
+  [Choice Question] Name:  (Type: RADIO)
+    - SDR 01 POS
+    - SDR 02 POS
+    - SDR 03 POS
+    - SDR 04 GARDU PLN
+    - LLE 05 AFVAL
+    - SDR 06 CHARGER CIMEX
+    - SDR 07 GAZEBO GEDE
+    - SDR 08 GAZEBO GEDE
+    - SDR 09 CHILLER GEDE
+    - SDR 10 CHILLER GEDE
+    - SDR 11 LOADING DOK EXISTING
+    - SDR 12 LOADING DOK EXISTING
+    - SDR 13 B3
+    - SDR 14 WT EXISTING
+    - SDR 15 WT EXISTING
+  [Page Break] Title: Form Pemeriksaan Barrier & Railing
+  [Choice Question] Name: Wire (Sling) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Pipa (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Wire Clip (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Turnbuckle hook & eye (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Tiang penyangga dan support (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Page Break] Title: Base plate
+  [Choice Question] Name:  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+========================================
+SLUG: full-body-harness | ID: 1x0YCDoV8wDVuUN1IRWsUxYBFyJvfx_dZMb-93lv8UUo
+TITLE: Form Pemeriksaan FBH (Full Body Harness)
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Lokasi Pemeriksaan (Type: RADIO)
+    - FBH 1 Workshop
+    - FBH 2 Workshop
+    - FBH 3 Workshop
+    - FBH 4 Penerpalan Existing
+    - FBH 5 Penerpalan Existing
+    - FBH 6 Penerpalan Existing
+    - FBH 7 Penerpalan Cimex
+    - FBh 8 Penerpalan Cimex
+    - FBH 9 Penerpalan Cimex
+    - FBH 10 Penerpalan cimex
+    - FBH 11 WT Existing
+    - FBH 12 WT Gede
+    - FBH 13 Confine Space
+    - FBH 14 OCS Cimex
+    - FBH 15 OCS Cimex
+    - FBH 15 WT Cimex
+  [Choice Question] Name: Shoulder Straps (Tali Bahu) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chest & Back Straps (Tali Dada dan Belakang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Waist Straps (Tali Pinggang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Leg Straps (Tali Kaki) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cuts (Ada Luka) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Burns (Terbakar) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Holes (Berlubang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Deterioration (Rusak/aus oleh kimia) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Paint Damage (Kerusakan Warna/Cat) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: D Ring (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chest Carabiner (Hook) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Label, Marking, Mfg Date (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: work-at-height | ID: 1AJ-2475yjGAVJmVtwWJaFmcdEL0gBmFmfa4pst96zZE
+TITLE: Form Pemeriksaan Working at Height
+  [Page Break] Title: Jenis Pemeriksaan
+  [Choice Question] Name:  (Type: RADIO)
+    - Fix Ladder
+    - Mobile Ladder
+    - Full Body haerness (FBH)
+    - Lifeline
+    - Skylight Protection
+    - Scaffolding
+    - Mobilr Elevation (Lifter)
+    - Barrier / Railing
+  [Page Break] Title: Lokasi Pemeriksaan
+  [Choice Question] Name:  (Type: RADIO)
+    - Cimex
+    - Existing
+    - Gede
+    - Sumber & RWH
+  [Page Break] Title: FIX LADDER CIMEX (FLC)
+  [Choice Question] Name: Silahkan Pilih (Type: RADIO)
+    - FLC 01 ROOF CHILLER
+    - FLC 02 ROOF GENSETS
+    - FLC 03 GENSETS
+    - FLC 04 WWTP TANK
+    - FLC 05 VALVE STATION
+    - FLC 06 PEDESTRIAN WT
+    - FLC 07 PEDESTRIAN CIMEX
+    - FLC 08 PEDESTRIAN PENAATAN
+    - FLC 09 PEDESTRIAN WWTP
+    - FLC 10 PALLETIZER
+    - FLC 11 CONVEYOR PALLETIZER
+    - FLC 12 PEDESTRIAN EOL 1
+    - FLC 13 PEDESTRIAN EOL 2
+    - FLC 14 PEDESTRIAN EOL 3
+    - FLC 15 AHU
+    - FLC 16 PREFORM
+    - FLC 17 CAPPER
+    - FLC 18 BLOWING
+    - FLC 19 STORAGE TANK
+    - FLC 20 FINISH TANK
+    - FLC 21 FRESH WATER TANK
+  [Page Break] Title: FIX LADDER EXISTING (FLE)
+  [Choice Question] Name: Silahkan Pilih (Type: RADIO)
+    - FLE 01 ROOF WORKSHOP
+    - FLE 02 ROOF COMPRESSOR
+    - FLE 03 HYDRANT TANK
+    - FLE 04 PEDESTRIAN HYDRANT ROOM
+    - FLE 05 CT AF
+    - FLE 06 BECIS
+    - FLE 07 TOP ROOF (BECIS)
+    - FLE 08 AHU
+    - FLE 09 SILO HUSKY
+    - FLE 10 PLAFOND SBO
+    - FLE 11 CT HUSKY
+    - FLE 12 STORAGE PREFORM L1
+    - FLE 13 STORAGE PREFORM L2
+    - FLE 14 STORAGE PREFORM L3
+    - FLE 15 ROOF WT
+    - FLE 16 FRESH WATER TANK
+    - FLE 17 STORAGE TANK
+    - FLE 18 CHEMICAL TANK
+    - FLE 19 FINISH TANK L1
+    - FLE 20 FINISH TANK L2
+    - FLE 21 FINISH TANK L3
+    - FLE 22 SOFT WATER TANK
+    - FLE 23 WT ROOM
+    - FLE 24 PEDESTRIAN WT
+    - FLE 25 PEDESTRIAN RMPM
+    - FLE 26 PEDESTRIAN RACKING 1
+    - FLE 27 PEDESTRIAN RACKING 2
+    - FLE 28 AFVAL
+    - FLE 29 PEDESTRIAN DATA ENTRY
+    - FLE 30 PEDESTRIAN GAZEBO
+    - FLE- 31 GENSETS
+    - FLE 32 PEDESTRIAN PARKIRAN MOTOR
+    - FLE 33 PEDESTRIAN PERKIRAN MOBIL
+    - FLE 34 PEDESTRIAN GOR
+    - FLE 35 PEDESTRIAN ENGINEERING
+    - FLE 36 PEDESTRIAN WORKSHOP
+    - FLE 37 OFFICE
+    - FLE 38 CONVEYOR PALLETIZER 1
+    - FLE 39 PALLETIZER 1
+    - FLE 40 PEDESTRIAN EOL 1&3
+    - FLE 41 PEDESTRIAN EOL 3&2
+    - FLE 42 CONVEYOR  PALLETIZER 2
+    - FLE 43 CONVEYOR PALLETIZER 3
+    - FLE 44 WRAPROUND 3
+    - FLE 45 SMI
+    - FLE 46 WRAPROUND 2
+    - FLE 47 CARTON FEEDER
+    - FLE 48 CARTON FEEDER L2
+    - FLE 49 CARTON FEEDER L3
+    - FLE 50 CARTON FEEDER L1
+    - FLE 51 CAPPER SBO L1
+    - FLE 52 PREFORM SBO 1
+    - FLE 53 CAPPER & PREFORM SBO 3
+    - FLE 54 CAPPER SBO 2
+    - FLE 55 PREFORM SBO 2
+  [Page Break] Title: FIX LADDER GEDE (FLG)
+  [Choice Question] Name:  (Type: RADIO)
+    - FLG 01 OFFICE L5
+    - FLG 02 PLAFOND SBO
+    - FLG 03 ROOF CT AF
+    - FLG 04 STP
+    - FLG 05 WWTP
+    - FLG 06 SOLAR STORAGE TANK
+    - FLG 07 PEDESTRIAN SOLAR STORAGE TANK
+    - FLG 08 PEDESTRIAN CHILLER
+    - FLG 09 SOFT WATER 1
+    - FLG 10 SOFT WATER 2
+    - FLG 11 STORAGE TANK
+    - FLG 12 CHEMICAL TANK
+    - FLG 13 FRESH WATER TANK
+    - FLG 14 FINISH TANK
+    - FLG 15 CAPPER SBO
+    - FLG 16 VARIO PACK
+    - FLG 17 PALLETIZER
+    - FLG 18 CONVEYOR PALLETIZER
+    - FLG 19 CONVEYOR OUT FILLER
+    - FLG 20 GAZEBO L5
+  [Page Break] Title: FIX LADDER SUMBER & RWH (FLS)
+  [Choice Question] Name:  (Type: RADIO)
+    - FLS 01 RUMAH POMPA
+    - FLS 02 STOARAGE TANK 1
+    - FLS 03 RUMAH SUMBER 1
+    - FLS 04 RWH CIMEX
+    - FLS 05 RWH WT EXISTING
+    - FLS 06 STORAGE TANK 2500 SB 4
+    - FLS 07 STORAGE TANK 2500 ROOM
+    - FLS 08 GIANT TANK
+    - FLS 09  PEDESTRIAN SUMBER 1
+  [Page Break] Title: MOBILE LADDER CIMEX (MLC)
+  [Choice Question] Name:  (Type: RADIO)
+    - MLC 01 BLOWING SBO 4
+    - MLC 02 OCS
+    - MLC 03 OCS
+  [Page Break] Title: MOBILE LADDER EXISTING (MLE)
+  [Choice Question] Name:  (Type: RADIO)
+    - MLE 01 WORKSHOP 1
+    - MLE 02 WORKSHOP 2
+    - MLE 03 LUAR GUDANG CAPEX
+    - MLE 04 COMPRESSOR AF EXISTING
+    - MLE 05 CT AF GEDE
+    - MLE 06 HYDRANT
+    - MLE 07 SBO 1A
+    - MLE 08 SBO 1B
+    - MLE 09 SBO 2A
+    - MLE 10 SBO 3A
+    - MLE 11 SBO 3B
+    - MLE 12 SBO 2A
+    - MLE 13 SBO 2B
+    - MLE 14 HUSKY
+    - MLE 15 SOFTDROP
+    - MLE16 RUANG RESIN
+    - MLE 17 AFVAL
+    - MLE 18 EOL 1
+    - MLE 19 EOL 2
+    - MLE 20 STORAGE PREFORM L1
+    - MLE 21 STORAGE PREFORM L2
+    - MLE 22 STORAGE PREFORM L3
+    - MLE 23 SPECTRUM L2
+    - MLE 24 SPAREPART LANTAI 1
+    - MLE 25 SPAREPART LANTAI 2
+    - MLE 26 HPU
+  [Page Break] Title: MOBILE LEDDER  GEDE (MLG)
+  [Choice Question] Name:  (Type: RADIO)
+    - MLG 01 SBO
+    - MLG 02 SBO
+    - MLG 03 SBO
+  [Page Break] Title: FULL BODY HARNESS (FBH) EXISTING
+  [Choice Question] Name:  (Type: RADIO)
+    - FBH 01 Workshop
+    - FBH 02 Workshop
+    - FBH 03 Workshop
+    - FBH 04 Afval
+    - FBH 05 Penerpalan Existing
+    - FBH 06 Penerpalan Existing
+    - FBH 07 Penerpalan Existing
+    - FBH 08 WT EXISTING
+    - FBH 09 WT EXISTING
+    - FBH 10 Confine Space
+  [Page Break] Title: FULL BODY HARNESS (FBH) GEDE
+  [Choice Question] Name:  (Type: RADIO)
+    - FBH 11 WT Gede
+  [Page Break] Title: FULL BODY HARNESS (FBH) CIMEX
+  [Choice Question] Name:  (Type: RADIO)
+    - FBH 12 PENERPALAN CIMEX
+    - FBH 13 PENERPALAN CIMEX
+    - FBH 14 PENERPALAN CIMEX
+    - FBH 15 PENERPALAN CIMEX
+    - FBH 16 OCS
+    - FBH 17 OCS
+  [Page Break] Title: LIFELINE GEDE (LLG) & ANCOR BOLT GEDE(ABG)
+  [Choice Question] Name:  (Type: RADIO)
+    - LLG 01 ROOF GEDE
+    - LLG 02 ROOF GD.BESI BEKAS & OLI
+    - LL 03  SOLAR TANK
+    - LL 04  COMPRESSOR GEDE
+    - LL 05 CHILLER GEDE
+  [Page Break] Title: LIFELINE EXISTING (LLE) & ANCHOR BOLT EXISTING (ABE)
+  [Choice Question] Name:  (Type: RADIO)
+    - LLE 01 ROOF EXISTING
+    - LLE 02 CT AF
+    - LLE 03 LOADING DOK EXISTING
+    - LLE 04 PENERPALAN EXISTING
+    - LLE 05 AFVAL
+  [Page Break] Title: LIFELINE CIMEX (LLC) & ANCHOR BOLT (ABC)
+  [Choice Question] Name:  (Type: RADIO)
+    - LLC 01 ROOF
+    - LLC 02 EXTENTION ROOF
+    - LLC 03 LOADING DOK
+    - LLC 04 PENERPALAN
+    - ABC O1 CIP ROOM
+  [Page Break] Title: LIFELINE SUMBER (LLS) & ANCHOR BOLT SUMBER (ABS)
+  [Choice Question] Name:  (Type: RADIO)
+    - LLS 01 STORAGE TANK 2500
+  [Page Break] Title: SKYLIGHT PROTECTION (SP)
+  [Choice Question] Name:  (Type: RADIO)
+    - SP CIMEX NO. 01 SAMPAI 84
+    - SP EXISTING NO. 01 SAMPAI 184
+    - SP GIEDE NO. 01 SAMPAI 10
+  [Page Break] Title: BARRIER & RAILING (BR) 
+  [Choice Question] Name:  (Type: RADIO)
+    - BR 01 RETAINING WALL GAZEBO L
+    - BR 02 HYDRANT
+    - BR 03 COMPRESSOR EXISTING
+    - BR 04 WORKSHOP
+    - BR 05 TRAFO GEDE
+    - BR 06 GENSETS CIMEX
+    - BR 07 CHILLER CIMEX
+    - BR 08 RETAINING WALL CIMEX
+  [Page Break] Title: SELF DOOR CLOSER (SDR)
+  [Choice Question] Name:  (Type: RADIO)
+    - SDR 01 POS
+    - SDR 02 POS
+    - SDR 03 POS
+    - SDR 04 GARDU PLN
+    - SDR 05 GARDU PLN
+    - SDR 06 CHARGER CIMEX
+    - SDR 07 GAZEBO GEDE
+    - SDR 08 GAZEBO GEDE
+    - SDR 09 CHILLER GEDE
+    - SDR 10 CHILLER GEDE
+    - SDR 11 LOADING DOK EXISTING
+    - SDR 12 LOADING DOK EXISTING
+    - SDR 13 B3
+    - SDR 14 WT EXISTING
+    - SDR 15 WT EXISTING
+  [Choice Question] Name: Rail (Pegangan) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Cage (Kurungan) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Steps (Anak Tangga) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Akses (Pintu / Barrier) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Body atau Tiang (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Sign dan No Tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Cat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Kunci atau Gembok (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Question] Name: Catatan (Type: Other)
+  [Choice Question] Name: Anak Tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Lock (kunci) kaki tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Kaki tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Anti Slip (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Sign dan No Tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Cat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Top step (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Choice Question] Name: Pembatasan pemakaian tangga / Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available (Tidak tersedia)
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+  [Choice Question] Name: Shoulder Straps (Tali Bahu) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chest & Back Straps (Tali Dada dan Belakang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Waist Straps (Tali Pinggang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Leg Straps (Tali Kaki) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cuts (Ada Luka) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Burns (Terbakar) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Holes (Berlubang) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Deterioration (Rusak/aus oleh kimia) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Paint Damage (Kerusakan Warna/Cat) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: D Ring (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chest Carabiner (Hook) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Label, Marking, Mfg Date (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+  [Choice Question] Name: Wire (Sling) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pipa (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Wire Clip (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Turnbuckle hook & eye (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tiang penyangga dan support (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base plate (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+  [Choice Question] Name: Wire Mesh (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Rangka (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Roofing atau baut (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Lasan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+  [Choice Question] Name: ADJUSTABLE BASE PLATE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: BASE PLATE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: COUPLER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: RODA CASTOR (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: JOINT PIN (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: LONG FRAME (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: RAILING (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: TANGGA (STAIR) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: PLATFORM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: SHORT & LONG CROSS BRACE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: SHORT & LONG PIPE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: TOP PLATFORM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pembatasan dan pengamanan  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+  [Choice Question] Name: Hydraulic System (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform  (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Electric (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Electric (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Electric (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pembatasan atau pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kesimpulan hasil dari pemeriksaan atau rekomendasi perbaikan (Type: Other)
+========================================
+SLUG: mesin-bor-duduk | ID: 1PaPGizj_H39oSx_28lmJM280sPhAULUP8KLcyVFg5i8
+TITLE: Form Checklist Bor Duduk 
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Motor (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Head Drill (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cover (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Ragum (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chuck bit (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Meja (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebersihan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: mesin-press | ID: 1s9NFNDRHNtYwukvVrdicKZ9gar-HQcHiiDhznY0EbcU
+TITLE: Form Checklist Mesin Press
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Pompa (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebocoran (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cylinder (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Frame (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cover guard (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hose (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebersihan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: pintu-geser | ID: 1vTUjTavOsNVw98R9VNKrts5xEmPi2mfiZIZGRx5gWD8
+TITLE: Form Pemeriksaan Pintu Geser
+  [Question] Name: Nama pemeriksa (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Nomor pintu geser
+  [Choice Question] Name:  (Type: RADIO)
+    - PG 01 Pos Security Pintu Masuk
+    - PG 02 Pos Security Pintu Keluar
+    - PG 03 Ruang Sparepart
+    - PG 04 Ruang Capex
+    - PG 05 Mushola L5
+    - PG 06 Area palletizer ke area gd. capex
+    - PG 07 Area produk hold ke RMPM L5
+    - Pg 08 Office Produksi
+    - PG 09 Ruang Special Tool
+    - PG 10 Ruang Resin Husky
+    - PG 11 Unloading Material ke Ruang Preform
+    - PG 12 Unloading Material ke RMPM
+    - PG 13 Area L2 ke Loading Dok
+    - PG 14 Ruang Afval
+    - PG 15 Ruang Kimia
+    - PG 16 Ruang IMC
+    - PG 17 Ruang Limbah B3
+    - PG 18 Charger Forklift Cimex
+    - PG 19 Compressor BM Cimex
+    - PG 20 Ruang Sparepart
+    - PG 21 Resin Ruang Antara
+    - PG 22 Compressor AF Cimex
+    - PG 23 Charger ke FG Cimex
+    - PG 24 Area Pedestrian EOL L5
+    - PG 25 Mushola data entry
+    - PG 26 Ruang
+  [Page Break] Title: Form Ceklis
+  [Choice Question] Name: Motor dan gearbox (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Rail (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Roda atau bearing (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Sambungan baut, rivet atau lasan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cover gearbox (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Proximity switch (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Daun pintu (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Remote (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standar
+    - Not Available
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: rolling-door | ID: 1MwhcNfWvirO004XnANXDG5p4OzAmKbxsAyHmkPGG3qs
+TITLE: Form Checklist Rolling Door
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Jenis Rolling Door
+  [Choice Question] Name: Jenis Rolling Door (Type: RADIO)
+    - Convetional Rolling Door
+    - Speed Rolling Door
+  [Page Break] Title: Nomor Conventional Rolling Door
+  [Choice Question] Name: Nomer Conventional Rolling Door (Type: RADIO)
+    - RD 01 Workshop
+    - RD 02 Gd.Capex
+    - RD 03 Loading Material L5
+    - RD 04 Loading FG Existing Gate 1
+    - Rd 05 Loading FG Existing Gate 2
+    - RD 06 Loading FG Existing Gate 3
+    - RD 07 Loading FG Existing Gate 4
+    - RD 08 Loading FG Existing Gate 5
+    - RD 09 Loading FG Existing Gate 6
+    - RD 10 Loading FG Existing Gate 7
+    - RD 11 Loading FG Existing Gate 8
+    - RD 12 Loading FG Existing Gate 9
+    - RD 13 Keluar Masuk RM 1
+    - RD 14 Keluar Masuk RM 2
+    - RD 15 Storage Preform Existing 1
+    - RD 16 Storage Preform Existing 2
+    - RD 17 RM ke Line 2
+    - RD 18 Loading FG Cimex Gate 1
+    - RD 19 Loading FG Cimex Gate 2
+    - RD 20 Loading FG Cimex Gate 3
+    - RD 21 Loading Material Cimex
+    - RD 22 Storage preform Cimex 1
+    - RD 23 Storage preform Cimex 2
+  [Page Break] Title: Nomor Speed Rolling Door
+  [Choice Question] Name: Nomer Speed Rolling Door (Type: RADIO)
+    - RD 24 Storage Preform Gede 1
+    - RD 25 Storage Preform Gede 2
+  [Page Break] Title: Checklist Conventional Rolling door 
+  [Choice Question] Name: Curtain / Slat (Daun Pintu) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Barrel / Drum / As Roll (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Motor Rolling Door (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Control Box / Panel (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Push Bottom (Up-Stop-Down) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Remote Control (Optional) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Guide Rail / Rel Samping (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Bottom Rail / Botton Bar (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Limit Switch (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: System Pengamanan (Lock Pin) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not available
+  [Question] Name: Catatan (Type: Other)
+  [Page Break] Title: Checklist Speed Rolling door 
+  [Choice Question] Name: Curtain / Door Sheet (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Guide Rail / Side Frame (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Bottom Bar (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Drive Motor (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Control Panel (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Shaft atau Roller (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Hood atau Cover (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Safety Device (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: rak-facility | ID: 1htAepCxxLAnj3Ty1WAf64EbVLyXYhyOsriOfUZ7N4fw
+TITLE: Pengecekan Rak Facility
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah gensets kw 26-851 (Type: Other)
+  [Choice Question] Name: GENSETS KW 26-851 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah air ventilator fan ctf-45 (Type: Other)
+  [Choice Question] Name: AIR VENTILATOR FAN CTF-45 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah plasma cutter cut 60G (Type: Other)
+  [Choice Question] Name: PLASMA CUTTER CUT 60G (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah krisbow jack hammer (Type: Other)
+  [Choice Question] Name: KRISBOW JACK HAMMER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah makita jack hammer (Type: Other)
+  [Choice Question] Name: MAKITA JACK HAMMER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah makita cordless driver drill (Type: Other)
+  [Choice Question] Name: MAKITA CORDLESS DRIVER DRILL (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah electric drain cleaner (Type: Other)
+  [Choice Question] Name: ELECTRIC DRAIN CLEANER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah baby compressor (Type: Other)
+  [Choice Question] Name: BABY COMPRESSOR (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: skylife-protection | ID: 1gE_BEpadasEfm-RlJN8d-if9_5njmrrZI8x6pwck5HY
+TITLE: Form Pemeriksaan Skylight Protection
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Skylight Protection (SP)
+  [Choice Question] Name:  (Type: RADIO)
+    - SP CIMEX No. 01-84
+    - SP EXISTING No. 01-184
+    - SP GEDE No. 01-10
+  [Page Break] Title: Form Pemeriksaan Skylight Protection
+  [Choice Question] Name: Wire Mesh (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Rangka (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Roofing atau baut (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Lasan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+========================================
+SLUG: lemari-apd-workshop | ID: 1-DeqGzFxS6PhLoRYUAiS7Azk-UBfndier1v5D0QxAac
+TITLE: Pengecekan Lemari APD
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah welding helmet (Type: Other)
+  [Choice Question] Name: WELDING HELMET (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah helmet (Type: Other)
+  [Choice Question] Name: HELMET (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah full body harness (Type: Other)
+  [Choice Question] Name: FULL BODY HARNESS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah face shield (Type: Other)
+  [Choice Question] Name: FACE SHIELD (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah welding gloves (Type: Other)
+  [Choice Question] Name: WELDING GLOVES (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah insulating gloves (Type: Other)
+  [Choice Question] Name: INSULATING GLOVES (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah ear muppler (Type: Other)
+  [Choice Question] Name: EAR MUPPLER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah welding sleeve (Type: Other)
+  [Choice Question] Name: WELDING SLEEVE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah welding apron (Type: Other)
+  [Choice Question] Name: WELDING APRON (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah welding cloth (Type: Other)
+  [Choice Question] Name: WELDING CLOTH (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah resfirator (Type: Other)
+  [Choice Question] Name: RESFIRATOR (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah welding blanket (Type: Other)
+  [Choice Question] Name: WELDING BLANKET (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: jh-makita-01 | ID: 1zLNvQkVSLY659Uho-sS5rE7GcB5Hvbf6uetemyo_PsM
+TITLE: Form Checklist Jack Hammer Makita
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Side handle (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chisel / Pahat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Body (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chisel chuck (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Motor (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Switch (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebersihan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: lemari-tool-3 | ID: 14NNApxwgulJ1f42qvo_SJfMgxwXeyM2Y1_4F_rm46GA
+TITLE: Pengecekan Lemari Tool 3
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah kunci pipa 18 " (Type: Other)
+  [Choice Question] Name: KUNCI PIPA 18 " (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah kunci pipa 24 " (Type: Other)
+  [Choice Question] Name: KUNCI PIPA 24 " (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah kunci pipa 12 " (Type: Other)
+  [Choice Question] Name: KUNCI PIPA 12 " (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah kop kaca (Type: Other)
+  [Choice Question] Name: KOP KACA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pistol pemanas (Type: Other)
+  [Choice Question] Name: PISTOL PEMANAS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah flashlight (Type: Other)
+  [Choice Question] Name: FLASHLIGHT (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah multimeter (Type: Other)
+  [Choice Question] Name: MULTIMETER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pistol cat (Type: Other)
+  [Choice Question] Name: PISTOL CAT (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah meteran 50 M (Type: Other)
+  [Choice Question] Name: METERAN 50 M (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gerinda tangan (Type: Other)
+  [Choice Question] Name: GERINDA TANGAN (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah mesin las plastik nt-wj25s (Type: Other)
+  [Choice Question] Name: MESIN LAS PLASTIK NT-WJ25S (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah mata bor beton 24 mm (Type: Other)
+  [Choice Question] Name: MATA BOR BETON 24 MM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah alat ulir pipa (Type: Other)
+  [Choice Question] Name: ALAT ULIR PIPA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah box alat listrik (Type: Other)
+  [Choice Question] Name: BOX ALAT LISTRIK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah box alat mekanik (Type: Other)
+  [Choice Question] Name: BOX ALAT MEKANIK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: sodu-gas | ID: 1BYpbO1V16_Iakso7P0AD6rTXScjnkb2d3zYlwnP6dvE
+TITLE: Form Checklist Storage Gas (Butane)
+  [Choice Question] Name: Nama pemeriksaan (Type: RADIO)
+    - Andryana Arif
+    - Ahmad Safari K
+    - Iman Solehudin
+    - M Gani
+    - Asep Hindrayana
+    - Ardian Lesmana
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Area storage gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tabung Gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Keterangan tambahan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: lemari-tool-4 | ID: 1GecukQ9tplYowYaapyealj5CmRXUCpeLyTwgy-6_eVQ
+TITLE: Pengecekan Lemari Tool 4
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah tang kakatua (Type: Other)
+  [Choice Question] Name: TANG KAKATUA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah linggis besar (Type: Other)
+  [Choice Question] Name: LINGGIS BESAR (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah linggis kecil (Type: Other)
+  [Choice Question] Name: LINGGIS KECIL (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pahat kayu (Type: Other)
+  [Choice Question] Name: PAHAT KAYU (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah palu karet (Type: Other)
+  [Choice Question] Name: PALU KARET (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gergaji kayu (Type: Other)
+  [Choice Question] Name: GERGAJI KAYU (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pistol silikon (Type: Other)
+  [Choice Question] Name: PISTOL SILIKON (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah siku hitam (Type: Other)
+  [Choice Question] Name: SIKU HITAM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah siku kayu (Type: Other)
+  [Choice Question] Name: SIKU KAYU (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah palu besi 5 kg (Type: Other)
+  [Choice Question] Name: PALU BESI 5 KG (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pahat pipih (Type: Other)
+  [Choice Question] Name: PAHAT PIPIH (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah pahat lancip (Type: Other)
+  [Choice Question] Name: PAHAT LANCIP (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah mistar baja (Type: Other)
+  [Choice Question] Name: MISTAR BAJA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah lot (Type: Other)
+  [Choice Question] Name: LOT (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: mesin-gerinda-duduk | ID: 1k299QYDsIMWByKtxlK8ufdZg86XEMqF7Ho79idH0LaY
+TITLE: Form Checklist Gerinda Duduk
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Motor (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Soft wheel grinding (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hard wheel grinding (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pelindung mata (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Push buttom (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tool rest (Penahan benda kerja) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebersihan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Kebersihan (Type: Other)
+========================================
+SLUG: lemari-tool-2 | ID: 1__y-rJb347p6e1araQE9re9A_2FfXvqIw3-1NjXQCJ0
+TITLE: Pengecekan Lemari Tool 2
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah gerinda lurus (Type: Other)
+  [Choice Question] Name: GERINDA LURUS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah  gerinda segitiga (Type: Other)
+  [Choice Question] Name: GERINDA SEGITIGA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gergaji akrilik (Type: Other)
+  [Choice Question] Name: GERGAJI AKRILIK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gerinda potong (Type: Other)
+  [Choice Question] Name: GERINDA POTONG (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah bor tangan (Type: Other)
+  [Choice Question] Name: BOR TANGAN (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: lemari-tool-1 | ID: 1Ds5H-ThjSrV-BRZss8WVGkm88LojE7uO4EB5ioHXvzE
+TITLE: Pengecekan Lemari Tool 1
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah kunci kombinasi (Type: Other)
+  [Choice Question] Name: KUNCI KOMBINASI (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah kikir (Type: Other)
+  [Choice Question] Name: KIKIR (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gergaji besi (Type: Other)
+  [Choice Question] Name: GERGAJI BESI (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah palu plastik (Type: Other)
+  [Choice Question] Name: PALU PLASTIK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah palu besi (Type: Other)
+  [Choice Question] Name: PALU BESI (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah penitik (Type: Other)
+  [Choice Question] Name: PENITIK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah drift pin (Type: Other)
+  [Choice Question] Name: DRIFT PIN (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah tang pelat (Type: Other)
+  [Choice Question] Name: TANG PELAT (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah tang rivet (Type: Other)
+  [Choice Question] Name: TANG RIVET (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gunting seng lurus (Type: Other)
+  [Choice Question] Name: GUNTING SENG LURUS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah gunting seng bengkok (Type: Other)
+  [Choice Question] Name: GUNTING SENG BENGKOK (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah obeng plus
+ (Type: Other)
+  [Choice Question] Name: OBENG PLUS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah obeng minus (Type: Other)
+  [Choice Question] Name: OBENG MINUS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah jangka (Type: Other)
+  [Choice Question] Name: JANGKA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah waterpass (Type: Other)
+  [Choice Question] Name: WATERPASS (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: mesin-las-argon | ID: 16Oay89rcSyZRIK8WSYb2gVbEIuVzxjh8ljonQP5Orow
+TITLE: Form Checklist Mesin Las Argon
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Tabung Argon (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebocoran (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Mesin Las (Type: RADIO)
+    - Sesuai standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Trolley (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: forklift | ID: 1SV4vR2g-STWWSEPgSp0yjy774ai0AtEjgI1wplvFNcU
+TITLE: Form Checklist Lifter
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Hydraulic System 1 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System 2 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System 3 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Hydraulic System 4 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform 1 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Platform 2 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot 1 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Base & Foot 2 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Electric 1 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Electric 2 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan 1 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan 2 (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: argon-dan-nitrogen-storage-gas | ID: 1VS8xfUuc_Ny2KU2vSrR7v-OtF-JfUpcSOupXUE2Yl8Q
+TITLE: Form Checklist Storage Gas (Ar & N2)
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Area storage gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tabung Gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Keterangan tambahan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: freon-storage | ID: 1AjN3QObwEfhOdpqvyP1ipjNKrYU9ce_4VS8Dnxgll38
+TITLE: Form Checklist Storage Gas (Fr)
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Area storage gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Tabung Gas (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Keterangan tambahan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: scaffolding | ID: 1s9312KChUe8_mH49zxCWygtSS1LhGS3XRFUYvGex_6k
+TITLE: Pengecekan Scaffolding 
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Question] Name: Jumlah adjustable base plate (Type: Other)
+  [Choice Question] Name: ADJUSTABLE BASE PLATE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah base plate (Type: Other)
+  [Choice Question] Name: BASE PLATE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah coupler (Type: Other)
+  [Choice Question] Name: COUPLER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah roda caster (Type: Other)
+  [Choice Question] Name: RODA CASTER (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah joint pin (Type: Other)
+  [Choice Question] Name: JOINT PIN (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah frame (Type: Other)
+  [Choice Question] Name: FRAME (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah railing (Type: Other)
+  [Choice Question] Name: RAILING (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah tangga (Type: Other)
+  [Choice Question] Name: TANGGA (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah platform (Type: Other)
+  [Choice Question] Name: PLATFORM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah top platform (Type: Other)
+  [Choice Question] Name: TOP PLATFORM (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah long & short cross brace (Type: Other)
+  [Choice Question] Name: LONG & SHORT CROSS BRACE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Jumlah long & short pipe (Type: Other)
+  [Choice Question] Name: LONG & SHORT PIPE (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: fix-ladder | ID: 1WHfZggFDdRvZ-M-RyAZsZy0d7UVdL3y7iUvxjMbSIXA
+TITLE: Form Pemeriksaan Tangga Tetap (Fix Ladder)
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Page Break] Title: Bagian Tanpa Judul
+  [Choice Question] Name: Area Pemeriksaan (Type: RADIO)
+    - Cimex
+    - Existing
+    - Gede
+    - Sumber
+  [Page Break] Title: Cimex
+  [Choice Question] Name: Cimex (Type: RADIO)
+    - FLC 01 ROOF CHILLER
+    - FLC 02 ROOF GENSETS
+    - FLC 03 GENSETS
+    - FLC 04 WWTP TANK
+    - FLC 05 VALVE STATION
+    - FLC 06 PEDESTRIAN WT
+    - FLC 07 PEDESTRIAN CIMEX
+    - FLC 08 PEDESTRIAN PENAATAN
+    - FLC 09 PEDESTRIAN WWTP
+    - FLC 10 PALLETIZER
+    - FLC 11 CONVEYOR PALLETIZER
+    - FLC 12 PEDESTRIAN EOL a
+    - FLC 13 PEDESTRIAN EOL B
+    - FLC 14 PEDESTRIAN EOL C
+    - FLC 15 AHU
+    - FLC 16 PREFORM
+    - FLC 17 CAPPER
+    - FLC 18 BLOWING
+    - FLC 19 STORAGE TANK
+    - FLC 20 FINISH TANK
+    - FLC 21 FRESH WATER TANK
+  [Page Break] Title: Existing
+  [Choice Question] Name: Existing (Type: RADIO)
+    - FLE 01 ROOF WORKSHOP
+    - FLE 02 ROOF COMPRESSOR
+    - FLE 03 HYDRANT TANK
+    - FLE 04 PEDESTRIAN HYDRANT ROOM
+    - FLE 05 CT AF
+    - FLE 06 BECIS
+    - FLE 07 TOP ROOF (BECIS)
+    - FLE 08 HUSKY
+    - FLE 09 SILO HUSKY
+    - FLE 10 PLAFOND SBO
+    - FLE 11 CT HUSKY
+    - FLE 12 STORAGE PREFORM L1
+    - FLE 13 STORAGE PREFORM L2
+    - FLE 14 STORAGE PREFORM L3
+    - FLE 15 ROOF WT
+    - FLE 16 FRESH WATER TANK
+    - FLE 17 STORAGE TANK
+    - FLE 18 CHEMICAL TANK
+    - FLE 19 FINISH TANK L1
+    - FLE 20 FINISH TANK L2
+    - FLE 21 FINISH TANK L3
+    - FLE 22 SOFT WATER TANK
+    - FLE 23 WT ROOM
+    - FLE 24 PEDESTRIAN WT
+    - FLE 25 PEDESTRIAN RMPM
+    - FLE 26 PEDESTRIAN RACKING
+    - FLE 27 PEDESTRIAN RTS
+    - FLE 28 AFVAL
+    - FLE 29 PEDESTRIAN DATA ENTRY
+    - FLE 30 PEDESTRIAN GAZEBO
+    - FLE 31 GENSETS
+    - FLE 32 PEDESTRIAN PARKIRAN MOTOR
+    - FLE 33 PEDESTRIAN PARKIRAN MOBIL
+    - FLE 34 PEDESTRIAN GOR
+    - FLE 35 PEDESTRIAN ENGINEERING
+    - FLE 36 PEDESTRIAN WORKSHOP
+    - FLE 37 OFFICE
+    - FLE 38 CONVEYOR PALLETIZER 1
+    - FLE 39 PALLETIZER 1
+    - FLE 40 PEDESTRIAN EOL 1
+    - FLE 41 PEDESTRIAN EOL 2
+    - FLE 42 CONVEYOR PALLETIZER 2
+    - FLE 43 CONVEYOR PALLETIZER 3
+    - FLE 44 WRAPROUND 3
+    - FLE 45 SMI
+    - FLE 46 WRAPROUND 2
+    - FLE 47 CARTON FEEDER
+    - FLE 48 INFEED PALLET  CARTON FEEDER A
+    - FLE 49 INFEED PALLET  CARTON FEEDER B
+    - FLE 50 CONVEYOR CARTON FEEDER L2
+    - FLE 51 CONVEYOR CARTON FEEDER L3
+    - FLE 52 CONVEYOR CARTON FEEDER L1
+    - FLE 53 SMI CARTON FEEDER L1
+    - FLE 54 CAPPER SBO L1
+    - FLE 55 PREFORM SBO 1
+    - FLE 56 CAPPER & PREFORM SBO 3
+    - FLE 57 CAPPER SBO 2
+    - FLE 58 PREFORM SBO 2
+    - FLE 59 SPAREPART ROOM
+    - FLE 60 CF Platform L3
+    - FLE 61 PEDESTRIAN LOADING DOK EXISTING
+    - FLE 62 CF Platform L2
+    - FLE 63 CF Platform L1
+  [Page Break] Title: Gede
+  [Choice Question] Name: Gede (Type: RADIO)
+    - FLG 01 OFFICE L5
+    - FLG 02 PLAFOND SBO
+    - FLG 03 ROOF CT AF
+    - FLG 04 ROOF GENSETS L5
+    - FLG 05 STP
+    - FLG 06 WWTP
+    - FLG 07 SOLAR STORAGE TANK
+    - FLG 08 PEDESTRIAN SOLAR STORAGE TANK
+    - FLG 09 PEDESTRIAN CHILLER L5
+    - FLG 10 SOFT WATER A
+    - FLG 11 SOFT WATER B
+    - FLG 12 STORAGE TANK
+    - FLG 13 CHEMICAL TANK
+    - FLG 14 FRESH WATER TANK
+    - FLG 15 FINISH TANK
+    - FLG 16 CAPPER SBO
+    - FLG 17 VARIO PACK A
+    - FLG 18 VARIO PACK B
+    - FLG 19 VARIO PACK C
+    - FLG 20 CONVEYOR PALLETIZER
+    - FLG 21 PALLETIZER
+    - FLG 22 CONVEYOR OUT FILLER
+    - FLG 23 GAZEBO L5
+    - FLG 24 FILLER SBO 5
+    - FLG 25 PREFORM SBO 5
+    - FLG 26 PEDESTRIAN WWTP GEDE
+    - FLG 27 HOPPER
+  [Page Break] Title: Sumber
+  [Choice Question] Name: Sumber (Type: RADIO)
+    - FLS 01 RUMAH POMPA
+    - FLS 02 STORAGE TANK 1
+    - FLS 03 RUMAH SUMBER 1
+    - FLS 04 RWH CIMEX
+    - FLS 05 RWH WT EXISTING
+    - FLS 06 STORAGE TANK 2500 SB 4
+    - FLS 07 ROOM STORAGE TANK 2500
+    - FLS 08 GIANT TANK
+    - FLS 09 TITIK PENAATAN SUMBER 1
+  [Page Break] Title: Form Ceklis
+  [Choice Question] Name: Rail/Pegangan (Diagonal Ladder), Cage/Kurungan (Vertical Ladder) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Lasan, Baut atau Rivet (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Steps (Anak Tangga) / Walkway (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Akses (Pintu / Barrier) (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Body atau Tiang (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+    - Not Available
+  [Choice Question] Name: Sign atau Nomer Tangga (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Cat, Stainless atau Concrete (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kunci atau Gembok (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standar
+    - Not Available
+  [Question] Name: Catatan (Type: Other)
+========================================
+SLUG: jh-krisbow-01 | ID: 1xsy0UHCslOddC_APZxhEikz-Sx07hfaC_VB17WPJZ28
+TITLE: Form Checklist Jack Hammer Krisbow
+  [Question] Name: Nama pemeriksaan (Type: Other)
+  [Question] Name: Tanggal pemeriksaan (Type: Other)
+  [Choice Question] Name: Side handle (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chisel / Pahat (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Body (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Chisel chuck (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Motor (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Switch (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Pengamanan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Choice Question] Name: Kebersihan (Type: RADIO)
+    - Sesuai Standard
+    - Tidak sesuai standard
+  [Question] Name: Catatan (Type: Other)
