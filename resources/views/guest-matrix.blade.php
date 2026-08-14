@@ -12,6 +12,7 @@
  modal: { open: false, loading: false, title: '', submissions: [], error: null },
  matrixSummary: {{ json_encode($summary) }},
  annualSummary: {{ json_encode($annualSummary) }},
+ monthsList: {{ json_encode($monthsList) }},
  downloadModalOpen: false,
  navbarHeight: 64,
 
@@ -169,6 +170,7 @@
  this.matrixStatusMap = finishData.matrixStatusMap;
  if (finishData.annualSummary) { this.annualSummary = finishData.annualSummary; this.computeDonut(); }
  if (finishData.summary) { this.matrixSummary = finishData.summary; }
+ if (finishData.monthsList) { this.monthsList = finishData.monthsList; }
  this.refreshedAt = finishData.refreshedAt;
  } catch(e) {
  console.error('Auto-refresh error:', e);
@@ -191,6 +193,7 @@
  this.matrixStatusMap = data.matrixStatusMap;
  if (data.annualSummary) { this.annualSummary = data.annualSummary; this.computeDonut(); }
  if (data.summary) { this.matrixSummary = data.summary; }
+ if (data.monthsList) { this.monthsList = data.monthsList; }
  } catch(e) {
  console.error('Filter error:', e);
  } finally {
@@ -532,7 +535,7 @@
  {{-- RIGHT: Export button --}}
  <div class="flex-shrink-0 flex flex-col justify-center border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6 w-full md:w-auto text-center">
  <div class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Export Data</div>
- <button @click="downloadModalOpen = true"
+<button @click="downloadModalOpen = true"
  class="inline-flex justify-center items-center gap-1.5 px-4 py-2 text-xs font-bold rounded-lg bg-green-600 hover:bg-green-700 active:bg-green-800 text-white shadow-md transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ">
  <flux:icon name="arrow-down-tray" class="w-3.5 h-3.5" />
  Export Excel
@@ -555,80 +558,96 @@
  <th class="py-4 px-5 font-bold text-sm text-gray-800 " style="width: 240px;">
  Form Checklist
  </th>
- @foreach($months as $monthKey => $monthName)
+ <template x-for="m in monthsList" :key="m.key">
  <th class="py-4 px-2 font-semibold text-sm text-center text-gray-600 ">
  <div class="flex flex-col items-center gap-1">
- <span>{{ substr($monthName, 0, 3) }}</span>
- <button type="button" @click="openSummary('{{ $monthKey }}', '{{ $monthName }}')" class="text-cyan-600 hover:text-cyan-800 transition-colors" title="Ringkasan Bulan Ini">
+ <span x-text="(() => {
+     let parts = m.name.split(' ');
+     let shortMonth = parts[0].substring(0, 3);
+     let shortYear = parts[1] ? parts[1].substring(2) : '';
+     return shortMonth + (shortYear ? ' \'' + shortYear : '');
+ })()"></span>
+ <button type="button" @click="openSummary(m.key, m.name)" class="text-cyan-600 hover:text-cyan-800 transition-colors" title="Ringkasan Bulan Ini">
  <flux:icon name="information-circle" class="w-4 h-4" />
  </button>
  </div>
  </th>
- @endforeach
+ </template>
  </tr>
  </thead>
  <tbody class="divide-y divide-gray-100 ">
- @foreach($matrix as $row)
+ <template x-for="row in matrixRows" :key="row.id">
  <tr class="group hover:bg-gray-50 transition-colors"
- x-show="visibleIds.includes({{ $row['id'] }}) @if($row['parent_id']) && (expandAll || {{ json_encode($row['ancestors']) }}.every(id => expandedRows.includes(id))) @endif"
+ x-show="visibleIds.includes(row.id) && (!row.parent_id || (expandAll || row.ancestors.every(id => expandedRows.includes(id))))"
  x-cloak
  >
- <td class="py-3 px-5 text-sm" style="padding-left: {{ 1.25 + ($row['level'] * 1.5) }}rem;">
+ <td class="py-3 px-5 text-sm" :style="`padding-left: ${1.25 + (row.level * 1.5)}rem;`">
  <div class="flex items-center gap-2 min-w-0">
- @if($row['has_children'])
- <button @click="toggleRow({{ $row['id'] }})"
+ <template x-if="row.has_children">
+ <button @click="toggleRow(row.id)"
  class="flex items-center gap-2 text-left group-hover:text-cyan-700 transition-colors min-w-0">
  <span class="flex-shrink-0 p-1 bg-transparent hover:bg-gray-200 rounded text-gray-500 transition-colors">
- <flux:icon name="chevron-down" class="w-4 h-4" x-show="expandAll || expandedRows.includes({{ $row['id'] }})" />
- <flux:icon name="chevron-right" class="w-4 h-4" x-show="!(expandAll || expandedRows.includes({{ $row['id'] }}))" />
+ <flux:icon name="chevron-down" class="w-4 h-4" x-show="expandAll || expandedRows.includes(row.id)" />
+ <flux:icon name="chevron-right" class="w-4 h-4" x-show="!(expandAll || expandedRows.includes(row.id))" />
  </span>
- <span class="font-semibold text-gray-800 group-hover:text-cyan-700 truncate" title="{{ $row['title'] }}">{{ $row['title'] }}</span>
+ <span class="font-semibold text-gray-800 group-hover:text-cyan-700 truncate" :title="row.title" x-text="row.title"></span>
  </button>
- @else
+ </template>
+ <template x-if="!row.has_children">
+ <div class="flex items-center gap-2 min-w-0 w-full">
  <div class="flex-shrink-0 w-6"></div>
- <span class="{{ $row['level'] > 0 ? 'text-gray-700 text-xs' : 'font-semibold text-gray-800 ' }} truncate" title="{{ $row['title'] }}">
- {{ $row['title'] }}
- </span>
- @endif
+ <span :class="row.level > 0 ? 'text-gray-700 text-xs' : 'font-semibold text-gray-800 '" class="truncate" :title="row.title" x-text="row.title"></span>
+ </div>
+ </template>
  </div>
  </td>
 
- @foreach($row['status'] as $monthKey => $initialStatus)
+ <template x-for="m in monthsList" :key="m.key">
  <td class="py-3 px-2 text-center">
- @if(!$row['has_children'])
- <button @click="openDetail({{ $row['id'] }}, '{{ $monthKey }}', '{{ addslashes($row['title']) }}')"
+ <template x-if="!row.has_children">
+ <button @click="openDetail(row.id, m.key, row.title)"
  class="inline-flex items-center justify-center w-8 h-8 rounded-full transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-500 "
- :title="cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'full' ? 'Sudah diisi — klik untuk lihat detail' : 'Belum diisi'">
- @else
- <div class="inline-flex items-center justify-center w-8 h-8 rounded-full"
- :title="cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'full' ? 'Semua sub-form sudah diisi' : (cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'partial' ? 'Sebagian sudah diisi' : 'Belum ada pengisian')">
- @endif
-
- {{-- Full (check) --}}
- <span x-show="cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'full'"
+ :title="cellStatus(row.id, m.key) === 'full' ? 'Sudah diisi — klik untuk lihat detail' : 'Belum diisi'">
+ 
+ <span x-show="cellStatus(row.id, m.key) === 'full'"
  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 ">
  <flux:icon name="check" class="w-4 h-4 stroke-[3]" />
  </span>
- {{-- Partial (dash) --}}
- <span x-show="cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'partial'"
+ <span x-show="cellStatus(row.id, m.key) === 'partial'"
  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-600 ">
  <flux:icon name="minus" class="w-4 h-4 stroke-[3]" />
  </span>
- {{-- None (X) --}}
- <span x-show="cellStatus({{ $row['id'] }}, '{{ $monthKey }}') === 'none'"
+ <span x-show="cellStatus(row.id, m.key) === 'none'"
  class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-50 text-red-400 ">
  <flux:icon name="x-mark" class="w-4 h-4 stroke-[3]" />
  </span>
-
- @if(!$row['has_children'])
+ 
  </button>
- @else
+ </template>
+ 
+ <template x-if="row.has_children">
+ <div class="inline-flex items-center justify-center w-8 h-8 rounded-full"
+ :title="cellStatus(row.id, m.key) === 'full' ? 'Semua sub-form sudah diisi' : (cellStatus(row.id, m.key) === 'partial' ? 'Sebagian sudah diisi' : 'Belum ada pengisian')">
+ 
+ <span x-show="cellStatus(row.id, m.key) === 'full'"
+ class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 ">
+ <flux:icon name="check" class="w-4 h-4 stroke-[3]" />
+ </span>
+ <span x-show="cellStatus(row.id, m.key) === 'partial'"
+ class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-600 ">
+ <flux:icon name="minus" class="w-4 h-4 stroke-[3]" />
+ </span>
+ <span x-show="cellStatus(row.id, m.key) === 'none'"
+ class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-50 text-red-400 ">
+ <flux:icon name="x-mark" class="w-4 h-4 stroke-[3]" />
+ </span>
+ 
  </div>
- @endif
+ </template>
  </td>
- @endforeach
+ </template>
  </tr>
- @endforeach
+ </template>
  </tbody>
  </table>
  </div>

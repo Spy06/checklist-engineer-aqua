@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6" style="text-align: center; font-weight: bold; font-size: 16px;">
+                    Data Checklist Export (2025-09-24 to 2025-12-26)
+                </th>
+            </tr>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Form Checklist</th>
+                <th>Pemeriksa</th>
+                <th>Status</th>
+                <th>Catatan / Failures</th>
+            </tr>
+        </thead>
+        <tbody>
+                            <tr>
+                    <td>1</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Kesannya: mantap mas, sangat terinspirasi dari mas mister
+Pesannya:teruslah menjadi mister alpro yes mas
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Semoga asprak-asprak lainnya semakin semangat mengajar budak-budak macam kami ni. tunggu saya di episode asprak berikutnya. Semangat, berjuang,suksess!!!!, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah sebuah variabel khusus yang fungsiny bukan menyimpan nilai data secara langsung (seperti angka atau teks) melainkan menyimpan alamat memori dari data lain. Dia juga disebut sebagai variabel yang merujuk pada obyek lain. Pointer berisi alamat dari suatu obyek lain(obyek yang dikatakan ditunjuk oleh pointer). Digunakan untuk mengalokasikan memori secara dinamia sehingga mampu menghemat memori dan eksekusi program yang cepat, Pesan dan Kesan untuk Aspraknya: Kesannya:pendiem cimit cimit gitu
+Pesannya:harga stickernya diturunin lah mas, Bagaimana proses berjalannya bubble sort: Proses berjalannya algoritma bubble sort didasarkan pada ide sederhana untuk secara berulang kali membandingkan elemen yang berdekatan(tetangga) dan menukarnya jika urutannya salah, hingga elemen terbesar itu terangkat atau berpindah ke posisi akhir yang benar pada setiap iterasi nya. Simpelnya kalo bubble sort itu dia pertukaran satu persatu dengan tetangganya sendiri., Nama Asprak 2: Mohamad aqil karomy, Apa itu array dan kegunaannya: Array itu menyimpan beberapa item data dengan tipe data yang sama didalam sebuah balik memori yang berdekatan yang kemudian dibagi menjadi beberapa slot. Secara sederhananya, array itu adalah koleksi atau kumpulan elemen data yang memiliki tipe data yang sama dan disimpan dalam lokasi memori yang berdekatan secara fisik. Kegunaannya itu adalah, untuk menyimpan data homogen, akses cepat, implementasi struktur data yang lain, representasi struktur dia dimensi, Perbedaan antara python dan c/c++: Kalo C itu bahasa yang dikompilasi(cepat, manajemen memori manual, tipe status) yang ide untuk performa tinggi dan hardware.kalo Python itu bahasa yang diinterpresrasi (lebih lambat, manajemen memori otomatis, tipe dinamis yang ideal untuk pengembangan cepat dan analisis data, Jelaskan potongan script dibawah: Mendefinisikan dan memanggil fungsi swap (tukar) yang menggunakan pointer (int*X, int *y) sebagai argumen. Fungsi ini bekerja dengan mengakses alamat memori variabel asli (num1 dan num2) yang dipanggil menggunakan operator &amp;) untuk menukar nilai keduanya. Hasilnya, nilai num1(2) dan nim2(3) berhasil ditukar menjadi num1=3 dan  num2=2 setelah pemanggilan fungsi, NIM: H1D025119, Nama:
+contoh: Mohammad Aqil Karomy: Anjani, Shift KRS: C, Shift Sekarang: E, Nama Asprak 1: Farhan hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>2</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Kesan selama ini cukup baik. pesan semoga tetap sehat selalu untuk asprak mas farhan. SEMOGA BISA AKRAB KEDEPANNYA
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Kesan selama ini cukup baik. pesan semoga tetap sehat selalu semuaaaaa, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variabel yang menyimpan alamat memori suatu variabel lain, Pesan dan Kesan untuk Aspraknya: Kesan selama ini cukup baik. pesan semoga tetap sehat selalu untuk asprak mas aqil. SEMOGA BISA AKRAB KEDEPANNYA, Bagaimana proses berjalannya bubble sort: Bubble sort bekerja dengan membandingkan elemen yang bersebelahan dan menukarnya berulang sampai data tersusun, Nama Asprak 2: Aqil, Apa itu array dan kegunaannya: Array adalah struktur data yang menampung banyak nilai dengan tipe yang sama dalam satu variabel, Perbedaan antara python dan c/c++: C/C++ harus dikompilasi sebelum dijalankan, sedangkan Python dijalankan melalui interpreter, Jelaskan potongan script dibawah: -Fungsi swap bertugas menukar nilai dua variabel.
+-temp digunakan sebagai tempat penyimpanan sementara.
+-Nilai yang ditunjuk pointer x disimpan ke temp, lalu x diisi nilai y, dan y diisi nilai dari temp.
+-Fungsi dipanggil dengan mengirim alamat num1 dan num2., NIM: H1D025150, Nama:
+contoh: Mohammad Aqil Karomy: Moh Faturrohman Cesar Purwoko , Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>3</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): kerenn euyy aspraknyahh jelasinnya mudah dipahami, semangat terus yahh kakak kakakk kuliyeaahnyaa sehat selalu, be happy!!!!!
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: kemreeeennn, semangat kakakk kakakk be happyy, Jelaskan apa yang dimaksud dengan pointer: pointer itu variabel yang isinya adalah alamat memori dari variabel lain. jadi bukan nyimpen nilai langsung, tapi nunjuk ke lokasi tempat nilai itu disimpen., Pesan dan Kesan untuk Aspraknya: kerenn euyy aspraknyahh jelasinnya mudah dipahami, semangat terus yahh kakak kakakk kuliyeaahnyaa sehat selalu, be happy!!!!!, Bagaimana proses berjalannya bubble sort: bubble sort itu membandingkan dua data yang bersebelahan, kalau urutannya salah itu dituker. Proses ini diulang terus dari awal sampe akhir beberapa kali sampe datanya urut. kayak “gelembungin” nilai besar ke atas/belakang., Nama Asprak 2: M. Aqil Karomy, Apa itu array dan kegunaannya: array adalah kumpulan data dengan tipe yang sama yang disimpen berurutan di memori. fungsinya biar kita bisa nyimpen banyak data tanpa perlu bikin variabel satu-satu., Perbedaan antara python dan c/c++: Python itu lebih simpel, ngga perlu deklarasi tipe data, syntaxnya lebih santai.
+kalo C/C++ itu tipe datanya harus jelas, performanya lebih cepet, agak lebih kompleks dari python, Jelaskan potongan script dibawah: itu pake pointer buat nuker nilai 2 variabel.
+swap(&amp;num1, &amp;num2) ngirim alamat dari num1 dan num2. Di dlm fungsi, nilai yang ditunjuk pointer dituker pakai variabel sementara temp. jadinya nilai variabel asli bakal berubah., NIM: H1D025103, Nama:
+contoh: Mohammad Aqil Karomy: Mazsa Amelia Maranatha, Shift KRS: H, Shift Sekarang: E, Nama Asprak 1: Farhan Hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>4</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Semangat dan semoga cepat lulusnya
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Semangat dan semoga semua cepat lulus, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah Variabel yang menyimpan alat memori dari variabel lain, Pesan dan Kesan untuk Aspraknya: Semangat dan semoga cepat lulusnya, Bagaimana proses berjalannya bubble sort: membandingkan dua elemen yang bersebelahan, lalu tukar posisi jika salah satunya paling besar atau salah, Nama Asprak 2: Muhammad Aqil Karomy, Apa itu array dan kegunaannya: Array adalah digunakan untuk menyimpan sebuah data dengan tipe yang sama dalam satu wadah. Kegunaannya untuk menyimpan banyak data dengan tipe yang sama dalam satu wadah sehingga mudah diakses dan diolah , Perbedaan antara python dan c/c++: Python tidak perlu di deklarasikan datanya, sedangkan untuk c/c++ perlu di deklarasikan datanya , Jelaskan potongan script dibawah: int *x, int *y, NIM: H1D025137 , Nama:
+contoh: Mohammad Aqil Karomy: Muhammad Farrel Rasyandi , Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Farhan Hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>5</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Mas aspraknya joss, tetap semangattt
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Mas asprak yg lain jg joss, tetap semangattt, Jelaskan apa yang dimaksud dengan pointer: variabel yang menyimpan alamat memori dari suatu variabel, Pesan dan Kesan untuk Aspraknya: Mas aspraknya joss, tetap semangattt, Bagaimana proses berjalannya bubble sort: membandingkan elemen yang berdekatan, elemen yg lebih kecil akan pindah ke depan dan dilakukan berulang kali sampai seluruh data terurut, Nama Asprak 2: Mas Farhan, Apa itu array dan kegunaannya: struktur data yang menyimpan kumpulan data dengan tipe yang sama dalam satu variabel, Perbedaan antara python dan c/c++: C/C++ adalah bahasa yang di-kompilasi (Compiled), sedangkan python adalah bahasa yg di interpretasi
+
+c/c++ wajib titik koma
+phyton tidak, Jelaskan potongan script dibawah: Fungsi “void swap”
+Deklarasi fungsi swap
+
+int temp = variabel temp bertipe integer
+temp = *x = alamat x atau pointer x disimpan ke temp
+*x = *y;: alamat x disalin ke alamat y 
+*y = temp Nilai awal yang disimpan di temp disalin ke alamat yang ditunjuk oleh pointer y 3.Pemanggilan fungsi
+
+int num1 = 2, num2 = -3;: Variabel num1 diinisialisasi dengan 2 dan num2 dengan -3
+, NIM: H1D025139, Nama:
+contoh: Mohammad Aqil Karomy: Pandu Hendra Baskara, Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Mas Aqil
+                    </td>
+                </tr>
+                            <tr>
+                    <td>6</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Menyenangkan dan sangat mantappp
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Sangat membantu dalam praktikum , Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variabel yang menyimpan alamat memori dari variabel lain. Dengan pointer, kita bisa mengakses atau mengubah nilai yang berada di alamat memori tersebut secara tidak langsung. Pointer banyak digunakan untuk pengolahan data tingkat lanjut, manipulasi array, dan pengelolaan memori, Pesan dan Kesan untuk Aspraknya: Menyenangkan dan sangat mantapp, Bagaimana proses berjalannya bubble sort: Bubble sort bekerja dengan cara membandingkan dua elemen yang berdekatan, kemudian menukarnya jika urutannya salah, Nama Asprak 2: Mas Farhan, Apa itu array dan kegunaannya: Array adalah struktur data yang terdiri dari kumpulan elemen dengan tipe data yang sama, disimpan dalam satu variabel dan diakses melalui indeks.
+Kegunaannya:
+
+1. Menyimpan banyak data dalam satu variabel
+
+2. Memudahkan pengolahan data secara berurutan
+
+3. Menghemat memori dan mempermudah pengelolaan data terstruktur, Perbedaan antara python dan c/c++: Python lebih sederhana dan mudah digunakan, namun lebih lambat karena bersifat interpreted. C++ lebih cepat dan powerful untuk kontrol sistem serta manajemen memori, tetapi sintaksnya lebih kompleks., Jelaskan potongan script dibawah: 1. Fungsi void swap
+
+Fungsi swap digunakan untuk menukar nilai dua variabel
+
+2.Isi fungsi
+
+-int temp;: Mendeklarasikan variabel temp untuk penyimpanan sementara
+
+-temp = *x;: Nilai dari variabel yang ditunjuk oleh pointer x disimpan ke temp
+
+-*x = *y;: Nilai dari variabel yang ditunjuk oleh pointer y disalin ke alamat yang ditunjuk oleh pointer x
+
+-*y = temp;: Nilai awal yang disimpan di temp disalin ke alamat yang ditunjuk oleh pointer y 3.Pemanggilan fungsi
+
+-int num1 = 2, num2 = -3;: Variabel num1 diinisialisasi dengan 2 dan num2 dengan -3, NIM: H1D025141, Nama:
+contoh: Mohammad Aqil Karomy: Masacio Yurcel Aicun Ramadhan, Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Mas Aqil
+                    </td>
+                </tr>
+                            <tr>
+                    <td>7</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Sehat sukses selalu
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Sehat sukses selalu, Jelaskan apa yang dimaksud dengan pointer: Suatu variabel yang menyimpan alamat memori value, Pesan dan Kesan untuk Aspraknya: Sehat sukses selalu , Bagaimana proses berjalannya bubble sort: Bubble sort mencari nilai dari yang paling besar dahulu. Jika n1 lebih besar dari n2, maka n1 bergeser ke kanan n2 proses ini dilakukan berulang hingga angka paling kanan adalah yang terbesar
+(urutan besar kecilnya tergantung user), Nama Asprak 2: Mister (lupa namanya), Apa itu array dan kegunaannya: Array sebuah pendefinisian perintah di bahasa pemrograman untuk mempersingkat. Kegunaannya untuk menjadikan beberapa variabel yang sama menjadi satu.
+Contoh
+Int A=5
+Int A=1
+Int A=2
+
+Dalam array
+Int A=[5, 1, 2], Perbedaan antara python dan c/c++: Python: Memiliki library, indentasi harus sesuai, bahasa pemrograman yang mudah dipahami (seperti bahasa manusia), tidak memakai akhiran titik koma (;), sering digunakan untuk membuat web, aplikasi
+
+C/C++: Memakai akhiran titik koma (;), indentasi tidak berpengaruh., Jelaskan potongan script dibawah: Prosedur dalam C untuk menampilkan alamat memori dari value num1 dan num2, NIM: H1D025127, Nama:
+contoh: Mohammad Aqil Karomy: Anggit Latifah Kinanti , Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Muhammad Aqil Karony
+                    </td>
+                </tr>
+                            <tr>
+                    <td>8</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Seru dan menyenangkan
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Semangat, Jelaskan apa yang dimaksud dengan pointer: Variabel yang menyimpan alamat memori dari variabel lain, Pesan dan Kesan untuk Aspraknya: Seru dan menyenangkan, Bagaimana proses berjalannya bubble sort: Memasukkan algoritma
+Tukar elemen jika angka lebih kecil dibandingkan sebelahnya
+Urutkan elemen dari yang terbesar ke terkecil, Nama Asprak 2: Farhan Hakim, Apa itu array dan kegunaannya: Struktur data yang menyimpan kumpulan elemen, digunakan untuk mengelompokkan data, Perbedaan antara python dan c/c++: Syntax, Jelaskan potongan script dibawah: Swap digunakan untuk menukar nilai variabel, NIM: H1D025145, Nama:
+contoh: Mohammad Aqil Karomy: Nadhifa Marcella Sri Rizanti, Shift KRS: H, Shift Sekarang: E, Nama Asprak 1: Muhammad Aqil Karomy
+                    </td>
+                </tr>
+                            <tr>
+                    <td>9</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Mantap, kwkwk
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: 🤔, semoga sehat selalu , semoga cepet lulus, Jelaskan apa yang dimaksud dengan pointer: Variabel yang berisi alamat dari suatu variabel lain pada memory komputer , Pesan dan Kesan untuk Aspraknya: Mantap, wkwkwkkw, Bagaimana proses berjalannya bubble sort: Membandingkan dua angka mulai dari yang paling awal, dan menaruh yang paling besar pada posisi kanan, kemudian, kemudian mengecualikan index paling kanan ketika semua data sudah dilewati, terus diulangi hingga semua data dikecualikan , Nama Asprak 2: Muhammad Aqil, Apa itu array dan kegunaannya: Array merupakan suatu variabel yang berisi kumpulan data dengan type data yang sama, berguna untuk menyimpan banyak data sejenis tanpa membuat banyak variabel yang mirip, Perbedaan antara python dan c/c++: Python merupakan bahasa pemrograman yang dibuat untuk memudahkan pengguna khususnya dalam pembuatan Artificial Intelligence, sedangkan C/C++ adalah bahasa yang awalnya dibuat sehingga manusia bisa merekayasa sistem komputer dan memiliki kebebasan untuk mengakses bagian komputer jauh lebih dalam dibandingkan dengan python akan tetapi, python memiliki banyak library siap guna sehingga lebih populer pada masa sekarang , Jelaskan potongan script dibawah: Menukar value dari kedua variabel menggunakan prosedur dengan parameter yang int(reference), NIM: H1D025123, Nama:
+contoh: Mohammad Aqil Karomy: Felix Ogen Gelael, Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>10</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): seru belajar alpro bareng mister karena diajarkan secara runtut dan rinci, kalau ada yang bingung langsung dijelaskan, untuk pesan, terimakasih karena telah menjadi asprak alpro untuk shift e, semangat terus untuk kuliahnya mas
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: seru belajar alpro bareng mister karena diajarkan secara runtut dan rinci, kalau ada yang bingung langsung dijelaskan, untuk pesan, terimakasih karena telah menjadi asprak alpro untuk shift e, semangat terus untuk kuliahnya mas , Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variabel yang menyimpan alamat memori dari variabel lain, Pesan dan Kesan untuk Aspraknya: seru belajar alpro bareng mister karena diajarkan secara runtut dan rinci, kalau ada yang bingung langsung dijelaskan, untuk pesan, terimakasih karena telah menjadi asprak alpro untuk shift e, semangat terus untuk kuliahnya mas , Bagaimana proses berjalannya bubble sort: Membandingkan dan menukar pasangan antar elemen yang berdeketan dengan cara berulang kali sampai data dari yang terbesar disebelah kanan dan data terkecil di sebelah kiri, Nama Asprak 2: Kak Aqil Kuromi, Apa itu array dan kegunaannya: Array adalah struktur data yang menyimpan kumpulan data dengan tipe [“…”] yang sama dalam satu values di suatu variable, Perbedaan antara python dan c/c++: C/C++ adalah bahasa pemrograman yang di kompilasi atau Compiled dengan artinya kode dari bahasa tersebut menarik sumber yang harus diubah terlebih dahulu menjadi kode mesin oleh compiler di extenstion kalau di vs code sebelum dapat dijalankan/run sepenuhnya, sedangkan bahasa python adalah bahasa pemrograman yang interpretasi yang artinya kode python dijalankan baris per baris secara langsung oleh interpreter python tanpa perlu dikompilasi menjadi bahasa mesin terlebih dahulu., Jelaskan potongan script dibawah: 1. Fungsi void swap
+= Deklarasi fungsi swap
+
+2.Isi fungsi
+= int temp : Mendeklarasikan variabel temp untuk penyimpanan sementara
+
+• temp = *x; : Nilai dari variabel yang ditunjuk oleh pointer x disimpan ke temp
+
+• *x = *y; : Nilai dari variabel yang ditunjuk oleh pointer y disalin ke alamat yang ditunjuk oleh pointer x
+
+• *y = temp; :Nilai awal yang disimpan di temp disalin ke alamat yang ditunjuk oleh pointer y
+
+3.Pemanggilan fungsi
+= int num1 = 2, 
+num2 = -3
+Variabel num1 diinisialisasi dengan = 2 dan num2 dengan = -3, NIM: H1D025153, Nama:
+contoh: Mohammad Aqil Karomy: Aba Ibrahim Akbar, Shift KRS: G, Shift Sekarang: E, Nama Asprak 1: Kak Farhan Hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>11</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): kesan: seru, pulang gasik, enak buat di obrolin
+pesan: lanjut asprak lagi
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: semangat yah, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variabel yang menyimpan alamat memori dari variabel lain, bukan nilai langsung dari variabel tersebut., Pesan dan Kesan untuk Aspraknya: sama kaya di atas, Bagaimana proses berjalannya bubble sort: algoritma pengurutan yang bekerja dengan cara membandingkan dua elemen yang berdekatan lalu menukarnya jika urutannya salah. Proses ini diulangi terus-menerus sampai seluruh data berada dalam urutan yang benar, Nama Asprak 2: Muhammad Aqil Karomy, Apa itu array dan kegunaannya: Array adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dengan tipe data yang sama dan tersusun dalam urutan indeks. Kegunaan array: Menyimpan banyak data sejenis dalam satu variabel, Memudahkan akses data dengan indeks, Perbedaan antara python dan c/c++: Python adalah bahasa interpreted dan high-level dengan sintaks sederhana serta manajemen memori otomatis. C/C++ adalah bahasa compiled dan lebih low-level dengan sintaks ketat dan manajemen memori manual. Python lebih cepat untuk mempelajarinya akan tetapi lambat, sedangkat C/C++ mudah cepat dan banyak di gunakan di banyak kegiatan. , Jelaskan potongan script dibawah: Kode tersebut adalah fungsi swap dalam bahasa C yang bertujuan menukar nilai dua variabel menggunakan pointer. penjelasan yang aku tau: void swap(int *x, int *y)
+Fungsi menerima alamat dari dua variabel bertipe int., NIM: H1D025135, Nama:
+contoh: Mohammad Aqil Karomy: Daffa Faiq Arganta, Shift KRS: H, Shift Sekarang: E, Nama Asprak 1: Farhan Hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>12</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): baik, imut, lucu, humoris
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: baik juga, Jelaskan apa yang dimaksud dengan pointer: pointer adalah variabel yang menyimpan alamat memori dari variabel lain, Pesan dan Kesan untuk Aspraknya: baik, imut, lucu, humoris, Bagaimana proses berjalannya bubble sort: mengecek data pertama, kemudian dibantingkan dengan data di sebelahnya, jika memenuhi kondisi yaitu lebih kecil/besar maka data pertama akan ditukar dengan data di sebelahnya, kemudian proses tersebut alan dilakukan sampai kondisi data pertama yang ditukar tadi salah (lebib kecil/besar), Nama Asprak 2: Mister Aqil, Apa itu array dan kegunaannya: array adalah variabel yang dapat menyimpan banyak nilai dan menggunakan index yang dimulai dari 0 untuk elemen pertama, index digunakan untuk mengakses nilai yg ada pada array tsb
+
+kegunaan array : untuk menyimpan banyak nilai dengan hanya 1 deklarasi variabel, sehingga program akan menjadi lebih efisien , Perbedaan antara python dan c/c++: sintaksnya beda, sintaks pada python sangat sederhana, kemudian python tidak menggunakaan {}, dan indentasi mempengaruhi error atau tidaknya sebuah prpgram, sementara pada c++ menggunakan {} untuk menandakan awal dan akhir dari sebuah argumen program, Jelaskan potongan script dibawah: fungsi swap menerima alamat memori dari 2 nilai sebagai parameter, yaitu x dan y, kemudian di dalam fungsi tersebut, kedua nilai akan ditukar, NIM: H1D025113, Nama:
+contoh: Mohammad Aqil Karomy: Muhammad Rifqi Agus Setianto, Shift KRS: F, Shift Sekarang: E, Nama Asprak 1: Mister Farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>13</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): mantap, bagus, keren, sukses selalu
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: keren, Jelaskan apa yang dimaksud dengan pointer: Pointer merupakan variabel yang berisi alamat dari sebuah nilai, Pesan dan Kesan untuk Aspraknya: bagus, keren, mantap, sukses selalu, Bagaimana proses berjalannya bubble sort: bubble sort bekerja dengan cara membandingkan nilai yang bersebelahan kemudian mengurutkannya dan dilakukan secara berulang sampai terurut dan nilai paling besar berada di pojok/ujung kanan, Nama Asprak 2: Kak Romi, Apa itu array dan kegunaannya: array adalah elemen yang berisi nilai nilai (sekelompok nilai) yang tipenya sama. digunakan untuk mengakses data dengan lebih cepat, Perbedaan antara python dan c/c++: python menggunakan indentasi sedangkan c++ menggunakan kurung kurawal dan titik koma. python bahasanya lebih mudah sedangkan c++ ribet/susah, Jelaskan potongan script dibawah: script tersebut merupakan contoh dari kode yang digunakan untuk menukar nilai, NIM: H1D025108, Nama:
+contoh: Mohammad Aqil Karomy: Aulia Rahma Feriza, Shift KRS: C, Shift Sekarang: E, Nama Asprak 1: Kak Farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>14</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Kesan: mantep ngejelasin nya sama asik buat diajak nanya
+Pesan: jangan telat ngirim link pengumpulan😹
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Okee, Jelaskan apa yang dimaksud dengan pointer: melihat lokasi alamat memori dari variable, Pesan dan Kesan untuk Aspraknya: kesan: mantep ngejelasin nya sama asik buat diajak nanya
+Pesan: jangan telat ngirim link pengumpulan😹, Bagaimana proses berjalannya bubble sort: membanding kan nilai nya dengan nilai sebelah nya jika program meminta urutkan dari terkecil-terbesar, bubble sort akan membandingkan nilai awal dan sebelahnya, lalu sampai nilai terendah setelah itu akan menyortir sampai semua nilai sudah terurut, Nama Asprak 2: Muhammad Aqil Karomy, Apa itu array dan kegunaannya: menyimpan value mulai dari int,float, string secara banyak lalu dapat memanggil nya kembali, Perbedaan antara python dan c/c++: python interpreter mengeksekusi kode secara  1 baris lanjut baris lain nya, sementara c/c++ compiler yang dapat mengeksekusi secara pararel yang membuat kode di c/c++ itu lebih cepat, Jelaskan potongan script dibawah: menukar nilai num1 ke -3 dan num2 ke 2 menggunakan pointer, NIM: H1D025151, Nama:
+contoh: Mohammad Aqil Karomy: Raditya Ghani, Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Farhan Hakim
+                    </td>
+                </tr>
+                            <tr>
+                    <td>15</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Makasi kak udah bantu kalo ada yg error. walau kalo tanya di discord lama balesnya, Semangat trs buat kedepannya kak
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Semangat dan sukses terus, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variable yang tidak menyimpan data, tapi menyimpan alamat memori dari variabel lain., Pesan dan Kesan untuk Aspraknya: Terima kasih juga buat ka romy, terutama udah bantu pas vs code ku error, semangat terus buat kedepannya, Bagaimana proses berjalannya bubble sort: Proses berjalannya bubble sort, jadi bubble sort akan membandingkan dan menukar elemen-elemen data yang bersebelahan secara berulang. Jika urutannya salah, elemen terbesar / terkecil akan menggelembung (bubble up) ke posisi akhir., Nama Asprak 2: Kak Romy, Apa itu array dan kegunaannya: Array adalah kumpulan data dengan tipe sama yang disimpan dalam memori yang berdekatan dan diakses menggunakan Indeks.
+Kegunaan array:
+- Untuk menyimpan data secara berkelompok
+- Untuk mengakses data dengan cepat
+- Dengan array, lebih efisien dalam akses data
+- Memudahkan ketika mau melakukan perulangan, Perbedaan antara python dan c/c++: Python :
+- Tidak perlu mendeklarasikan tipe data di awal
+- Prosesnya jauh lebih cepat dan efisien karena sintaks yang ringkas
+- Otomatis dan lebih sederhana, tetapi bisa mengkonsumsi lebih banyak memori
+
+C/C++ :
+- Perlu mendeklarasikan tipe data
+- Prosesnya bisa lebih lama karena sintaxnya panjang dan detail
+- Perlu manajemen memori manual, lebih rentan kesalahan., Jelaskan potongan script dibawah: Program ini menukar nilai dua variabel integer, yaitu num1 yang nilainya 2 dan num2 yang nilianya -3. Program ini menggunakan Pointer (int *x, int *y) dengan mengirimkan alamat memori variabel asli (&amp;num1, &amp;num2) ke fungsi swap, fungsi itu bisa memodifikasi nilai variabel di luar fungsi utama. 
+Penukaran terjadi melalui tiga langkah: Menyimpan nilai num1 di variabel lokal temp (temp = *x), mengganti nilai num1 dengan nilai num2 (*x = *y), dan mengganti nilai num2 dengan nilai yang tersimpan di temp (*y = temp), sehingga penukaran terjadi, NIM: H1D025124, Nama:
+contoh: Mohammad Aqil Karomy: Zuvika Dwi Yustina, Shift KRS: D, Shift Sekarang: E, Nama Asprak 1: Kak Farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>16</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): kerenn
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: keren semuanyaa, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah variabel yang menyimpan alamat memori dari variabel lain, Pesan dan Kesan untuk Aspraknya: kerenn, Bagaimana proses berjalannya bubble sort: membandingkan dan menukar pasangan elemen yang berdekatan berulang kali sampai seluruh data terurut, Nama Asprak 2: mas karomi, Apa itu array dan kegunaannya: struktur data yang menyimpan kumpulan data dengan tipe yang sama dalam satu variable penyimpanan sementara, Perbedaan antara python dan c/c++: C/C++ adalah bahasa yang di-kompilasi. yang kode harus diubah terlebih dahulu menjadi kode mesin oleh compiler sebelum dapat dijalankan, 
+
+sedangkan python ada bahasa yg di interpretasi, Jelaskan potongan script dibawah: 1. void swap : menDeklarasikan fungsi swap
+
+2.Isi 
+-int temp: Mendeklarasikan variabel temp untuk penyimpanan sementara
+-temp = *x; Nilai variabel yang ditunjuk oleh pointer x yang disimpan ke temp
+-*x = *y; Nilai variabel yang ditunjuk oleh pointer y disalin ke alamat yang ditunjuk oleh pointer x
+-*y = temp; Nilai awal yang disimpan di temp disalin ke alamat yang ditunjuk oleh pointer y
+
+3.Pemanggilan fungsi
+-int num1 = 2, num2 = -3: Variabel num1 digambarkan dengan 2 dan num2 dengan -3 
+swap : pemanggilan swap, NIM: H1D025101, Nama:
+contoh: Mohammad Aqil Karomy: Salsabilla Rahma Diena , Shift KRS: C, Shift Sekarang: E, Nama Asprak 1: mas farhan
+                    </td>
+                </tr>
+                            <tr>
+                    <td>17</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Pembawaan dan penjelasannya mudah dipahami dengan bahasa yg memang mudah dicerna
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Tidak terlalu paham dengan asprak lain karena tidak diajar langsung oleh mereka, namum semoga saja memiliki sifat sama dengan asatidz diatas (mas farhan dan mas aqil), Jelaskan apa yang dimaksud dengan pointer: Nama untuk program yg berguna untuk memunculkan variabel alamat program pada memori, Pesan dan Kesan untuk Aspraknya: Chill, membawa materi dengan sama mudah dipahaminya dengan mas farhan, Bagaimana proses berjalannya bubble sort: yaitu looping untuk menyortir data atau variabel yg telah di tulis di dalam program untuk menampilkan hasil yg sudah tersortir atau terpilih dari sebelumnya ada banyak data, singkatnya untuk memunculkan hasil dengan perhitungan yg panjang, Nama Asprak 2: Ust. Aqil عاقل, Apa itu array dan kegunaannya: Array berguna untuk meletakkan data pada &quot;ruang&quot; didalam program, kegunaanya adalah mempermudah pemilihan dan pemanggilan data yang tersimpan di masing masing &quot;ruang&quot;, Perbedaan antara python dan c/c++: jelas berbeda di cara penulisan program, yang mana bahasa C/C++ cenderung lebih detail dan kompleks serta lebih sulit untuk dipahami oleh pemula sedangkan python lebih mudah untuk dipahami pemula karena struktur bahasanya tidak sedetail dan sekompleks C/C++, Jelaskan potongan script dibawah: prosedur pointer, NIM: H1D025120, Nama:
+contoh: Mohammad Aqil Karomy: Syarif Hidayat , Shift KRS: I, Shift Sekarang: E, Nama Asprak 1: Ust. Farhan فرحان
+                    </td>
+                </tr>
+                            <tr>
+                    <td>18</td>
+                    <td>2025-11-26</td>
+                    <td>A</td>
+                    <td>Unknown User</td>
+                    
+                                        <td>Not Good / Tidak Sesuai</td>
+                    <td>
+                        Pesan dan Kesan untuk Aspraknya (Catatan): Kesannya seru, jadi praktikum ga tegang. Pesannya semangat terus, udh sih itu aja :)
+
+[IMPORTED FAILURES]: Pesan dan Kesan untuk Asprak lain: Kesannya seru, pesannya semangat teruss, Jelaskan apa yang dimaksud dengan pointer: Pointer adalah penunjuk yang berfungsi untuk arah untuk sebuah bubble sort dari sebuah perangkat untuk perangkat lainnya., Pesan dan Kesan untuk Aspraknya: Kakaknya calm, cool... Tapi kadang agak random. Pesannya juga jangan lupa senyum ;), Bagaimana proses berjalannya bubble sort: Sebuah perangkat mengirimkan sebuah data kepada perangkat lain yang dikirimkan secara cepat. Sistem pengiriman berbentuk seperti gelembung yang menyimpan data di dalam gelembung tersebut lalu mengirimkan data tersebut ke perangkat lain. (Gelembung tersebut berfungsi seperti transportasi untuk mengirimkan data)., Nama Asprak 2: Muhammad Aqil Karomi, Apa itu array dan kegunaannya: Array adalah susunan yang terdapat di dalam suatu program dan kegunaannya adalah supaya program yang tersusun tidak berantakan , Perbedaan antara python dan c/c++: Python menggunakan bahasa yang jauh lebih simple, c/c++ menggunakan runtutan yang lebih jelas dan panjang, sehingga bahasa yang digunakan pun jauh lebih rumit., Jelaskan potongan script dibawah: X = num1 ; Y= num2, NIM: H1D025167 , Nama:
+contoh: Mohammad Aqil Karomy: Raisa Naadhirah Aguslizar , Shift KRS: F, Shift Sekarang: E, Nama Asprak 1: Farhan Hakim
+                    </td>
+                </tr>
+                    </tbody>
+    </table>
+</body>
+</html>

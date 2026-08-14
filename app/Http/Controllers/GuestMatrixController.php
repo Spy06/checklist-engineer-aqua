@@ -40,6 +40,11 @@ class GuestMatrixController extends Controller
         $end = Carbon::now()->endOfYear();
         $months = $this->generateMonthRange($start, $end);
 
+        $monthsList = [];
+        foreach ($months as $k => $v) {
+            $monthsList[] = ['key' => $k, 'name' => $v];
+        }
+
         $rootForms = Form::with('children.children.children.children')
             ->whereNull('parent_id')
             ->orderBy('order')
@@ -48,18 +53,26 @@ class GuestMatrixController extends Controller
         // ---------- Fetch live submissions (cached) ----------
         $liveSubmissions = $this->fetchLiveSubmissions($syncService);
 
-        // Build session cache for submission-detail modal
+        // Filter submissions to the active date range (current year by default)
+        $filteredSubmissions = $liveSubmissions->filter(function ($sub) use ($start, $end) {
+            if (empty($sub['date'])) {
+                return false;
+            }
+            return Carbon::parse($sub['date'])->between($start, $end);
+        });
+
+        // Build session cache for submission-detail modal (contains all to avoid re-fetch)
         Cache::put(
             'live_submissions_'.session()->getId(),
             $liveSubmissions->values()->toArray(),
             now()->addMinutes(self::CACHE_TTL + 5)
         );
 
-        $filledLookup = $this->buildFilledLookupFromArrays($liveSubmissions);
+        $filledLookup = $this->buildFilledLookupFromArrays($filteredSubmissions);
         $matrix = $this->buildMatrixRows($rootForms, $months, $filledLookup);
-        $summary = $this->buildMonthlySummary($months, $liveSubmissions, []);
+        $summary = $this->buildMonthlySummary($months, $filteredSubmissions, []);
 
-        $annualSummary = $this->buildAnnualSummaryFromFiltered($liveSubmissions, []);
+        $annualSummary = $this->buildAnnualSummaryFromFiltered($filteredSubmissions, []);
 
         $matrixStatusMap = [];
         foreach ($matrix as $row) {
@@ -68,6 +81,7 @@ class GuestMatrixController extends Controller
 
         return view('guest-matrix', [
             'months' => $months,
+            'monthsList' => $monthsList,
             'matrix' => $matrix,
             'matrixStatusMap' => $matrixStatusMap,
             'summary' => $summary,
@@ -155,6 +169,12 @@ class GuestMatrixController extends Controller
         });
         
         $months = $this->generateMonthRange($start, $end);
+        
+        $monthsList = [];
+        foreach ($months as $k => $v) {
+            $monthsList[] = ['key' => $k, 'name' => $v];
+        }
+
         $rootForms = Form::with('children.children.children.children')->whereNull('parent_id')->orderBy('order')->get();
 
         $filledLookup = $this->buildFilledLookupFromArrays($filteredSubmissions);
@@ -171,6 +191,7 @@ class GuestMatrixController extends Controller
             'matrixStatusMap' => $matrixStatusMap,
             'annualSummary' => $annualSummary,
             'summary' => $summary,
+            'monthsList' => $monthsList,
             'refreshedAt' => now()->translatedFormat('H:i:s'),
         ]);
     }
@@ -462,6 +483,11 @@ class GuestMatrixController extends Controller
         // Generate dynamic month columns from start to end date
         $months = $this->generateMonthRange($start, $end);
 
+        $monthsList = [];
+        foreach ($months as $k => $v) {
+            $monthsList[] = ['key' => $k, 'name' => $v];
+        }
+
         $rootForms = Form::with('children.children.children.children')
             ->whereNull('parent_id')
             ->orderBy('order')
@@ -481,6 +507,7 @@ class GuestMatrixController extends Controller
             'matrixStatusMap' => $matrixStatusMap,
             'annualSummary' => $annualSummary,
             'summary' => $summary,
+            'monthsList' => $monthsList,
         ]);
     }
 
