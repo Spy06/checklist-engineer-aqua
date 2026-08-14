@@ -98,6 +98,20 @@ class PanduAdminController extends Controller
             $path = storage_path('app/pandu_config.json');
             File::put($path, json_encode($config, JSON_PRETTY_PRINT));
 
+            // Hapus form dari database (dan cache) jika sudah tidak ada di config
+            $configSlugs = array_column($forms, 'slug');
+            $deletedForms = Form::whereNull('parent_id')
+                ->whereNotIn('slug', $configSlugs)
+                ->get();
+            
+            if ($deletedForms->count() > 0) {
+                // Delete cascaded children in DB automatically (onDelete cascade)
+                Form::whereIn('id', $deletedForms->pluck('id'))->delete();
+
+                // Clear live submission cache to remove orphaned forms data
+                Artisan::call('cache:clear');
+            }
+
             return back()->with('success', 'Konfigurasi berhasil disimpan. Klik "Preview & Sinkronkan" pada form baru untuk melanjutkan.');
         } catch (\Exception $e) {
             Log::error('Failed to save pandu config: '.$e->getMessage());
