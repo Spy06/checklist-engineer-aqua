@@ -121,7 +121,11 @@ class GuestMatrixController extends Controller
         $fetchedRootForms = Form::whereIn('slug', $fetchedSlugs)->get();
         $fetchedLeafIds = [];
         foreach ($fetchedRootForms as $rf) {
-            $fetchedLeafIds = array_merge($fetchedLeafIds, $this->getLeafDescendantIds($rf));
+            if ($rf->children->count() === 0) {
+                $fetchedLeafIds[] = $rf->id;
+            } else {
+                $fetchedLeafIds = array_merge($fetchedLeafIds, $this->getLeafDescendantIds($rf));
+            }
         }
 
         $newSubmissions = collect($oldCache)->filter(function($s) use ($fetchedLeafIds) {
@@ -207,8 +211,7 @@ class GuestMatrixController extends Controller
         };
 
         // Try session cache first, then fall back to global cache
-        $liveData = Cache::get('live_submissions_'.session()->getId())
-                 ?? Cache::get(self::CACHE_KEY);
+        $liveData = Cache::get(self::CACHE_KEY, []);
 
         if (! $liveData) {
             return response()->json([
@@ -251,8 +254,7 @@ class GuestMatrixController extends Controller
         }
 
         // Try session cache first, then global
-        $liveData = Cache::get('live_submissions_'.session()->getId())
-                 ?? Cache::get(self::CACHE_KEY);
+        $liveData = Cache::get(self::CACHE_KEY, []);
 
         if (! $liveData) {
             return back()->with('error', 'Data live belum dimuat. Silakan klik Muat Data Live terlebih dahulu.');
@@ -436,8 +438,7 @@ class GuestMatrixController extends Controller
         $toDate = $request->input('to_date');
         $hiddenIds = json_decode($request->input('hidden_ids', '[]'), true) ?? [];
 
-        $liveData = Cache::get('live_submissions_'.session()->getId())
-                 ?? Cache::get(self::CACHE_KEY);
+        $liveData = Cache::get(self::CACHE_KEY, []);
 
         if (! $liveData) {
             $empty = ['total' => 0, 'filled_count' => 0, 'unfilled_count' => 0, 'good_count' => 0, 'not_good_count' => 0,

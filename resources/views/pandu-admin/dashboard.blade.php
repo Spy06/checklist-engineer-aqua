@@ -115,7 +115,7 @@
                             <p class="text-xs text-gray-500 dark:text-gray-400">Pemetaan antara ID Google Form dan Slug Checklist di Database</p>
                         </div>
                     </div>
-                    <button type="button" @click="forms.unshift({id: '', slug: ''})" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400 transition-colors shadow-sm">
+                    <button type="button" @click="forms.unshift({id: '', slug: '', name: '', parent_slug: ''})" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400 transition-colors shadow-sm">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                         Tambah Form
                     </button>
@@ -128,26 +128,62 @@
                         </div>
                     </template>
                     
+                    {{-- Column Headers --}}
+                    <div class="hidden sm:grid grid-cols-12 gap-2 px-4 mb-1 text-xs font-semibold text-gray-400 dark:text-gray-500">
+                        <div class="col-span-3">Google Form ID</div>
+                        <div class="col-span-2">Slug Database</div>
+                        <div class="col-span-3">Nama Tampilan</div>
+                        <div class="col-span-3">Form Induk (opsional)</div>
+                        <div class="col-span-1"></div>
+                    </div>
+
                     <div class="space-y-3">
                         <template x-for="(form, index) in forms" :key="index">
-                            <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center p-4 bg-gray-50 dark:bg-zinc-800/20 border border-gray-200 dark:border-zinc-800 rounded-xl group transition-colors hover:bg-gray-100 dark:hover:bg-zinc-800/40">
-                                
-                                <div class="w-full sm:w-1/2">
-                                    <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1 sm:hidden">Google Form ID</label>
-                                    <input type="text" x-model="form.id" :name="`forms[${index}][id]`" required placeholder="Contoh: 1TsEx5jisS8tlPV..."
-                                           class="w-full text-sm rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors" />
-                                </div>
-                                
-                                <div class="w-full sm:w-5/12">
-                                    <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1 sm:hidden">Slug Database</label>
-                                    <input type="text" x-model="form.slug" :name="`forms[${index}][slug]`" required placeholder="Contoh: mobile-ladder"
-                                           class="w-full text-sm rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors font-mono" />
-                                </div>
-                                
-                                <div class="w-full sm:w-1/12 flex justify-end">
-                                    <button type="button" @click="forms.splice(index, 1)" class="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/30 rounded-lg transition-colors" title="Hapus Form">
-                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>
-                                    </button>
+                            <div class="flex flex-col gap-3 p-4 bg-gray-50 dark:bg-zinc-800/20 border border-gray-200 dark:border-zinc-800 rounded-xl group transition-colors hover:bg-gray-100 dark:hover:bg-zinc-800/40">
+
+                                {{-- Row 1: core fields --}}
+                                <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 items-end">
+
+                                    <div class="sm:col-span-3">
+                                        <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1">Google Form ID</label>
+                                        <input type="text" x-model="form.id" :name="`forms[${index}][id]`" required placeholder="1TsEx5jisS8tlPV..."
+                                               class="w-full text-xs rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors font-mono" />
+                                    </div>
+
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1">Slug</label>
+                                        <input type="text" x-model="form.slug" :name="`forms[${index}][slug]`" required placeholder="mobile-ladder"
+                                               class="w-full text-xs rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors font-mono" />
+                                    </div>
+
+                                    <div class="sm:col-span-3">
+                                        <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1">Nama Tampilan</label>
+                                        <input type="text" x-model="form.name" :name="`forms[${index}][name]`" placeholder="Mis: Pompa Air"
+                                               class="w-full text-xs rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors" />
+                                    </div>
+
+                                    <div class="sm:col-span-3">
+                                        <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1">Form Induk</label>
+                                        <select x-model="form.parent_slug" :name="`forms[${index}][parent_slug]`"
+                                                class="w-full text-xs rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors">
+                                            <option value="">— Tanpa induk (root) —</option>
+                                            @foreach($rootForms as $rf)
+                                                <option value="{{ $rf->slug }}">{{ $rf->title }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+
+                                    <div class="sm:col-span-1 flex items-end justify-end gap-1">
+                                        {{-- Preview button (only shown once slug and id are filled) --}}
+                                        <a :href="(form.slug && form.id) ? '{{ route('pandu-admin.form.preview') }}?slug=' + form.slug + '&google_form_id=' + form.id : '#'"
+                                           x-show="form.slug && form.id"
+                                           class="inline-flex items-center p-2 text-cyan-600 hover:text-cyan-700 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 rounded-lg transition-colors" title="Preview & Sinkronkan">
+                                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                        </a>
+                                        <button type="button" @click="forms.splice(index, 1)" class="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/30 rounded-lg transition-colors" title="Hapus Form">
+                                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </template>

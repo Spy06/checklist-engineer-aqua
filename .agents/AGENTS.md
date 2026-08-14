@@ -1,143 +1,131 @@
-# AGENTS.md — Checklist Engineer Aqua
+# AGENTS.md — PANDU
 
-> Dokumentasi teknis internal untuk AI Agent agar dapat melakukan debugging, feature implementation, dan maintenance dengan efisien di proyek Checklist Engineer Aqua.
+> Dokumentasi teknis internal untuk AI Agent agar dapat melakukan debugging, implementasi fitur, dan pemeliharaan dengan efisien di proyek PANDU (Platform Analitik dan Digitalisasi Checklist Plant Cianjur).
 
 ---
 
 ## 1. Deskripsi Proyek
 
-**Checklist Engineer Aqua** adalah aplikasi berbasis web yang berfungsi sebagai Dashboard Live untuk menampilkan matriks checklist dari berbagai fasilitas engineering (berbasis Google Forms). Aplikasi menyinkronkan data secara real-time, mem-parsing format submission yang kompleks, dan menampilkannya dalam UI matriks yang efisien menggunakan sistem caching.
+**PANDU (Platform Analitik dan Digitalisasi Checklist Plant Cianjur)** adalah aplikasi dashboard analitik berbasis web untuk memantau pengisian matriks checklist dari berbagai fasilitas engineering (berbasis Google Forms) di Danone Aqua Plant Cianjur. 
 
-### Tujuan Utama
-- Sentralisasi monitoring pengisian form checklist harian/berkala tim engineering.
-- Real-time dashboard view (Live Matrix) dengan indikator visual.
-- Sinkronisasi data via Google Forms API (`GoogleFormsSyncService`).
-- Parsing dinamis untuk berbagai tipe form (termasuk form kompleks seperti Ladder, Rolling Door, Sliding Door, dsb).
-- Custom hidden admin panel (`PanduAdmin`) untuk manajemen konfigurasi.
-- Admin Panel Filament untuk manajemen master data (Forms, Submissions, dll).
+Aplikasi ini menyinkronkan data secara real-time, mem-parsing format submission yang kompleks, dan menyajikan visualisasi analitik yang interaktif dengan didukung oleh sistem caching lokal berkinerja tinggi.
 
 ### Stack Teknologi
 | Layer | Teknologi |
 |-------|-----------|
 | Backend Framework | Laravel 11 (PHP 8.2+) |
-| Frontend Interaktif | Blade, Vanilla JS untuk Live Polling (Chunking) |
-| Admin Panel | Filament v3 |
-| Hidden Config Panel| Custom Blade + Controller (`PanduAdmin`) |
+| Frontend Interaktif | Alpine.js, Blade, Vanilla JS (AJAX Fetch API) |
+| Konfigurasi Admin | Custom Blade + Controller (`PanduAdmin`) |
 | Styling | Tailwind CSS |
-| Database Default | MySQL / SQLite |
-| Sinkronisasi Data | Google Forms API + Google Client |
+| Database Default | MySQL (Production) / SQLite (Development) |
+| Cache Driver | File Cache Driver (`CACHE_STORE=file` untuk stabilitas data besar) |
+| Sinkronisasi Data | Google Forms API + Google Client SDK |
 
 ---
 
-## 2. Fitur yang Sudah Tersedia
+## 2. Peta Fitur & Arsitektur Utama
 
-### 2.1. Sinkronisasi Data (Google Forms API)
-- Menggunakan `GoogleFormsSyncService` untuk mengambil submission form dari Google.
-- Terdapat mekanisme *chunking* atau *polling* pada sisi client (di halaman `/guest/matrix/live`) untuk menghindari limit API (Timeout) jika form sangat banyak. Mekanismenya menggunakan rute `/poll/init`, `/poll/chunk`, `/poll/finish`.
+### 2.1. Dasbor Analitik Utama (`/`)
+Halaman publik yang menyajikan data secara interaktif:
+* **Filter Tanggal:** Input rentang waktu (tanggal mulai s.d. tanggal selesai) untuk membatasi visualisasi matriks secara real-time.
+* **Live Mode:** Sakelar (toggle) untuk mengaktifkan pemantauan otomatis langsung dari Google Forms API.
+* **Auto Refresh:** Opsi refresh otomatis secara periodik sesuai interval waktu yang ditentukan (dalam detik).
+* **Scrape Data (Ambil Data Live):** Tombol yang memicu penarikan data secara asynchronous menggunakan teknik *chunked polling* untuk mencegah timeout API Google:
+  1. `/guest/matrix/live/poll/init` -> Menginisialisasi daftar form.
+  2. `/guest/matrix/live/poll/chunk` -> Mengunduh data Google Form per slug secara terpisah ke cache sementara.
+  3. `/guest/matrix/live/poll/finish` -> Menggabungkan seluruh data sementara, memotong data usang, menghitung status matriks, dan menyimpan ke cache global.
+* **Visualisasi Diagram Donat:** Representasi persentase kondisi checklist:
+  * **Filled:** Persentase form yang sudah terisi.
+  * **Unfilled:** Persentase form yang belum terisi.
+  * **Good:** Persentase pengisian yang bernilai baik (tanpa indikasi kerusakan).
+  * **Not Good:** Persentase pengisian yang memiliki catatan kegagalan/kerusakan.
+* **Matriks Checklist Bulanan:** Tabel komprehensif bulanan (Jan s.d. Des) per form yang menunjukkan status pengisian menggunakan indikator visual 3-state:
+  * 🔴 **None (Merah/Kosong):** Belum ada pengisian sama sekali pada bulan tersebut.
+  * 🟡 **Partial (Kuning/Setengah):** Pengisian baru dilakukan pada sebagian objek (untuk kategori yang memiliki beberapa anak).
+  * 🟢 **Full (Hijau/Penuh):** Pengisian telah selesai sepenuhnya untuk seluruh objek.
+* **Export Excel:** Fitur untuk mengunduh laporan matriks ke dalam format spreadsheet Excel sesuai rentang tanggal yang dipilih.
 
-### 2.2. Parsing Dinamis (Form Inspeksi)
-- Aplikasi menangani form dengan format submission yang cukup variatif, beberapa form memiliki struktur dinamis seperti:
-  - Form Ladder (Fix/Portable)
-  - Form Rolling Door
-  - Form Pintu Geser / Sliding Door
-- Mekanisme parsing data Google Forms diekstrak dan dibaca sesuai dengan *mapping* / *template* yang telah dibuat.
-
-### 2.3. Dashboard Matrix Live
-- Halaman utamanya `/` (Redirect ke `/guest/matrix/live`).
-- Menyediakan cache global (contoh cache dengan TTL tertentu) untuk menampilkan status submission di semua kalender (Hijau/Merah/Kosong).
-- Mendukung export data ke Excel.
-
-### 2.4. Pandu Admin (Hidden Panel)
-- Panel konfigurasi rahasia untuk mengatur sinkronisasi dan token (`/pandu-admin`).
-- Menggunakan middleware kustom `pandu.auth`.
-
-### 2.5. Filament Admin Panel
-- Mengelola data hirarki form dan log sistem.
-
----
-
-## 3. Struktur Routing
-
-### 3.1. Web Routes (`routes/web.php`)
-
-| Method | URI | Controller/Action |
-|--------|-----|-------------------|
-| GET | `/` dan `/guest/matrix/live` | `GuestMatrixController@live` |
-| GET | `/guest/matrix/live/poll/init` | `GuestMatrixController@livePollInit` |
-| POST | `/guest/matrix/live/poll/chunk` | `GuestMatrixController@livePollChunk` |
-| POST | `/guest/matrix/live/poll/finish` | `GuestMatrixController@livePollFinish` |
-| GET | `/matrix/submission-detail` | `GuestMatrixController@submissionDetail` |
-| GET | `/guest/matrix/export` | `GuestMatrixController@exportExcel` |
-| GET | `/guest/matrix/view` | `GuestMatrixController@viewByDateRange` |
-| GET | `/pandu-admin/login` | `PanduAdminController@showLogin` |
-| POST | `/pandu-admin/login` | `PanduAdminController@processLogin` |
-| GET | `/pandu-admin` | `PanduAdminController@index` |
+### 2.2. Panel Admin Tersembunyi (Pandu Admin — `/pandu-admin`)
+Panel khusus dengan otentikasi middleware `pandu.auth` untuk mengelola sistem:
+* **Google API Credentials:** Form input untuk menyimpan JSON Key Service Account Google Cloud (Base64 encoded) langsung ke dalam konfigurasi lokal.
+* **Form Registry CRUD:** Pemetaan data Google Form yang fleksibel:
+  * Input Google Form ID & Slug Database.
+  * Input Nama Tampilan kustom di halaman matriks.
+  * Dropdown penentuan Form Induk (Parent Form) untuk menyusun struktur hierarki di matriks.
+* **Fitur Preview Form Baru (Sebelum Publikasi):**
+  * Halaman khusus (`/pandu-admin/form/preview?slug=xxx`) yang menampilkan struktur elemen pertanyaan Google Form API secara langsung (pilihan ganda, checklist, section).
+  * Menampilkan 20 respons terbaru dari Google Form untuk memastikan data berhasil ditarik.
+  * Menampilkan visualisasi struktur hierarki database (Parent → Child → Grandchild).
+  * Tombol **"Sinkronkan Sekarang"** untuk menjalankan dry-run pembentukan tabel database.
+* **Finalisasi Form:** Tombol persetujuan akhir yang memindahkan data konfigurasi sementara ke dalam database aktif agar langsung tampil secara live di halaman utama `/`.
 
 ---
 
-## 4. Skema Database (Penting)
+## 3. Struktur Routing (`routes/web.php`)
 
-Tabel masih berbasis `forms`, `form_submissions`, dan konfigurasi aplikasi (`settings` atau custom json). Data submission disinkronisasi dari Google Forms (seringnya tidak langsung ditulis via web).
+| Method | URI | Controller/Action | Keterangan |
+|--------|-----|-------------------|------------|
+| GET | `/` / `/guest/matrix/live` | `GuestMatrixController@live` | Halaman utama dasbor matriks |
+| GET | `/guest/matrix/live/poll/init` | `GuestMatrixController@livePollInit` | Inisialisasi daftar ambil data |
+| POST | `/guest/matrix/live/poll/chunk` | `GuestMatrixController@livePollChunk` | Penarikan data parsial per form |
+| POST | `/guest/matrix/live/poll/finish` | `GuestMatrixController@livePollFinish` | Finalisasi & kalkulasi akhir data live |
+| GET | `/matrix/submission-detail` | `GuestMatrixController@submissionDetail` | Modal detail pengisian objek |
+| GET | `/guest/matrix/export` | `GuestMatrixController@exportExcel` | Unduh matriks ke format Excel |
+| GET | `/guest/matrix/view` | `GuestMatrixController@viewByDateRange` | AJAX filter tanggal matriks |
+| GET | `/pandu-admin/login` | `PanduAdminController@showLogin` | Halaman masuk panel admin |
+| POST | `/pandu-admin/login` | `PanduAdminController@processLogin` | Autentikasi sesi admin |
+| GET | `/pandu-admin` | `PanduAdminController@index` | Dashboard kelola form & kredensial |
+| POST | `/pandu-admin/config` | `PanduAdminController@updateConfig` | Update data config JSON |
+| GET | `/pandu-admin/form/preview` | `PanduAdminController@previewForm` | Halaman peninjau struktur & data form |
+| POST | `/pandu-admin/form/sync` | `PanduAdminController@syncNewForm` | AJAX trigger sinkronisasi DB |
+| POST | `/pandu-admin/form/finalize` | `PanduAdminController@finalizeForm` | Publikasi form baru ke matriks utama |
 
 ---
 
-## 5. Struktur Direktori Penting
+## 4. Skema Caching & Database
 
+### Caching Driver (Sangat Penting)
+Aplikasi PANDU menyimpan data ter-scrape di dalam cache global menggunakan key `global_live_submissions`. 
+* **Driver yang digunakan:** `file` (dikonfigurasi via `CACHE_STORE=file` di berkas `.env`). 
+* **Mengapa tidak menggunakan `database` cache?** Data akumulasi Google Forms berukuran sangat besar (Megabyte). Query penyimpanan MySQL memicu error `MySQL server has gone away` karena limitasi `max_allowed_packet`. Menggunakan driver `file` menyelesaikan masalah ini dengan menulis data langsung ke disk lokal (`storage/framework/cache/data`).
+
+### Database Modul (`forms` table)
+Tabel utama untuk memetakan hirarki checklist:
+* `id`: ID unik.
+* `parent_id`: ID form induk (null jika root).
+* `slug`: Kode unik pengenal.
+* `title`: Nama tampilan matriks.
+* `is_category`: Boolean penentu kategori/daun.
+* `options`: Struktur array pertanyaan checklist yang valid.
+
+---
+
+## 5. Komponen Kritis & Catatan Pemeliharaan
+
+### 5.1. Filter ID Daun saat Penghapusan Cache Lama
+Di dalam `livePollFinish`, pastikan pencarian daun (`fetchedLeafIds`) menyertakan kondisi khusus jika form tersebut adalah form mandiri (tanpa anak):
+```php
+foreach ($fetchedRootForms as $rf) {
+    if ($rf->children->count() === 0) {
+        $fetchedLeafIds[] = $rf->id;
+    } else {
+        $fetchedLeafIds = array_merge($fetchedLeafIds, $this->getLeafDescendantIds($rf));
+    }
+}
 ```
-checklist-engineer-aqua/
-├── app/
-│   ├── Concerns/
-│   │   └── MatrixSummary.php
-│   ├── Filament/
-│   ├── Http/
-│   │   ├── Controllers/        # GuestMatrixController, PanduAdminController
-│   ├── Models/                 # Form, FormSubmission
-│   └── Services/
-│       └── GoogleFormsSyncService.php
-├── resources/
-│   └── views/
-├── routes/
-│   ├── web.php
-└── .agents/
-    └── AGENTS.md
-```
+*Gagal menyertakan logika ini akan mengakibatkan duplikasi data bertumpuk di cache karena data lama tidak terbuang sebelum data baru di-merge.*
+
+### 5.2. File `pandu_config.json`
+Berada di `storage/app/pandu_config.json`, berkas ini menjadi pusat penyimpanan daftar link Google Forms API yang terhubung sebelum di-sync ke database. Jangan biarkan berkas ini terhapus secara sengaja.
 
 ---
 
-## 6. Komponen Kritis & Catatan Teknis
+## 6. Komando Penting
 
-### 6.1. Google Forms API Polling
-- Ketika memuat halaman live, aplikasi tidak melakukan fetching 100+ forms secara bersamaan. Ia menggunakan proses polling (init -> chunk looping via fetch JS -> finish) lalu me-reload cache.
-- Jika ada masalah "data tidak sinkron", cek mekanisme fetch chunking ini di blade `live.blade.php`.
-
-### 6.2. Parsing Form Dinamis
-- Logika parsing untuk jenis inspeksi khusus (seperti Fix Ladder, Rolling Door, dll) cukup kompleks dan bervariasi pada Google Forms JSON API. Selalu periksa data raw (menggunakan scratch script atau dd) sebelum membuat asumsi keys (pertanyaan).
-
-### 6.3. Pandu Admin Access
-- Akun atau password untuk masuk ke `/pandu-admin` mungkin di-set secara statis atau dari file `.env`. Pastikan tidak membocorkan password ini.
-
----
-
-## 7. Tracking Progress
-| Fitur | Status |
-|-------|--------|
-| Google Forms Integration | ✅ Done |
-| Live Matrix Dashboard | ✅ Done |
-| Async Polling Fetch (Chunk) | ✅ Done |
-| Parsing Form (Ladder, dll) | ✅ Done / In Progress |
-| Pandu Admin Auth | ✅ Done |
-
----
-
-## 8. Konvensi & Protokol AI Agent
-
-### 8.1. Prinsip Debugging
-1. **Evidence First**: Jangan tebak struktur respons JSON dari Google Forms. Selalu buat scratch file PHP untuk inspeksi (seperti yang ada di `scratch/inspect_...php`).
-2. **Caching**: Ingat bahwa hasil sinkronisasi sering kali di-cache (contoh `global_live_submissions`). Gunakan `Cache::forget()` saat testing agar data up-to-date.
-3. **Chunking**: Hati-hati dengan timeout. Biarkan flow chunking berjalan sebagaimana mestinya. Jangan ubah ke fetching sinkron untuk semua form.
-
-### 8.2. Komando Penting
 | Perintah | Fungsi |
 |----------|--------|
-| `php artisan serve` | Menjalankan server development |
-| `php artisan cache:clear` | Menghapus cache (Penting saat testing sinkronisasi) |
+| `php artisan serve` | Menjalankan server lokal |
+| `php artisan config:clear` | Membersihkan cache konfigurasi (setelah edit `.env`) |
+| `php artisan cache:clear` | Membersihkan seluruh data cache aplikasi |
+| `php artisan forms:sync-structure` | Melakukan sinkronisasi struktur form secara manual |
+| `php artisan forms:sync-structure --slug=xxx --id=yyy` | Sinkronisasi spesifik untuk form tunggal (digunakan oleh AJAX admin) |

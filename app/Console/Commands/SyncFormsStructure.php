@@ -18,7 +18,7 @@ class SyncFormsStructure extends Command
      *
      * @var string
      */
-    protected $signature = 'forms:sync-structure';
+    protected $signature = 'forms:sync-structure {--slug= : Only sync the form with this specific slug} {--id= : Google Form ID to use when slug is not yet in config}';
 
     /**
      * The description of the console command.
@@ -67,6 +67,24 @@ class SyncFormsStructure extends Command
             return 0;
         }
 
+        // If --slug option is provided, only sync that specific form
+        $targetSlug = $this->option('slug');
+        $targetId   = $this->option('id');
+
+        if ($targetSlug) {
+            $googleForms = array_filter($googleForms, fn($gf) => $gf['slug'] === $targetSlug);
+
+            // If slug not found in config but --id is provided, synthesize an entry
+            if (empty($googleForms) && $targetId) {
+                $this->info("Slug '{$targetSlug}' not in config, using provided ID: {$targetId}");
+                $googleForms = [['id' => $targetId, 'slug' => $targetSlug]];
+            } elseif (empty($googleForms)) {
+                $this->error("No form with slug '{$targetSlug}' found in pandu_config.json.");
+                return 1;
+            }
+            $this->info("Targeting only slug: {$targetSlug}");
+        }
+
         $syncedFormIds = [];
 
         foreach ($googleForms as $gf) {
@@ -88,8 +106,10 @@ class SyncFormsStructure extends Command
             }
         }
 
-        // Cleanup obsolete forms (leaves/subcategories that have 0 submissions and were not synced)
-        $this->cleanupObsoleteForms($syncedFormIds);
+        // Only cleanup obsolete forms when doing a full sync (not single-slug)
+        if (! $targetSlug) {
+            $this->cleanupObsoleteForms($syncedFormIds);
+        }
 
         $this->info('Forms structure synchronization completed successfully.');
 

@@ -24,4 +24,10 @@ Route::middleware(['pandu.auth'])->group(function () {
     Route::get('/pandu-admin', [PanduAdminController::class, 'index'])->name('pandu-admin.dashboard');
     Route::post('/pandu-admin/config', [PanduAdminController::class, 'updateConfig'])->name('pandu-admin.config.update');
     Route::post('/pandu-admin/logout', [PanduAdminController::class, 'logout'])->name('pandu-admin.logout');
+
+    // Form management: preview, sync dry-run, finalize
+    Route::get('/pandu-admin/form/preview', [PanduAdminController::class, 'previewForm'])->name('pandu-admin.form.preview');
+    Route::post('/pandu-admin/form/sync', [PanduAdminController::class, 'syncNewForm'])->name('pandu-admin.form.sync');
+    Route::post('/pandu-admin/form/finalize', [PanduAdminController::class, 'finalizeForm'])->name('pandu-admin.form.finalize');
 });
+

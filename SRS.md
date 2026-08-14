@@ -58,14 +58,12 @@ Aplikasi ini adalah sistem *self-contained* yang menjadi perantara antara penggu
 - Sinkronisasi data submission secara *live* menggunakan Google Forms API.
 - Visualisasi matriks checklist (menampilkan status Terisi/Kosong, *Good/Not Good*).
 - Pemetaan dan *parsing* format submission yang kompleks (seperti form Ladder, Rolling Door).
-- Manajemen hierarki form dan pengguna melalui Filament Admin Panel.
 - Panel konfigurasi rahasia (*Pandu Admin*) untuk manajemen token API.
 - Ekspor data laporan matriks bulanan/harian ke format Excel.
 
 ### 2.3 User Classes and Characteristics
 1. **Guest / Regular User (Tanpa Login):** Tim engineering atau pihak lain yang hanya membutuhkan akses ke halaman Live Dashboard untuk melihat status pengerjaan checklist.
-2. **Admin Filament (Super Admin/Admin):** Pengguna dengan hak akses manajemen sistem untuk mengatur *Master Data* (Kategori, Form, Roles, Users).
-3. **Pandu Admin (System Configurator):** Pengembang atau IT Support yang menangani konfigurasi API, token otentikasi Google, dan parameter *back-end* yang sensitif.
+2. **Pandu Admin (System Configurator):** Pengembang atau IT Support yang menangani konfigurasi API, token otentikasi Google, dan parameter *back-end* yang sensitif.
 
 ### 2.4 Operating Environment
 - **Server:** Linux/Windows Server dengan PHP 8.2+ dan Laravel 11.
@@ -92,7 +90,6 @@ Aplikasi ini adalah sistem *self-contained* yang menjadi perantara antara penggu
 
 ### 3.1 User Interfaces
 - **Live Dashboard:** Berupa tabel matriks responsif dengan indikator warna (Hijau = Good, Merah = Not Good, Abu-abu = Kosong).
-- **Filament Admin Panel:** Menggunakan standar komponen UI Filament v3 yang intuitif.
 - **Pandu Admin Login:** Formulir login sederhana tanpa *branding* publik untuk menjaga keamanan.
 
 ### 3.2 Hardware Interfaces
@@ -100,7 +97,7 @@ Tidak ada interaksi dengan perangkat keras (*hardware*) secara langsung.
 
 ### 3.3 Software Interfaces
 - **Sistem Database Lokal:** MySQL/SQLite untuk menyimpan *cache* dan *Master Data*.
-- **Otentikasi:** Laravel Fortify (Passkeys) opsional untuk Filament Panel.
+- **Otentikasi:** Middleware kustom untuk otentikasi rahasia (Pandu Admin).
 
 ### 3.4 Communications Interfaces
 - **Protokol Eksternal:** HTTPS digunakan untuk komunikasi dengan *Google Forms REST API*.
@@ -164,7 +161,6 @@ Sistem tidak memodifikasi data asli di Google Forms (bersifat *Read-Only* dari p
 
 ### 5.3 Security Requirements
 - URL *Google Service Account JSON/Token* tidak boleh diunggah ke *repository* (harus dijaga di server *environment*).
-- Admin panel (Filament) harus mengalihkan (*redirect*) pengguna yang tidak berhak (`RedirectAdminToPanel`).
 
 ### 5.4 Software Quality Attributes
 - **Adaptability:** Penambahan jenis form baru (misalnya *Fire Extinguisher*) harus secara otomatis dapat di-*parse* oleh sistem tanpa perombakan kode.

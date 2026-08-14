@@ -19,18 +19,8 @@ Pengguna biasa adalah tim engineering, supervisor, atau siapa saja yang ingin me
 3. **Melihat Matriks Checklist:** Setelah sinkronisasi selesai, pengguna akan disajikan tabel/matriks kalender yang menunjukkan status setiap *leaf* (form akhir) dalam bentuk indikator warna (Hijau untuk Good, Merah untuk Not Good, dan Abu-abu/Kosong untuk Tidak Terisi).
 4. **Melihat Detail & Export:** Pengguna dapat mengklik sel pada matriks untuk melihat detail *submission* (siapa yang mengisi, apa yang tidak sesuai) serta dapat mengekspor matriks ke format Excel.
 
-### B. Admin Filament (Membutuhkan Login)
-Admin ini bertugas mengelola master data (Data Form, User, dsb). Ini adalah admin aplikasi utama.
 
-1. **Login:** Mengakses rute panel Filament (biasanya `/admin` atau rute dashboard yang diproteksi).
-2. **Autentikasi Passkeys:** Login menggunakan sistem otentikasi biometrik/Passkeys jika sudah dikonfigurasi, atau kredensial konvensional.
-3. **Manajemen Master Data:**
-   - **Forms Hierarchy:** Admin dapat membuat kategori (folder) dan form akhir (*leaf*). Form disusun secara hierarkis (Parent > Child).
-   - **Users & Roles:** Admin dapat menambahkan pengguna baru dan memberikan hak akses.
-   - **Assignments:** Menentukan pengguna mana yang bertanggung jawab atas form tertentu (opsional tergantung konfigurasi).
-4. **Monitoring:** Admin juga bisa melihat daftar raw data *submissions* yang telah disinkronkan dari Google Forms dan tersimpan di database lokal.
-
-### C. Pandu Admin / System Config (Hidden Admin)
+### B. Pandu Admin / System Config (Hidden Admin)
 Ini adalah role khusus untuk konfigurasi sistem tingkat lanjut, biasanya digunakan oleh *developer* atau *IT Support*.
 
 1. **Login:** Mengakses URL rahasia `/pandu-admin/login`.
